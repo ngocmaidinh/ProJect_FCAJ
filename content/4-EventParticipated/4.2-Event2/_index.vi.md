@@ -11,13 +11,14 @@ pre: " <b> 4.2. </b> "
 
 ## 1. Mục đích của sự kiện
 
-Mini Meetup – First Cloud AI Journey ngày 22/08/2026 là buổi gặp gỡ và chia sẻ kiến thức do cộng đồng FCAJ tổ chức. Sự kiện tập trung vào chủ đề các chuẩn API trong Backend, giúp người tham gia hiểu rõ hơn về vai trò của API trong quá trình xây dựng và phát triển các hệ thống phần mềm hiện đại.
+Mini Meetup – First Cloud AI Journey ngày 22/08/2026 là buổi gặp gỡ và chia sẻ kiến thức do cộng đồng FCAJ tổ chức. Sự kiện tập trung vào chủ đề các chuẩn API trong Backend, giúp người tham gia hiểu rõ hơn về vai trò của API trong quá trình xây dựng, tích hợp và vận hành các hệ thống phần mềm hiện đại.
 
 Các mục tiêu chính của sự kiện bao gồm:
 
 - Tìm hiểu vai trò của API trong việc kết nối và trao đổi dữ liệu giữa các thành phần của hệ thống.
 - Tiếp cận các chuẩn và nguyên tắc quan trọng khi thiết kế API trong Backend.
-- Hiểu được tầm quan trọng của việc xây dựng API dễ sử dụng, dễ bảo trì và có khả năng mở rộng.
+- Hiểu tầm quan trọng của việc xây dựng API dễ sử dụng, dễ bảo trì và có khả năng mở rộng.
+- Tìm hiểu cách API hỗ trợ tích hợp giữa ứng dụng, dịch vụ và hạ tầng điện toán đám mây.
 - Khuyến khích tinh thần học hỏi, chia sẻ kiến thức và phát triển chuyên môn trong cộng đồng công nghệ.
 
 ## 2. Diễn giả và chủ đề chia sẻ
@@ -28,7 +29,7 @@ Các mục tiêu chính của sự kiện bao gồm:
 
 ### 3.1. Tổng quan về API trong Backend
 
-API (Application Programming Interface) là giao diện cho phép các ứng dụng hoặc thành phần phần mềm giao tiếp và trao đổi dữ liệu với nhau. Trong các hệ thống hiện đại, API đóng vai trò quan trọng trong việc kết nối Frontend với Backend, tích hợp các dịch vụ và hỗ trợ trao đổi dữ liệu giữa những hệ thống khác nhau.
+API (Application Programming Interface) là giao diện lập trình ứng dụng, cho phép các ứng dụng hoặc thành phần phần mềm giao tiếp và trao đổi dữ liệu với nhau. Trong các hệ thống hiện đại, API đóng vai trò quan trọng trong việc kết nối Frontend với Backend, tích hợp các dịch vụ và hỗ trợ trao đổi dữ liệu giữa những hệ thống khác nhau.
 
 Một số nội dung cơ bản liên quan đến API:
 
@@ -36,6 +37,7 @@ Một số nội dung cơ bản liên quan đến API:
 - Nhận biết cách API hỗ trợ giao tiếp giữa các ứng dụng và dịch vụ.
 - Hiểu tầm quan trọng của việc thiết kế API rõ ràng, thống nhất và dễ sử dụng.
 - Nhận thức được vai trò của API trong việc tích hợp các thành phần của một hệ thống lớn.
+- Tìm hiểu khả năng sử dụng API để quản lý và tương tác với các dịch vụ công nghệ.
 
 ### 3.2. Các chuẩn và nguyên tắc thiết kế API
 
@@ -48,6 +50,7 @@ Các khía cạnh đáng chú ý bao gồm:
 - **Khả năng bảo trì:** Tổ chức API hợp lý để thuận tiện cho việc cập nhật, sửa lỗi và phát triển chức năng mới.
 - **Khả năng mở rộng:** Xây dựng API có cấu trúc phù hợp để đáp ứng nhu cầu phát triển của hệ thống.
 - **Tính tương thích:** Hạn chế những thay đổi gây ảnh hưởng đến các ứng dụng đang sử dụng API.
+- **Tính bảo mật:** Quan tâm đến xác thực, phân quyền và bảo vệ dữ liệu trong quá trình trao đổi thông tin.
 
 Những nguyên tắc này cho thấy việc xây dựng API không chỉ tập trung vào khả năng xử lý yêu cầu mà còn cần quan tâm đến chất lượng thiết kế và khả năng vận hành lâu dài.
 
@@ -62,8 +65,9 @@ Một số nội dung cần quan tâm khi thiết kế API:
 - Chú trọng đến xác thực, phân quyền và bảo vệ dữ liệu khi cung cấp API.
 - Xem xét việc quản lý phiên bản khi cần thay đổi hoặc bổ sung chức năng.
 - Cung cấp tài liệu API rõ ràng để hỗ trợ quá trình phát triển và tích hợp.
+- Tìm hiểu khả năng khai thác API để kết nối và tự động hóa việc quản lý các dịch vụ cloud.
 
-Các nội dung trên là những nguyên tắc có thể áp dụng khi thiết kế và xây dựng các hệ thống phần mềm trong thực tế.
+Các nội dung trên là những nguyên tắc có thể áp dụng khi thiết kế và xây dựng các hệ thống phần mềm, đồng thời hỗ trợ quá trình tích hợp ứng dụng với hạ tầng điện toán đám mây.
 
 ## 4. Những kiến thức và kỹ năng học được
 
@@ -74,40 +78,46 @@ Các nội dung trên là những nguyên tắc có thể áp dụng khi thiết
 - **Tích hợp hệ thống:** Hiểu thêm cách API hỗ trợ giao tiếp và trao đổi dữ liệu giữa các ứng dụng hoặc dịch vụ.
 - **Bảo mật API:** Nhận thức được sự cần thiết của việc xác thực, phân quyền và bảo vệ dữ liệu khi xây dựng các giao diện dịch vụ.
 - **Khả năng mở rộng:** Hiểu rằng thiết kế API cần tính đến nhu cầu phát triển và thay đổi của hệ thống trong tương lai.
+- **Quản lý dịch vụ cloud:** Biết thêm về vai trò của API trong việc tương tác, quản lý và tự động hóa các tài nguyên trên nền tảng điện toán đám mây.
 
 ### 4.2. Kỹ năng phát triển bản thân
 
 - Nâng cao khả năng tiếp cận và tìm hiểu các kiến thức kỹ thuật mới.
 - Hiểu được giá trị của việc chia sẻ kiến thức và kinh nghiệm thực tế trong cộng đồng công nghệ.
 - Có thêm định hướng tìm hiểu cách thiết kế, tài liệu hóa và kiểm thử API.
+- Nâng cao tư duy về khả năng tích hợp giữa ứng dụng và các dịch vụ hạ tầng.
 - Nhận thức được tầm quan trọng của việc học hỏi liên tục để đáp ứng yêu cầu phát triển của các hệ thống hiện đại.
 
 ## 5. Ứng dụng vào đề tài thực tập
 
-Đề tài thực tập của tôi là **"Thiết kế và triển khai hệ thống Hybrid Cloud kết nối mạng doanh nghiệp đa chi nhánh bằng VPN Site-to-Site tích hợp giải pháp giám sát tập trung"**.
+Đề tài thực tập của tôi là **"Nghiên cứu và xây dựng hệ thống Backup và Disaster Recovery trên Amazon Web Services (AWS)"**. Trong quá trình thực hiện, tôi xây dựng hệ thống website bán hàng thời trang Maiora trên AWS, kết hợp các dịch vụ lưu trữ, sao lưu và khôi phục dữ liệu nhằm nâng cao khả năng bảo vệ dữ liệu và duy trì hoạt động của ứng dụng khi xảy ra sự cố.
 
-Mặc dù nội dung chính của đề tài tập trung vào hạ tầng mạng và điện toán đám mây, kiến thức về API vẫn có thể hỗ trợ quá trình tìm hiểu và quản lý các dịch vụ trong hệ thống theo những hướng sau:
+Mặc dù nội dung chính của buổi Meetup tập trung vào API trong Backend, những kiến thức này vẫn có thể liên hệ với đề tài thực tập thông qua các khía cạnh sau:
 
-- **Tìm hiểu dịch vụ AWS:** Nghiên cứu cách các dịch vụ AWS cung cấp API để quản lý tài nguyên và thực hiện các thao tác thông qua giao diện lập trình.
-- **Tích hợp hệ thống:** Hiểu vai trò của API trong việc kết nối các ứng dụng và dịch vụ có liên quan đến hệ thống Hybrid Cloud.
-- **Giám sát tập trung:** Tìm hiểu khả năng sử dụng API của các công cụ giám sát để truy xuất dữ liệu, tích hợp thông tin hoặc tự động hóa một số thao tác khi cần thiết.
-- **Bảo mật và quản lý truy cập:** Chú trọng đến cơ chế xác thực, phân quyền và bảo vệ thông tin khi các dịch vụ trao đổi dữ liệu.
-- **Tự động hóa:** Mở rộng kiến thức về API để nghiên cứu khả năng tự động hóa việc quản lý tài nguyên cloud trong các giai đoạn phát triển tiếp theo.
+- **Tìm hiểu và quản lý dịch vụ AWS:** AWS cung cấp các API thông qua AWS SDK, AWS CLI và các giao diện quản lý dịch vụ. Việc hiểu nguyên tắc hoạt động của API giúp tôi có thêm cơ sở để tìm hiểu cách quản lý tài nguyên EC2, S3, RDS và AWS Backup.
+- **Quản lý dữ liệu ứng dụng:** Trong hệ thống Maiora, website PHP giao tiếp với cơ sở dữ liệu MySQL trên Amazon RDS. Kiến thức về API và giao tiếp giữa các thành phần phần mềm giúp tôi hiểu rõ hơn cách tổ chức quá trình trao đổi dữ liệu trong ứng dụng.
+- **Sao lưu và khôi phục dữ liệu:** Các dịch vụ AWS như AWS Backup và Amazon S3 hỗ trợ quản lý hoạt động sao lưu, lưu trữ và khôi phục dữ liệu. Việc tìm hiểu API giúp mở rộng khả năng tiếp cận các thao tác quản lý tài nguyên và tự động hóa quy trình khi cần thiết.
+- **Giám sát và cảnh báo:** Amazon CloudWatch và Amazon SNS hỗ trợ theo dõi trạng thái tài nguyên, phát hiện sự cố và gửi thông báo. Kiến thức về API giúp tôi hiểu thêm khả năng tích hợp dữ liệu giám sát với các ứng dụng hoặc công cụ quản lý khác.
+- **Bảo mật và quản lý truy cập:** Khi tương tác với các dịch vụ AWS thông qua API, cần quan tâm đến cơ chế xác thực và phân quyền. Điều này có liên hệ trực tiếp với việc sử dụng AWS IAM để kiểm soát quyền truy cập vào các tài nguyên trong hệ thống.
+- **Tự động hóa vận hành:** Có thể tìm hiểu thêm cách sử dụng AWS SDK hoặc AWS CLI để thực hiện các thao tác quản lý tài nguyên, kiểm tra trạng thái dịch vụ và hỗ trợ quy trình sao lưu, khôi phục.
 
-Những nội dung này giúp tôi có thêm góc nhìn về sự liên kết giữa phát triển phần mềm, quản lý dịch vụ và vận hành hạ tầng cloud.
+Thông qua việc liên hệ kiến thức từ buổi Meetup với đề tài thực tập, tôi nhận thấy API không chỉ có ý nghĩa trong phát triển Backend mà còn là một thành phần quan trọng trong việc kết nối, quản lý và tự động hóa các dịch vụ điện toán đám mây.
 
 ## 6. Trải nghiệm khi tham gia sự kiện
 
 Tham gia Mini Meetup – First Cloud AI Journey ngày 22/08/2026 là cơ hội để tôi tiếp cận chủ đề API trong Backend và hiểu thêm về một khía cạnh quan trọng của quá trình xây dựng hệ thống phần mềm.
 
-Thông qua chủ đề do Nguyễn Nhân chia sẻ, tôi có thêm định hướng tìm hiểu về các nguyên tắc thiết kế API, đặc biệt là tính nhất quán, khả năng bảo trì và mở rộng. Đây là những yếu tố quan trọng giúp các thành phần phần mềm giao tiếp hiệu quả khi quy mô hệ thống ngày càng tăng.
+Thông qua phần chia sẻ của Nguyễn Nhân, tôi có thêm kiến thức về các nguyên tắc thiết kế API, đặc biệt là tính nhất quán, khả năng bảo trì, bảo mật và mở rộng. Đây là những yếu tố quan trọng giúp các thành phần phần mềm giao tiếp hiệu quả khi quy mô hệ thống ngày càng tăng.
 
 Bên cạnh nội dung kỹ thuật, tinh thần chia sẻ kiến thức giữa các thành viên FCAJ cũng là một điểm đáng chú ý. Hoạt động này khuyến khích mỗi thành viên chủ động học hỏi, trao đổi kinh nghiệm và đóng góp kiến thức cho cộng đồng.
+
+Những kiến thức tiếp thu được từ sự kiện giúp tôi có thêm góc nhìn về mối liên hệ giữa phát triển phần mềm và vận hành hạ tầng cloud, từ đó hỗ trợ quá trình nghiên cứu và triển khai hệ thống Backup và Disaster Recovery trên AWS.
 
 ## 7. Kết luận và bài học rút ra
 
 Qua buổi Mini Meetup – First Cloud AI Journey ngày 22/08/2026, tôi nhận thấy API là một thành phần quan trọng trong việc kết nối và tích hợp các dịch vụ của hệ thống hiện đại. Việc thiết kế API cần đảm bảo tính nhất quán, dễ sử dụng, bảo mật, dễ bảo trì và có khả năng mở rộng.
 
-Bên cạnh đó, buổi meetup giúp tôi nhận thức rõ hơn về giá trị của việc học hỏi và chia sẻ kiến thức trong cộng đồng công nghệ. Những kiến thức thu được là cơ sở để tôi tiếp tục tìm hiểu về API, cách các dịch vụ AWS tương tác với nhau và khả năng tích hợp API vào quá trình quản lý, giám sát hệ thống Hybrid Cloud.
+Đối với đề tài thực tập về Backup và Disaster Recovery trên AWS, kiến thức về API giúp tôi hiểu rõ hơn cách các dịch vụ cloud tương tác và hỗ trợ quản lý tài nguyên. Đây cũng là cơ sở để tìm hiểu thêm về khả năng sử dụng AWS SDK, AWS CLI và các giao diện lập trình nhằm hỗ trợ tự động hóa một số thao tác trong quá trình vận hành hệ thống.
 
+Bên cạnh kiến thức chuyên môn, buổi Meetup còn giúp tôi nhận thức rõ hơn về giá trị của việc học hỏi và chia sẻ kinh nghiệm trong cộng đồng công nghệ. Đây là động lực để tôi tiếp tục trau dồi kiến thức về Backend, Cloud Computing và các giải pháp quản lý hạ tầng, phục vụ cho quá trình học tập và phát triển chuyên môn trong tương lai.
 

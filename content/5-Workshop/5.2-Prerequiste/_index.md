@@ -1,242 +1,70 @@
 ---
-title : "Prerequiste"
-date : 2024-01-01 
-weight : 2 
-chapter : false
-pre : " <b> 5.2. </b> "
+title: "Prerequisites"
+date: 2026-11-10
+weight: 2
+chapter: false
+pre: " <b> 5.2. </b> "
 ---
 
-#### IAM permissions
-Add the following IAM permission policy to your user account to deploy and cleanup this workshop.
-```
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "VisualEditor0",
-            "Effect": "Allow",
-            "Action": [
-                "cloudformation:*",
-                "cloudwatch:*",
-                "ec2:AcceptTransitGatewayPeeringAttachment",
-                "ec2:AcceptTransitGatewayVpcAttachment",
-                "ec2:AllocateAddress",
-                "ec2:AssociateAddress",
-                "ec2:AssociateIamInstanceProfile",
-                "ec2:AssociateRouteTable",
-                "ec2:AssociateSubnetCidrBlock",
-                "ec2:AssociateTransitGatewayRouteTable",
-                "ec2:AssociateVpcCidrBlock",
-                "ec2:AttachInternetGateway",
-                "ec2:AttachNetworkInterface",
-                "ec2:AttachVolume",
-                "ec2:AttachVpnGateway",
-                "ec2:AuthorizeSecurityGroupEgress",
-                "ec2:AuthorizeSecurityGroupIngress",
-                "ec2:CreateClientVpnEndpoint",
-                "ec2:CreateClientVpnRoute",
-                "ec2:CreateCustomerGateway",
-                "ec2:CreateDhcpOptions",
-                "ec2:CreateFlowLogs",
-                "ec2:CreateInternetGateway",
-                "ec2:CreateLaunchTemplate",
-                "ec2:CreateNetworkAcl",
-                "ec2:CreateNetworkInterface",
-                "ec2:CreateNetworkInterfacePermission",
-                "ec2:CreateRoute",
-                "ec2:CreateRouteTable",
-                "ec2:CreateSecurityGroup",
-                "ec2:CreateSubnet",
-                "ec2:CreateSubnetCidrReservation",
-                "ec2:CreateTags",
-                "ec2:CreateTransitGateway",
-                "ec2:CreateTransitGatewayPeeringAttachment",
-                "ec2:CreateTransitGatewayPrefixListReference",
-                "ec2:CreateTransitGatewayRoute",
-                "ec2:CreateTransitGatewayRouteTable",
-                "ec2:CreateTransitGatewayVpcAttachment",
-                "ec2:CreateVpc",
-                "ec2:CreateVpcEndpoint",
-                "ec2:CreateVpcEndpointConnectionNotification",
-                "ec2:CreateVpcEndpointServiceConfiguration",
-                "ec2:CreateVpnConnection",
-                "ec2:CreateVpnConnectionRoute",
-                "ec2:CreateVpnGateway",
-                "ec2:DeleteCustomerGateway",
-                "ec2:DeleteFlowLogs",
-                "ec2:DeleteInternetGateway",
-                "ec2:DeleteNetworkInterface",
-                "ec2:DeleteNetworkInterfacePermission",
-                "ec2:DeleteRoute",
-                "ec2:DeleteRouteTable",
-                "ec2:DeleteSecurityGroup",
-                "ec2:DeleteSubnet",
-                "ec2:DeleteSubnetCidrReservation",
-                "ec2:DeleteTags",
-                "ec2:DeleteTransitGateway",
-                "ec2:DeleteTransitGatewayPeeringAttachment",
-                "ec2:DeleteTransitGatewayPrefixListReference",
-                "ec2:DeleteTransitGatewayRoute",
-                "ec2:DeleteTransitGatewayRouteTable",
-                "ec2:DeleteTransitGatewayVpcAttachment",
-                "ec2:DeleteVpc",
-                "ec2:DeleteVpcEndpoints",
-                "ec2:DeleteVpcEndpointServiceConfigurations",
-                "ec2:DeleteVpnConnection",
-                "ec2:DeleteVpnConnectionRoute",
-                "ec2:Describe*",
-                "ec2:DetachInternetGateway",
-                "ec2:DisassociateAddress",
-                "ec2:DisassociateRouteTable",
-                "ec2:GetLaunchTemplateData",
-                "ec2:GetTransitGatewayAttachmentPropagations",
-                "ec2:ModifyInstanceAttribute",
-                "ec2:ModifySecurityGroupRules",
-                "ec2:ModifyTransitGatewayVpcAttachment",
-                "ec2:ModifyVpcAttribute",
-                "ec2:ModifyVpcEndpoint",
-                "ec2:ReleaseAddress",
-                "ec2:ReplaceRoute",
-                "ec2:RevokeSecurityGroupEgress",
-                "ec2:RevokeSecurityGroupIngress",
-                "ec2:RunInstances",
-                "ec2:StartInstances",
-                "ec2:StopInstances",
-                "ec2:UpdateSecurityGroupRuleDescriptionsEgress",
-                "ec2:UpdateSecurityGroupRuleDescriptionsIngress",
-                "iam:AddRoleToInstanceProfile",
-                "iam:AttachRolePolicy",
-                "iam:CreateInstanceProfile",
-                "iam:CreatePolicy",
-                "iam:CreateRole",
-                "iam:DeleteInstanceProfile",
-                "iam:DeletePolicy",
-                "iam:DeleteRole",
-                "iam:DeleteRolePolicy",
-                "iam:DetachRolePolicy",
-                "iam:GetInstanceProfile",
-                "iam:GetPolicy",
-                "iam:GetRole",
-                "iam:GetRolePolicy",
-                "iam:ListPolicyVersions",
-                "iam:ListRoles",
-                "iam:PassRole",
-                "iam:PutRolePolicy",
-                "iam:RemoveRoleFromInstanceProfile",
-                "lambda:CreateFunction",
-                "lambda:DeleteFunction",
-                "lambda:DeleteLayerVersion",
-                "lambda:GetFunction",
-                "lambda:GetLayerVersion",
-                "lambda:InvokeFunction",
-                "lambda:PublishLayerVersion",
-                "logs:CreateLogGroup",
-                "logs:DeleteLogGroup",
-                "logs:DescribeLogGroups",
-                "logs:PutRetentionPolicy",
-                "route53:ChangeTagsForResource",
-                "route53:CreateHealthCheck",
-                "route53:CreateHostedZone",
-                "route53:CreateTrafficPolicy",
-                "route53:DeleteHostedZone",
-                "route53:DisassociateVPCFromHostedZone",
-                "route53:GetHostedZone",
-                "route53:ListHostedZones",
-                "route53domains:ListDomains",
-                "route53domains:ListOperations",
-                "route53domains:ListTagsForDomain",
-                "route53resolver:AssociateResolverEndpointIpAddress",
-                "route53resolver:AssociateResolverRule",
-                "route53resolver:CreateResolverEndpoint",
-                "route53resolver:CreateResolverRule",
-                "route53resolver:DeleteResolverEndpoint",
-                "route53resolver:DeleteResolverRule",
-                "route53resolver:DisassociateResolverEndpointIpAddress",
-                "route53resolver:DisassociateResolverRule",
-                "route53resolver:GetResolverEndpoint",
-                "route53resolver:GetResolverRule",
-                "route53resolver:ListResolverEndpointIpAddresses",
-                "route53resolver:ListResolverEndpoints",
-                "route53resolver:ListResolverRuleAssociations",
-                "route53resolver:ListResolverRules",
-                "route53resolver:ListTagsForResource",
-                "route53resolver:UpdateResolverEndpoint",
-                "route53resolver:UpdateResolverRule",
-                "s3:AbortMultipartUpload",
-                "s3:CreateBucket",
-                "s3:DeleteBucket",
-                "s3:DeleteObject",
-                "s3:GetAccountPublicAccessBlock",
-                "s3:GetBucketAcl",
-                "s3:GetBucketOwnershipControls",
-                "s3:GetBucketPolicy",
-                "s3:GetBucketPolicyStatus",
-                "s3:GetBucketPublicAccessBlock",
-                "s3:GetObject",
-                "s3:GetObjectVersion",
-                "s3:GetBucketVersioning",
-                "s3:ListAccessPoints",
-                "s3:ListAccessPointsForObjectLambda",
-                "s3:ListAllMyBuckets",
-                "s3:ListBucket",
-                "s3:ListBucketMultipartUploads",
-                "s3:ListBucketVersions",
-                "s3:ListJobs",
-                "s3:ListMultipartUploadParts",
-                "s3:ListMultiRegionAccessPoints",
-                "s3:ListStorageLensConfigurations",
-                "s3:PutAccountPublicAccessBlock",
-                "s3:PutBucketAcl",
-                "s3:PutBucketPolicy",
-                "s3:PutBucketPublicAccessBlock",
-                "s3:PutObject",
-                "secretsmanager:CreateSecret",
-                "secretsmanager:DeleteSecret",
-                "secretsmanager:DescribeSecret",
-                "secretsmanager:GetSecretValue",
-                "secretsmanager:ListSecrets",
-                "secretsmanager:ListSecretVersionIds",
-                "secretsmanager:PutResourcePolicy",
-                "secretsmanager:TagResource",
-                "secretsmanager:UpdateSecret",
-                "sns:ListTopics",
-                "ssm:DescribeInstanceProperties",
-                "ssm:DescribeSessions",
-                "ssm:GetConnectionStatus",
-                "ssm:GetParameters",
-                "ssm:ListAssociations",
-                "ssm:ResumeSession",
-                "ssm:StartSession",
-                "ssm:TerminateSession"
-            ],
-            "Resource": "*"
-        }
-    ]
-}
+### 1. Overview of the Deployment Environment
 
-```
+To deploy a Backup and Disaster Recovery system for the Maiora Fashion Store website, we need to prepare the AWS cloud environment, application infrastructure, database, and storage resources.
 
-#### Provision resources using CloudFormation
+The primary environment is deployed in the Singapore Region (ap-southeast-1), where the website runs on an Amazon EC2 instance and uses Amazon RDS for MySQL to store application data. Amazon S3 is used to store product images and website assets.
 
-In this lab, we will use **N.Virginia region (us-east-1)**.
+The Sydney Region (ap-southeast-2) is used as the destination for Amazon S3 Cross-Region Replication. This configuration helps maintain copies of product images in another AWS Region. AWS Backup is used to manage backup and recovery points for supported resources, including Amazon EC2 and Amazon RDS.
 
-To prepare the workshop environment, deploy this **CloudFormation Template** (click link): [PrivateLinkWorkshop ](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?templateURL=https://s3.us-east-1.amazonaws.com/reinvent-endpoints-builders-session/Nested.yaml&stackName=PLCloudSetup). Accept all of the defaults when deploying the template. 
+### 2. Required Components
 
-![create stack](/images/5-Workshop/5.2-Prerequisite/create-stack1.png)
+- **Amazon Web Services (AWS):** Provides the cloud infrastructure and services required to deploy the application, store data, and implement backup and recovery mechanisms.
 
-+ Tick 2 acknowledgement boxes
-+ Choose **Create stack**
+- **Amazon VPC:** Provides an isolated network environment for deploying application and database resources. The VPC includes public and private subnets, route tables, an Internet Gateway, and security groups.
 
-![create stack](/images/5-Workshop/5.2-Prerequisite/create-stack2.png)
+- **Amazon EC2:** Hosts the Maiora Fashion Store website using PHP and Apache. The EC2 instance acts as the application server and communicates with the database hosted on Amazon RDS.
 
-The **ClouddFormation** deployment requires about 15 minutes to complete.
+- **Amazon RDS for MySQL:** Provides a managed relational database service for storing website information, including customer accounts, product details, shopping carts, and orders.
 
-![complete](/images/5-Workshop/5.2-Prerequisite/complete.png)
+- **Amazon S3:** Stores product images and website assets. S3 Versioning is used to preserve object versions, while Cross-Region Replication (CRR) replicates objects from the primary bucket in Singapore to a destination bucket in Sydney.
 
-+ **2 VPCs** have been created
+- **AWS Backup:** Provides centralized backup management for supported AWS resources, including Amazon EC2 and Amazon RDS. Backup vaults and recovery points are used to organize and restore protected resources.
 
-![vpcs](/images/5-Workshop/5.2-Prerequisite/vpcs.png)
+- **Administration Computer:** Used to access the AWS Management Console, configure AWS resources, connect to the EC2 instance, manage application files, and verify the website.
 
-+ **3 EC2s** have been created
+#### Images of the Deployment Environment
 
-![EC2](/images/5-Workshop/5.2-Prerequisite/ec2.png)
+Image 5.2.1: Amazon VPC and application infrastructure in the Singapore Region.
+
+![AWS VPC Environment](/images/5-Workshop/5.2-Prerequisite/aws-vpc-environment.png)
+
+Image 5.2.2: Maiora Fashion Store website running on Amazon EC2.
+
+![Maiora Fashion Store Website](/images/5-Workshop/5.2-Prerequisite/maiora-website.png)
+
+Image 5.2.3: Amazon S3 buckets configured for cross-region replication.
+
+![Amazon S3 Cross-Region Replication](/images/5-Workshop/5.2-Prerequisite/s3-cross-region-replication.png)
+
+Image 5.2.4: AWS Backup vault and recovery points.
+
+![AWS Backup Vault](/images/5-Workshop/5.2-Prerequisite/aws-backup-vault.png)
+
+### 3. Prerequisites Before Deployment
+
+1. An AWS account with permissions to create and manage the required AWS resources.
+2. The Singapore Region (ap-southeast-1) is selected as the primary deployment Region.
+3. A VPC with public and private subnets, route tables, an Internet Gateway, and appropriate security groups is prepared.
+4. An Amazon EC2 instance is available to host the PHP-based website.
+5. An Amazon RDS for MySQL database is created and configured to allow access from the application server.
+6. An Amazon S3 bucket is prepared for storing product images, with Versioning enabled.
+7. A destination S3 bucket in the Sydney Region (ap-southeast-2) is prepared for Cross-Region Replication.
+8. AWS Backup permissions and the required backup configuration are available for protecting Amazon EC2 and Amazon RDS resources.
+9. The website application files and database configuration are ready for deployment and verification.
+10. An administration computer with an Internet connection and a modern web browser is available to manage AWS resources.
+
+#### Expected Outcome
+
+After completing the preparation stage, we will have an AWS account ready for deployment, a primary application environment in the Singapore Region, and the required database and storage resources.
+
+The destination S3 bucket in the Sydney Region and the necessary AWS Backup configuration will provide the foundation for implementing cross-region object replication and resource backup.
+
+These preparations enable us to proceed with application deployment, database and storage configuration, backup management, and restoration procedures in the following sections.
