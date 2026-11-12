@@ -30,7 +30,7 @@ Thông tin cấu hình cơ sở dữ liệu:
 
 RDS được triển khai trong mạng riêng nhằm hạn chế khả năng truy cập trực tiếp từ Internet.
 
-![Cấu hình RDS Instance](/images/4-Workshop/4.5-Database-and-Storage-Configuration/rds-instance.png)
+![Cấu hình RDS Instance](/ProJect_FCAJ/images/4-Workshop/4.5-Database-and-Storage-Configuration/rds-instance.png)
 
 ### 4.5.2. Cấu hình kết nối cơ sở dữ liệu
 
@@ -40,7 +40,7 @@ Cấu hình này đảm bảo máy chủ ứng dụng có thể truy cập cơ s
 
 Ứng dụng sử dụng một tệp cấu hình riêng để lưu trữ thông tin kết nối cơ sở dữ liệu. Các thông tin nhạy cảm như mật khẩu không được lưu trong mã nguồn công khai trên GitHub.
 
-![Cấu hình kết nối RDS](/images/4-Workshop/4.5-Database-and-Storage-Configuration/rds-connectivity.png)
+![Cấu hình kết nối RDS](/ProJect_FCAJ/images/4-Workshop/4.5-Database-and-Storage-Configuration/rds-connectivity.png)
 
 ### 4.5.3. Khởi tạo cơ sở dữ liệu ứng dụng
 
@@ -56,7 +56,7 @@ Cơ sở dữ liệu bao gồm các bảng phục vụ những chức năng chí
 
 Các bảng dữ liệu hỗ trợ những chức năng chính như đăng ký tài khoản, đăng nhập, hiển thị sản phẩm, quản lý giỏ hàng và xử lý đơn hàng.
 
-![Các bảng trong cơ sở dữ liệu](/images/4-Workshop/4.5-Database-and-Storage-Configuration/database-tables.png)
+![Các bảng trong cơ sở dữ liệu](/ProJect_FCAJ/images/4-Workshop/4.5-Database-and-Storage-Configuration/database-tables.png)
 
 ### 4.5.4. Tạo Amazon S3 Bucket
 
@@ -74,7 +74,7 @@ Thông tin cấu hình:
 
 Ứng dụng sử dụng vị trí lưu trữ của các đối tượng trên S3 để truy xuất và hiển thị hình ảnh sản phẩm.
 
-![Cấu hình S3 Bucket](/images/4-Workshop/4.5-Database-and-Storage-Configuration/s3-bucket.png)
+![Cấu hình S3 Bucket](/ProJect_FCAJ/images/4-Workshop/4.5-Database-and-Storage-Configuration/s3-bucket.png)
 
 ### 4.5.5. Tải hình ảnh sản phẩm lên Amazon S3
 
@@ -84,7 +84,7 @@ Các hình ảnh sản phẩm được tải lên thư mục tiền tố `produc
 
 Việc tách riêng hình ảnh sản phẩm khỏi máy chủ ứng dụng giúp quản lý dữ liệu lưu trữ linh hoạt hơn và tạo cơ sở cho việc triển khai đồng bộ dữ liệu liên vùng ở phần tiếp theo.
 
-![Hình ảnh sản phẩm trên S3](/images/4-Workshop/4.5-Database-and-Storage-Configuration/s3-product-images.png)
+![Hình ảnh sản phẩm trên S3](/ProJect_FCAJ/images/4-Workshop/4.5-Database-and-Storage-Configuration/s3-product-images.png)
 
 ### 4.5.6. Tổng kết
 

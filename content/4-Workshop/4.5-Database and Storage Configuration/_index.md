@@ -30,7 +30,7 @@ The database instance is configured with the following settings:
 
 The RDS instance is deployed in the private network to prevent direct access from the public Internet.
 
-![RDS Instance Configuration](/images/4-Workshop/4.5-Database-and-Storage-Configuration/rds-instance.png)
+![RDS Instance Configuration](/ProJect_FCAJ/images/4-Workshop/4.5-Database-and-Storage-Configuration/rds-instance.png)
 
 ### 4.5.2. Configuring Database Connectivity
 
@@ -40,7 +40,7 @@ This configuration ensures that the database is accessible to the application se
 
 The application uses a separate configuration file to store database connection settings. Sensitive information such as database passwords is not stored in the public source code repository.
 
-![RDS Connectivity Configuration](/images/4-Workshop/4.5-Database-and-Storage-Configuration/rds-connectivity.png)
+![RDS Connectivity Configuration](/ProJect_FCAJ/images/4-Workshop/4.5-Database-and-Storage-Configuration/rds-connectivity.png)
 
 ### 4.5.3. Creating the Application Database
 
@@ -56,7 +56,7 @@ The database contains tables for managing the application's main functions:
 
 These tables support the main shopping functions, including account registration, login, product display, shopping cart management, and order processing.
 
-![Database Tables](/images/4-Workshop/4.5-Database-and-Storage-Configuration/database-tables.png)
+![Database Tables](/ProJect_FCAJ/images/4-Workshop/4.5-Database-and-Storage-Configuration/database-tables.png)
 
 ### 4.5.4. Creating an Amazon S3 Bucket
 
@@ -74,7 +74,7 @@ The bucket is configured with the following settings:
 
 The application retrieves product images from S3 using their object locations.
 
-![S3 Bucket Configuration](/images/4-Workshop/4.5-Database-and-Storage-Configuration/s3-bucket.png)
+![S3 Bucket Configuration](/ProJect_FCAJ/images/4-Workshop/4.5-Database-and-Storage-Configuration/s3-bucket.png)
 
 ### 4.5.5. Uploading Product Images to Amazon S3
 
@@ -84,7 +84,7 @@ The application retrieves image locations from the database and displays the cor
 
 Separating product images from the application server makes storage management more flexible and supports the cross-region replication configuration in the next section.
 
-![S3 Product Images](/images/4-Workshop/4.5-Database-and-Storage-Configuration/s3-product-images.png)
+![S3 Product Images](/ProJect_FCAJ/images/4-Workshop/4.5-Database-and-Storage-Configuration/s3-product-images.png)
 
 ### 4.5.6. Section Summary
 

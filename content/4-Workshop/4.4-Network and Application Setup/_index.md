@@ -53,7 +53,7 @@ Use the following configuration:
 5. Enter the VPC name and IPv4 CIDR block.
 6. Create the VPC.
 
-![Create AWS VPC](/images/4-Workshop/4.4-Network-and-Application-Setup/create-vpc.png)
+![Create AWS VPC](/ProJect_FCAJ/images/4-Workshop/4.4-Network-and-Application-Setup/create-vpc.png)
 
 ## 3. Configure Subnets
 
@@ -73,7 +73,7 @@ Private subnets are intended for resources that should not be directly accessibl
 
 The Amazon RDS MySQL database is deployed in private subnets.
 
-![VPC Subnet Configuration](/images/4-Workshop/4.4-Network-and-Application-Setup/vpc-subnets.png)
+![VPC Subnet Configuration](/ProJect_FCAJ/images/4-Workshop/4.4-Network-and-Application-Setup/vpc-subnets.png)
 
 ## 4. Configure Internet Gateway and Route Tables
 
@@ -102,7 +102,7 @@ Associate this route table with the public subnets.
 
 Private subnets do not receive a direct route to the Internet Gateway in this workshop.
 
-![Internet Gateway and Route Table](/images/4-Workshop/4.4-Network-and-Application-Setup/internet-gateway-route-table.png)
+![Internet Gateway and Route Table](/ProJect_FCAJ/images/4-Workshop/4.4-Network-and-Application-Setup/internet-gateway-route-table.png)
 
 ## 5. Create Security Groups
 
@@ -168,7 +168,7 @@ Select or create an appropriate key pair for SSH access.
 9. Select the key pair.
 10. Launch the instance.
 
-![Launch EC2 Instance](/images/4-Workshop/4.4-Network-and-Application-Setup/launch-ec2.png)
+![Launch EC2 Instance](/ProJect_FCAJ/images/4-Workshop/4.4-Network-and-Application-Setup/launch-ec2.png)
 
 ## 7. Configure the Web Server Environment
 
@@ -245,7 +245,7 @@ Verify the following functions:
 - The shopping cart interface is displayed.
 - The website can access its configured database through the application.
 
-![Maiora Fashion Store Website](/images/4-Workshop/4.4-Network-and-Application-Setup/maiora-website.png)
+![Maiora Fashion Store Website](/ProJect_FCAJ/images/4-Workshop/4.4-Network-and-Application-Setup/maiora-website.png)
 
 ## 10. Expected Results
 

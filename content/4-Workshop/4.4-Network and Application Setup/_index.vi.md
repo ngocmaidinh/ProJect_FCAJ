@@ -55,7 +55,7 @@ Các bước thực hiện:
 5. Nhập tên VPC và địa chỉ IPv4 CIDR.
 6. Tiến hành tạo VPC.
 
-![Tạo AWS VPC](/images/4-Workshop/4.4-Network-and-Application-Setup/create-vpc.png)
+![Tạo AWS VPC](/ProJect_FCAJ/images/4-Workshop/4.4-Network-and-Application-Setup/create-vpc.png)
 
 ## 3. Cấu hình Subnet
 
@@ -75,7 +75,7 @@ Private Subnet được sử dụng cho những tài nguyên không cần cho ph
 
 Cơ sở dữ liệu Amazon RDS MySQL được triển khai trong Private Subnet nhằm tăng cường bảo mật.
 
-![Cấu hình VPC Subnet](/images/4-Workshop/4.4-Network-and-Application-Setup/vpc-subnets.png)
+![Cấu hình VPC Subnet](/ProJect_FCAJ/images/4-Workshop/4.4-Network-and-Application-Setup/vpc-subnets.png)
 
 ## 4. Cấu hình Internet Gateway và Route Table
 
@@ -104,7 +104,7 @@ Sau đó liên kết Route Table với các Public Subnet.
 
 Trong phạm vi workshop này, Private Subnet không được cấu hình tuyến đường trực tiếp đến Internet Gateway.
 
-![Internet Gateway và Route Table](/images/4-Workshop/4.4-Network-and-Application-Setup/internet-gateway-route-table.png)
+![Internet Gateway và Route Table](/ProJect_FCAJ/images/4-Workshop/4.4-Network-and-Application-Setup/internet-gateway-route-table.png)
 
 ## 5. Tạo Security Group
 
@@ -172,7 +172,7 @@ Các bước thực hiện:
 9. Chọn Key Pair.
 10. Nhấn **Launch instances** để khởi tạo.
 
-![Khởi tạo EC2 Instance](/images/4-Workshop/4.4-Network-and-Application-Setup/launch-ec2.png)
+![Khởi tạo EC2 Instance](/ProJect_FCAJ/images/4-Workshop/4.4-Network-and-Application-Setup/launch-ec2.png)
 
 ## 7. Cấu hình môi trường Web Server
 
@@ -249,7 +249,7 @@ Tiến hành kiểm tra các chức năng:
 - Giao diện giỏ hàng hoạt động.
 - Website có thể truy cập cơ sở dữ liệu thông qua cấu hình ứng dụng.
 
-![Website Maiora Fashion Store](/images/4-Workshop/4.4-Network-and-Application-Setup/maiora-website.png)
+![Website Maiora Fashion Store](/ProJect_FCAJ/images/4-Workshop/4.4-Network-and-Application-Setup/maiora-website.png)
 
 ## 10. Kết quả đạt được
 
