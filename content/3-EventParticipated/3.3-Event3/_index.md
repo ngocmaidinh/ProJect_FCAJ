@@ -1,113 +1,124 @@
 
 ---
-title: "Event 3"
-date: 2026-08-22
-weight: 2
+title: "FCAJ Mini Meetup – From Learning to Building"
+date: 2026-10-25
+weight: 3
 chapter: false
-pre: " <b> 4.2. </b> "
+pre: "<b>3.3.</b>"
 ---
 
-# Report on the Mini Meetup – First Cloud AI Journey
 
 ## 1. Event Objectives
 
-The Mini Meetup – First Cloud AI Journey, held on August 22, 2026, was a knowledge-sharing event organized by the FCAJ community. The event focused on API standards in Backend development, helping participants better understand the role of APIs in building and developing modern software systems.
+FCAJ Mini Meetup – From Learning to Building, held on October 25, 2026, was a knowledge-sharing event organized by the First Cloud AI Journey community. The event focused on the topic **Cloud Quest – An Interactive AWS Learning Platform for Vietnamese Learners**, providing participants with insights into how technical knowledge can be transformed into practical technology products.
 
-The main objectives of the event were:
+Through the presentation by Nguyễn Minh Toàn, participants had the opportunity to explore the research and development journey of Cloud Quest, from the initial idea to the implementation of an interactive learning platform.
 
-- To understand the role of APIs in connecting and exchanging data between system components.
-- To explore important standards and principles for designing Backend APIs.
-- To understand the importance of building APIs that are easy to use, maintain, and scale.
-- To encourage continuous learning, knowledge sharing, and professional development within the technology community.
+The main objectives of the event included:
 
-## 2. Speaker and Topic
+- Understanding the idea and development goals of the Cloud Quest project.
+- Exploring how AWS knowledge can be presented through an interactive learning platform.
+- Learning about interactive 3D models, simulated labs, quizzes, and flashcards.
+- Understanding the process of transforming technical knowledge into a practical technology product.
+- Encouraging hands-on learning, independent research, and knowledge sharing.
 
-- **Nguyen Nhan – FCAJ Member:** API Standards in Backend Development.
+## 2. Speaker and Presentation Topic
 
-## 3. Key Topics
+- **Nguyễn Minh Toàn – FCAJ Member | PTIT:** Cloud Quest – An Interactive AWS Learning Platform for Vietnamese Learners.
 
-### 3.1. Overview of APIs in Backend Development
+## 3. Key Highlights
 
-An API (Application Programming Interface) allows applications or software components to communicate and exchange data with one another. In modern systems, APIs play an important role in connecting Frontend applications with Backend services, integrating services, and facilitating data exchange between different systems.
+### 3.1. Overview of the Cloud Quest Project
 
-Key concepts include:
+Cloud Quest is a personal project researched and developed by Nguyễn Minh Toàn to help learners approach AWS knowledge in a more visual and understandable way.
 
-- Understanding the concept of APIs and their role in software architecture.
-- Recognizing how APIs enable communication between applications and services.
-- Understanding the importance of designing APIs that are clear, consistent, and easy to use.
-- Recognizing the role of APIs in integrating components within larger systems.
+The project combines different interactive learning methods, including:
 
-### 3.2. API Design Standards and Principles
+- **Interactive 3D Models:** Presenting technical concepts through visual 3D representations.
+- **Simulated Labs:** Providing simulated activities to help users understand AWS services.
+- **Quizzes:** Supporting knowledge assessment through multiple-choice questions.
+- **Flashcards:** Helping learners review and memorize important concepts.
+- **Learning Content Integration:** Organizing learning resources into a structured platform.
 
-The session focused on important standards and principles for developing Backend APIs, with an emphasis on usability, maintainability, and scalability as systems grow.
+The project demonstrates how technical knowledge can be transformed into an educational product that provides practical value to other learners.
 
-Key aspects include:
+### 3.2. Research and Development Process of Cloud Quest
 
-- **Consistency:** Using consistent endpoint naming conventions, data structures, and response formats.
-- **Usability:** Designing clear endpoints that other applications and services can easily integrate with.
-- **Maintainability:** Organizing APIs logically to simplify updates, bug fixes, and the development of new features.
-- **Scalability:** Designing APIs with a structure that can accommodate future system growth.
-- **Compatibility:** Minimizing breaking changes that could affect applications already using the APIs.
+The presentation introduced the process of developing Cloud Quest from an initial idea into a platform with multiple interactive learning components.
 
-These principles demonstrate that API development involves more than simply processing requests. It also requires attention to design quality and long-term maintainability.
+The notable development components include:
 
-### 3.3. The Role of APIs in Modern Systems
+- **Interactive 3D Models:** Creating visual representations of AWS concepts.
+- **Simulated Labs:** Developing practical learning environments.
+- **Quizzes:** Integrating questions to evaluate learners' understanding.
+- **Flashcards:** Supporting the review and memorization of technical knowledge.
+- **Learning Content Integration:** Combining different learning features into a unified platform.
 
-As software systems become more complex, APIs become essential components that enable services to communicate and work together. Well-designed APIs can reduce dependencies between components, support integration, and facilitate future system development.
+This process demonstrates that building a technology product requires identifying requirements, researching solutions, implementing features, testing functionality, and continuously improving the final product.
 
-Important considerations when designing APIs include:
+### 3.3. From Learning to Building Practical Technology Solutions
 
-- Clearly defining the purpose of each endpoint and the data it needs to exchange.
-- Standardizing request handling, responses, and error messages.
-- Prioritizing authentication, authorization, and data protection when exposing APIs.
-- Considering API versioning when modifying or introducing new features.
-- Providing clear API documentation to support development and integration.
+The main message of the presentation was the importance of transforming acquired knowledge into practical products.
 
-These principles can be applied when designing and developing software systems in real-world environments.
+Some valuable lessons include:
 
-## 4. Knowledge and Skills Gained
+- **Proactive Research:** Actively exploring technical documentation and new technologies.
+- **Learning Through Practice:** Applying theoretical knowledge through practical implementation.
+- **Systematic Development:** Dividing a project into smaller components and integrating them into a complete system.
+- **Testing and Improvement:** Evaluating functionality, identifying problems, and improving implementation.
+- **Knowledge Sharing:** Documenting technical results and sharing practical experience.
+
+## 4. Knowledge and Skills Acquired
 
 ### 4.1. Technical Knowledge
 
-- **APIs and Backend Development:** Gained a better understanding of the role of APIs in connecting software system components.
-- **API Design:** Recognized the importance of consistency, usability, and maintainability.
-- **System Integration:** Learned more about how APIs facilitate communication and data exchange between applications and services.
-- **API Security:** Recognized the need for authentication, authorization, and data protection when developing service interfaces.
-- **Scalability:** Understood that API design should accommodate future system growth and changing requirements.
+- **AWS Cloud Computing:** Strengthening my understanding of AWS services and cloud computing concepts.
+- **Technology Product Development:** Understanding the process of transforming an idea into a practical system.
+- **Practical Implementation:** Recognizing the importance of testing technical solutions.
+- **Technical Documentation:** Understanding how documentation contributes to technology development.
 
 ### 4.2. Personal Development Skills
 
-- Improved my ability to explore and learn new technical concepts.
-- Understood the value of sharing technical knowledge and practical experience within a technology community.
-- Gained further motivation to explore API design, documentation, and testing.
-- Recognized the importance of continuous learning in keeping up with the development of modern systems.
+- Improving independent research and problem-solving skills.
+- Developing a systematic approach to technology projects.
+- Connecting theoretical knowledge with practical implementation.
+- Learning to evaluate results and improve technical solutions.
+- Developing a proactive learning mindset.
 
 ## 5. Application to My Internship Project
 
-My internship project is titled **"Design and Implementation of a Hybrid Cloud System Connecting Multi-Branch Enterprise Networks Using Site-to-Site VPN with Centralized Monitoring."**
+My internship project is **"Research and Development of a Backup and Disaster Recovery System on Amazon Web Services (AWS)"**.
 
-Although the main focus of my project is network infrastructure and cloud computing, knowledge of APIs can support the management and integration of services within the system in several ways:
+The knowledge and development approach shared during the meetup are relevant to my project because both require transforming technical knowledge into practical solutions that can be implemented, tested, and evaluated.
 
-- **AWS Services:** Explore how AWS services provide APIs for managing cloud resources and performing operations programmatically.
-- **System Integration:** Understand the role of APIs in connecting applications and services related to the Hybrid Cloud environment.
-- **Centralized Monitoring:** Investigate how monitoring tools expose APIs for retrieving data, integrating information, or automating certain operations when needed.
-- **Security and Access Management:** Pay attention to authentication, authorization, and information protection when services exchange data.
-- **Automation:** Expand my knowledge of APIs to explore opportunities for automating cloud resource management in future development stages.
+I applied these lessons throughout my AWS Backup and Disaster Recovery project in several ways:
 
-These topics provide a broader perspective on the relationship between software development, service management, and cloud infrastructure operations.
+- **Proactive AWS Research:** Researching AWS documentation and understanding how VPC, EC2, RDS, S3, and AWS Backup work together.
+- **Practical System Development:** Deploying the Maiora fashion e-commerce website using Amazon EC2 and Amazon RDS MySQL.
+- **Data Storage and Protection:** Using Amazon S3 to store product images, enabling Versioning and Cross-Region Replication.
+- **Backup Implementation:** Configuring AWS Backup to create and manage recovery points for EC2 and RDS resources.
+- **Disaster Recovery Architecture:** Building a two-Region architecture with Singapore as the primary Region and Sydney as the disaster recovery Region.
+- **System Testing and Evaluation:** Simulating application server failures and data loss, performing recovery procedures, and evaluating RTO and RPO.
+- **Technical Documentation:** Recording configuration steps, capturing implementation evidence, and documenting testing results.
 
-## 6. Event Experience
+The presentation encouraged me to approach my internship project as a practical technology solution rather than simply a theoretical research topic.
 
-Participating in the Mini Meetup – First Cloud AI Journey on August 22, 2026, gave me an opportunity to explore APIs in Backend development and better understand an important aspect of modern system design.
+## 6. Experience Participating in the Event
 
-Through the topic shared by Nguyen Nhan, I gained further insight into API design principles, particularly consistency, maintainability, and scalability. These factors are essential for enabling software components to communicate effectively as systems grow in complexity.
+Participating in FCAJ Mini Meetup – From Learning to Building on October 25, 2026, provided me with an opportunity to learn about transforming technical knowledge into a practical technology product.
 
-In addition to the technical content, the knowledge-sharing spirit among FCAJ members was another valuable aspect of the event. It encouraged participants to learn proactively, exchange experiences, and contribute knowledge to the community.
+Through Nguyễn Minh Toàn's presentation about Cloud Quest, I gained a better understanding of independent research, practical implementation, and continuous product improvement.
+
+The event also encouraged me to improve my AWS project by paying greater attention to architecture design, implementation, system testing, and technical documentation.
 
 ## 7. Conclusion and Lessons Learned
 
-Through the Mini Meetup – First Cloud AI Journey on August 22, 2026, I gained a better understanding of how APIs connect and integrate services in modern systems. API design should prioritize consistency, usability, security, maintainability, and scalability.
+Through FCAJ Mini Meetup – From Learning to Building, I realized that acquiring technical knowledge is only the first step in technology development. The ability to apply that knowledge to build, test, and improve practical solutions is equally important.
 
-Furthermore, the meetup helped me recognize the value of continuous learning and knowledge sharing within the technology community. The knowledge gained provides a foundation for further exploring APIs, understanding how AWS services interact, and investigating the potential integration of APIs into Hybrid Cloud management and monitoring.
+The Cloud Quest project demonstrated how research, creativity, and practical implementation can transform an initial idea into a technology product with educational value.
 
+This lesson is directly relevant to my AWS Backup and Disaster Recovery project, where I need to combine AWS services, implement a complete architecture, simulate potential failures, and evaluate recovery effectiveness.
 
+Overall, the event strengthened my motivation to continue researching AWS technologies, developing practical solutions, and sharing technical knowledge with the community.
+
+**Not just learning, but also practicing, building, testing, and sharing.**

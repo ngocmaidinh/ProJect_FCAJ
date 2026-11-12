@@ -1,12 +1,11 @@
 ---
 title: "Mini Meetup Report – First Cloud AI Journey"
 date: 2026-08-22
-weight: 3
+weight: 2
 chapter: false
-pre: " <b> 3. </b> "
+pre: " <b>3.2.</b> "
 ---
 
-# Mini Meetup Report – First Cloud AI Journey
 
 ## 1. Event Objectives
 

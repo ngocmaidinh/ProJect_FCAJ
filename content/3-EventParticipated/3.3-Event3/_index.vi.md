@@ -1,113 +1,130 @@
 
 ---
-title: "Event 3"
-date: 2026-08-22
-weight: 2
+title: "FCAJ Mini Meetup – Từ học tập đến xây dựng sản phẩm"
+date: 2026-10-25
+weight: 3
 chapter: false
-pre: " <b> 4.2. </b> "
+pre: "<b>3.3.</b>"
 ---
 
-# Bài thu hoạch Mini Meetup – First Cloud AI Journey
 
-## 1. Mục đích của sự kiện
+## 1. Mục tiêu sự kiện
 
-Mini Meetup – First Cloud AI Journey ngày 22/08/2026 là buổi gặp gỡ và chia sẻ kiến thức do cộng đồng FCAJ tổ chức. Sự kiện tập trung vào chủ đề các chuẩn API trong Backend, giúp người tham gia hiểu rõ hơn về vai trò của API trong quá trình xây dựng và phát triển các hệ thống phần mềm hiện đại.
+FCAJ Mini Meetup – From Learning to Building được tổ chức vào ngày 25/10/2026 bởi cộng đồng First Cloud AI Journey. Sự kiện tập trung vào chủ đề **Cloud Quest – An Interactive AWS Learning Platform for Vietnamese Learners**, mang đến cho người tham gia những góc nhìn về cách chuyển đổi kiến thức kỹ thuật thành các sản phẩm công nghệ có tính ứng dụng thực tế.
+
+Thông qua phần trình bày của anh Nguyễn Minh Toàn, người tham gia có cơ hội tìm hiểu quá trình nghiên cứu và phát triển Cloud Quest, từ ý tưởng ban đầu đến việc xây dựng một nền tảng học tập tương tác.
 
 Các mục tiêu chính của sự kiện bao gồm:
 
-- Tìm hiểu vai trò của API trong việc kết nối và trao đổi dữ liệu giữa các thành phần của hệ thống.
-- Tiếp cận các chuẩn và nguyên tắc quan trọng khi thiết kế API trong Backend.
-- Hiểu được tầm quan trọng của việc xây dựng API dễ sử dụng, dễ bảo trì và có khả năng mở rộng.
-- Khuyến khích tinh thần học hỏi, chia sẻ kiến thức và phát triển chuyên môn trong cộng đồng công nghệ.
+- Tìm hiểu ý tưởng và mục tiêu phát triển dự án Cloud Quest.
+- Khám phá cách truyền tải kiến thức AWS thông qua nền tảng học tập tương tác.
+- Tìm hiểu về mô hình 3D tương tác, phòng thực hành mô phỏng, câu hỏi trắc nghiệm và flashcard.
+- Hiểu quy trình chuyển đổi kiến thức kỹ thuật thành sản phẩm công nghệ thực tế.
+- Khuyến khích tinh thần tự học, nghiên cứu độc lập, thực hành và chia sẻ kiến thức.
 
-## 2. Diễn giả và chủ đề chia sẻ
+## 2. Diễn giả và chủ đề trình bày
 
-- **Nguyễn Nhân – FCAJ Member:** Các chuẩn API trong Backend.
+- **Nguyễn Minh Toàn – Thành viên FCAJ | PTIT:** Cloud Quest – An Interactive AWS Learning Platform for Vietnamese Learners.
 
-## 3. Nội dung nổi bật
+## 3. Những nội dung nổi bật
 
-### 3.1. Tổng quan về API trong Backend
+### 3.1. Tổng quan về dự án Cloud Quest
 
-API (Application Programming Interface) là giao diện cho phép các ứng dụng hoặc thành phần phần mềm giao tiếp và trao đổi dữ liệu với nhau. Trong các hệ thống hiện đại, API đóng vai trò quan trọng trong việc kết nối Frontend với Backend, tích hợp các dịch vụ và hỗ trợ trao đổi dữ liệu giữa những hệ thống khác nhau.
+Cloud Quest là dự án cá nhân được nghiên cứu và phát triển bởi anh Nguyễn Minh Toàn, với mục tiêu giúp người học tiếp cận kiến thức AWS một cách trực quan và dễ hiểu hơn.
 
-Một số nội dung cơ bản liên quan đến API:
+Thay vì chỉ dựa vào tài liệu lý thuyết, dự án kết hợp nhiều phương pháp học tập tương tác khác nhau, giúp người học hiểu rõ hơn các khái niệm điện toán đám mây và dịch vụ AWS.
 
-- Hiểu khái niệm API và vai trò của API trong kiến trúc phần mềm.
-- Nhận biết cách API hỗ trợ giao tiếp giữa các ứng dụng và dịch vụ.
-- Hiểu tầm quan trọng của việc thiết kế API rõ ràng, thống nhất và dễ sử dụng.
-- Nhận thức được vai trò của API trong việc tích hợp các thành phần của một hệ thống lớn.
+Một số thành phần chính của dự án bao gồm:
 
-### 3.2. Các chuẩn và nguyên tắc thiết kế API
+- **Mô hình 3D tương tác:** Trình bày các khái niệm kỹ thuật thông qua hình ảnh 3D trực quan.
+- **Phòng thực hành mô phỏng:** Cung cấp các hoạt động mô phỏng giúp người học tìm hiểu cách hoạt động của dịch vụ AWS.
+- **Câu hỏi trắc nghiệm:** Hỗ trợ đánh giá mức độ hiểu bài thông qua các câu hỏi lựa chọn.
+- **Flashcard:** Giúp người học ôn tập và ghi nhớ các kiến thức quan trọng.
+- **Tích hợp nội dung học tập:** Tổ chức các tài nguyên học tập thành một nền tảng có cấu trúc.
 
-Session tập trung vào việc tìm hiểu các chuẩn và nguyên tắc quan trọng khi xây dựng API trong Backend, hướng đến khả năng sử dụng thuận tiện, dễ bảo trì và mở rộng khi hệ thống phát triển.
+Dự án cho thấy kiến thức kỹ thuật có thể được phát triển thành một sản phẩm giáo dục mang lại giá trị thực tế cho cộng đồng người học.
 
-Các khía cạnh đáng chú ý bao gồm:
+### 3.2. Quá trình nghiên cứu và phát triển Cloud Quest
 
-- **Tính nhất quán:** Sử dụng cách đặt tên endpoint, cấu trúc dữ liệu và định dạng phản hồi thống nhất.
-- **Tính dễ sử dụng:** Thiết kế các endpoint rõ ràng, giúp những ứng dụng hoặc dịch vụ khác dễ dàng tích hợp.
-- **Khả năng bảo trì:** Tổ chức API hợp lý để thuận tiện cho việc cập nhật, sửa lỗi và phát triển chức năng mới.
-- **Khả năng mở rộng:** Xây dựng API có cấu trúc phù hợp để đáp ứng nhu cầu phát triển của hệ thống.
-- **Tính tương thích:** Hạn chế những thay đổi gây ảnh hưởng đến các ứng dụng đang sử dụng API.
+Một trong những nội dung đáng chú ý của buổi chia sẻ là quá trình phát triển Cloud Quest từ ý tưởng ban đầu thành một nền tảng với nhiều thành phần học tập tương tác.
 
-Những nguyên tắc này cho thấy việc xây dựng API không chỉ tập trung vào khả năng xử lý yêu cầu mà còn cần quan tâm đến chất lượng thiết kế và khả năng vận hành lâu dài.
+Các thành phần phát triển nổi bật bao gồm:
 
-### 3.3. Vai trò của API trong các hệ thống hiện đại
+- **Mô hình 3D tương tác:** Xây dựng hình ảnh trực quan để mô tả các khái niệm AWS.
+- **Phòng thực hành mô phỏng:** Phát triển môi trường học tập thực hành.
+- **Câu hỏi trắc nghiệm:** Tích hợp câu hỏi để đánh giá mức độ hiểu kiến thức.
+- **Flashcard:** Hỗ trợ ôn tập và ghi nhớ kiến thức kỹ thuật.
+- **Tích hợp nội dung học tập:** Kết hợp các tính năng học tập thành một nền tảng thống nhất.
 
-Khi hệ thống phần mềm ngày càng phát triển, API trở thành thành phần quan trọng giúp các dịch vụ giao tiếp và phối hợp với nhau. Một thiết kế API phù hợp có thể giúp giảm sự phụ thuộc giữa các thành phần, hỗ trợ tích hợp và tạo điều kiện thuận lợi cho việc phát triển hệ thống.
+Quá trình này cho thấy việc xây dựng một sản phẩm công nghệ không chỉ yêu cầu kiến thức lý thuyết mà còn cần xác định yêu cầu, nghiên cứu giải pháp, triển khai chức năng, kiểm thử và liên tục cải tiến sản phẩm.
 
-Một số nội dung cần quan tâm khi thiết kế API:
+### 3.3. Từ học tập đến xây dựng giải pháp công nghệ thực tế
 
-- Xác định rõ mục đích của từng endpoint và dữ liệu cần trao đổi.
-- Chuẩn hóa cách xử lý yêu cầu, phản hồi và thông báo lỗi.
-- Chú trọng đến xác thực, phân quyền và bảo vệ dữ liệu khi cung cấp API.
-- Xem xét việc quản lý phiên bản khi cần thay đổi hoặc bổ sung chức năng.
-- Cung cấp tài liệu API rõ ràng để hỗ trợ quá trình phát triển và tích hợp.
+Thông điệp chính của buổi chia sẻ là tầm quan trọng của việc chuyển đổi kiến thức đã học thành các sản phẩm có tính ứng dụng thực tế.
 
-Các nội dung trên là những nguyên tắc có thể áp dụng khi thiết kế và xây dựng các hệ thống phần mềm trong thực tế.
+Một số bài học đáng chú ý bao gồm:
 
-## 4. Những kiến thức và kỹ năng học được
+- **Chủ động nghiên cứu:** Tích cực tìm hiểu tài liệu kỹ thuật và các công nghệ mới.
+- **Học thông qua thực hành:** Vận dụng kiến thức lý thuyết vào quá trình triển khai thực tế.
+- **Phát triển có hệ thống:** Chia dự án thành các thành phần nhỏ và tích hợp thành một hệ thống hoàn chỉnh.
+- **Kiểm thử và cải tiến:** Đánh giá chức năng, xác định vấn đề và hoàn thiện giải pháp.
+- **Chia sẻ kiến thức:** Ghi lại kết quả kỹ thuật và chia sẻ kinh nghiệm thực tế.
+
+## 4. Kiến thức và kỹ năng thu nhận được
 
 ### 4.1. Kiến thức chuyên môn
 
-- **API và Backend:** Hiểu rõ hơn vai trò của API trong việc kết nối các thành phần của hệ thống phần mềm.
-- **Thiết kế API:** Nhận thức được tầm quan trọng của tính nhất quán, tính dễ sử dụng và khả năng bảo trì.
-- **Tích hợp hệ thống:** Hiểu thêm cách API hỗ trợ giao tiếp và trao đổi dữ liệu giữa các ứng dụng hoặc dịch vụ.
-- **Bảo mật API:** Nhận thức được sự cần thiết của việc xác thực, phân quyền và bảo vệ dữ liệu khi xây dựng các giao diện dịch vụ.
-- **Khả năng mở rộng:** Hiểu rằng thiết kế API cần tính đến nhu cầu phát triển và thay đổi của hệ thống trong tương lai.
+- **Điện toán đám mây AWS:** Củng cố hiểu biết về các dịch vụ AWS và khái niệm điện toán đám mây.
+- **Phát triển sản phẩm công nghệ:** Hiểu quy trình chuyển đổi ý tưởng thành một hệ thống có tính ứng dụng.
+- **Triển khai thực tế:** Nhận thức được tầm quan trọng của việc kiểm thử các giải pháp kỹ thuật.
+- **Tài liệu kỹ thuật:** Hiểu vai trò của việc ghi chép và tài liệu hóa trong quá trình phát triển dự án.
 
-### 4.2. Kỹ năng phát triển bản thân
+### 4.2. Kỹ năng phát triển cá nhân
 
-- Nâng cao khả năng tiếp cận và tìm hiểu các kiến thức kỹ thuật mới.
-- Hiểu được giá trị của việc chia sẻ kiến thức và kinh nghiệm thực tế trong cộng đồng công nghệ.
-- Có thêm định hướng tìm hiểu cách thiết kế, tài liệu hóa và kiểm thử API.
-- Nhận thức được tầm quan trọng của việc học hỏi liên tục để đáp ứng yêu cầu phát triển của các hệ thống hiện đại.
+- Cải thiện khả năng tự nghiên cứu và giải quyết vấn đề.
+- Phát triển phương pháp lập kế hoạch và triển khai dự án có hệ thống.
+- Kết nối kiến thức lý thuyết với quá trình thực hành.
+- Học cách đánh giá kết quả và cải tiến giải pháp kỹ thuật.
+- Hình thành tinh thần chủ động học hỏi.
 
-## 5. Ứng dụng vào đề tài thực tập
+## 5. Vận dụng vào đề tài thực tập
 
-Đề tài thực tập của tôi là **"Thiết kế và triển khai hệ thống Hybrid Cloud kết nối mạng doanh nghiệp đa chi nhánh bằng VPN Site-to-Site tích hợp giải pháp giám sát tập trung"**.
+Đề tài thực tập của tôi là **"Nghiên cứu và xây dựng hệ thống Backup và Disaster Recovery trên Amazon Web Services (AWS)"**.
 
-Mặc dù nội dung chính của đề tài tập trung vào hạ tầng mạng và điện toán đám mây, kiến thức về API vẫn có thể hỗ trợ quá trình tìm hiểu và quản lý các dịch vụ trong hệ thống theo những hướng sau:
+Kiến thức và phương pháp phát triển dự án được chia sẻ tại buổi Meetup có liên quan trực tiếp đến quá trình thực hiện đề tài, bởi cả hai đều yêu cầu chuyển đổi kiến thức kỹ thuật thành giải pháp thực tế có thể triển khai, kiểm thử và đánh giá.
 
-- **Tìm hiểu dịch vụ AWS:** Nghiên cứu cách các dịch vụ AWS cung cấp API để quản lý tài nguyên và thực hiện các thao tác thông qua giao diện lập trình.
-- **Tích hợp hệ thống:** Hiểu vai trò của API trong việc kết nối các ứng dụng và dịch vụ có liên quan đến hệ thống Hybrid Cloud.
-- **Giám sát tập trung:** Tìm hiểu khả năng sử dụng API của các công cụ giám sát để truy xuất dữ liệu, tích hợp thông tin hoặc tự động hóa một số thao tác khi cần thiết.
-- **Bảo mật và quản lý truy cập:** Chú trọng đến cơ chế xác thực, phân quyền và bảo vệ thông tin khi các dịch vụ trao đổi dữ liệu.
-- **Tự động hóa:** Mở rộng kiến thức về API để nghiên cứu khả năng tự động hóa việc quản lý tài nguyên cloud trong các giai đoạn phát triển tiếp theo.
+Tôi đã vận dụng những bài học này vào dự án Backup và Disaster Recovery trên AWS thông qua các nội dung sau:
 
-Những nội dung này giúp tôi có thêm góc nhìn về sự liên kết giữa phát triển phần mềm, quản lý dịch vụ và vận hành hạ tầng cloud.
+- **Chủ động nghiên cứu AWS:** Tìm hiểu tài liệu AWS và cách các dịch vụ VPC, EC2, RDS, S3 và AWS Backup phối hợp trong một kiến trúc điện toán đám mây.
+- **Triển khai hệ thống thực tế:** Xây dựng website bán hàng thời trang Maiora, sử dụng Amazon EC2 để triển khai ứng dụng và Amazon RDS MySQL để quản lý cơ sở dữ liệu.
+- **Lưu trữ và bảo vệ dữ liệu:** Sử dụng Amazon S3 để lưu trữ hình ảnh sản phẩm, kích hoạt Versioning và Cross-Region Replication.
+- **Triển khai sao lưu:** Cấu hình AWS Backup để tạo và quản lý các recovery point cho tài nguyên EC2 và RDS.
+- **Xây dựng kiến trúc Disaster Recovery:** Triển khai kiến trúc hai Region với Singapore là Region chính và Sydney là Region dự phòng.
+- **Kiểm thử và đánh giá hệ thống:** Mô phỏng các tình huống lỗi máy chủ ứng dụng và mất dữ liệu, thực hiện quy trình khôi phục và đánh giá các chỉ số RTO, RPO.
+- **Tài liệu hóa kỹ thuật:** Ghi lại các bước cấu hình, chụp ảnh minh chứng và tổng hợp kết quả kiểm thử phục vụ báo cáo thực tập.
 
-## 6. Trải nghiệm khi tham gia sự kiện
+Buổi chia sẻ giúp tôi định hướng đề tài thực tập theo hướng xây dựng một giải pháp công nghệ có khả năng triển khai và kiểm chứng thực tế, thay vì chỉ dừng lại ở nghiên cứu lý thuyết.
 
-Tham gia Mini Meetup – First Cloud AI Journey ngày 22/08/2026 là cơ hội để tôi tiếp cận chủ đề API trong Backend và hiểu thêm về một khía cạnh quan trọng của quá trình xây dựng hệ thống phần mềm.
+## 6. Trải nghiệm tham gia sự kiện
 
-Thông qua chủ đề do Nguyễn Nhân chia sẻ, tôi có thêm định hướng tìm hiểu về các nguyên tắc thiết kế API, đặc biệt là tính nhất quán, khả năng bảo trì và mở rộng. Đây là những yếu tố quan trọng giúp các thành phần phần mềm giao tiếp hiệu quả khi quy mô hệ thống ngày càng tăng.
+Tham gia FCAJ Mini Meetup – From Learning to Building vào ngày 25/10/2026 là cơ hội để tôi tìm hiểu cách chuyển đổi kiến thức kỹ thuật thành một sản phẩm công nghệ thực tế.
 
-Bên cạnh nội dung kỹ thuật, tinh thần chia sẻ kiến thức giữa các thành viên FCAJ cũng là một điểm đáng chú ý. Hoạt động này khuyến khích mỗi thành viên chủ động học hỏi, trao đổi kinh nghiệm và đóng góp kiến thức cho cộng đồng.
+Thông qua phần trình bày của anh Nguyễn Minh Toàn về dự án Cloud Quest, tôi hiểu rõ hơn tầm quan trọng của việc tự nghiên cứu, thực hành triển khai và liên tục cải tiến sản phẩm.
 
-## 7. Kết luận và bài học rút ra
+Điều khiến tôi ấn tượng là cách kết hợp nhiều thành phần kỹ thuật khác nhau thành một nền tảng học tập thống nhất. Điều này cho thấy một dự án công nghệ thành công không chỉ cần kiến thức chuyên môn mà còn đòi hỏi tư duy sáng tạo, phương pháp phát triển có hệ thống và khả năng xác định nhu cầu người dùng.
 
-Qua buổi Mini Meetup – First Cloud AI Journey ngày 22/08/2026, tôi nhận thấy API là một thành phần quan trọng trong việc kết nối và tích hợp các dịch vụ của hệ thống hiện đại. Việc thiết kế API cần đảm bảo tính nhất quán, dễ sử dụng, bảo mật, dễ bảo trì và có khả năng mở rộng.
+Những bài học từ sự kiện cũng khuyến khích tôi hoàn thiện dự án AWS bằng cách chú trọng hơn đến thiết kế kiến trúc, triển khai thực tế, kiểm thử hệ thống và tài liệu kỹ thuật.
 
-Bên cạnh đó, buổi meetup giúp tôi nhận thức rõ hơn về giá trị của việc học hỏi và chia sẻ kiến thức trong cộng đồng công nghệ. Những kiến thức thu được là cơ sở để tôi tiếp tục tìm hiểu về API, cách các dịch vụ AWS tương tác với nhau và khả năng tích hợp API vào quá trình quản lý, giám sát hệ thống Hybrid Cloud.
+## 7. Kết luận và bài học kinh nghiệm
 
+Thông qua FCAJ Mini Meetup – From Learning to Building, tôi nhận thấy việc tiếp thu kiến thức kỹ thuật chỉ là bước đầu tiên trong quá trình phát triển công nghệ. Khả năng vận dụng kiến thức để xây dựng, kiểm thử và cải tiến các giải pháp thực tế cũng có vai trò quan trọng không kém.
 
+Dự án Cloud Quest được giới thiệu tại sự kiện là ví dụ cho thấy nghiên cứu, sáng tạo và thực hành có thể chuyển đổi một ý tưởng ban đầu thành sản phẩm công nghệ mang giá trị giáo dục.
+
+Bài học quan trọng nhất tôi rút ra là cần duy trì tinh thần chủ động học hỏi và liên tục vận dụng kiến thức đã tiếp thu vào các dự án thực tế.
+
+Bài học này có ý nghĩa trực tiếp đối với đề tài Backup và Disaster Recovery trên AWS, trong đó tôi cần kết hợp nhiều dịch vụ AWS, triển khai kiến trúc hoàn chỉnh, mô phỏng các tình huống sự cố và đánh giá hiệu quả khôi phục hệ thống.
+
+Nhìn chung, sự kiện đã củng cố động lực để tôi tiếp tục nghiên cứu công nghệ AWS, phát triển các giải pháp thực tế và chia sẻ kiến thức kỹ thuật với cộng đồng.
+
+**Không chỉ học hỏi mà còn thực hành, xây dựng, kiểm thử và chia sẻ.**

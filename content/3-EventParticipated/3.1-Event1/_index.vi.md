@@ -2,12 +2,11 @@
 ---
 title: "Bài thu hoạch Mini Meetup – First Cloud AI Journey"
 date: 2026-08-15
-weight: 3
+weight: 1
 chapter: false
-pre: " <b> 3. </b> "
+pre: " <b>3.1.</b> "
 ---
 
-# BÀI THU HOẠCH MINI MEETUP – FIRST CLOUD AI JOURNEY
 
 ## 1. Mục đích của sự kiện
 
