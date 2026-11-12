@@ -4,40 +4,43 @@ title: "Workshop"
 date: 2026-11-01
 weight: 4
 chapter: false
-pre: "<b>4.</b>"
+pre: " <b> 4. </b> "
 ---
 
-# Design and Implementation of a Backup and Disaster Recovery System on Amazon Web Services (AWS)
+# Nghiên cứu và xây dựng hệ thống Backup và Disaster Recovery trên Amazon Web Services (AWS)
 
-### Overview
+### Tổng quan
 
-This workshop focuses on designing, implementing, and testing a Backup and Disaster Recovery (DR) system on Amazon Web Services (AWS). The project uses a fashion e-commerce website named Maiora as a practical application to demonstrate data protection, backup management, and system recovery in a cloud environment.
+Trong workshop này, chúng ta sẽ tìm hiểu cách thiết kế và triển khai hệ thống Backup và Disaster Recovery (DR) trên Amazon Web Services (AWS) cho website Maiora Fashion Store.
 
-The system is deployed across two AWS Regions: Singapore (ap-southeast-1) as the primary environment and Sydney (ap-southeast-2) as the Disaster Recovery environment. The application runs on Amazon EC2, while Amazon RDS for MySQL stores product information, customer accounts, shopping carts, and order data.
+Hệ thống được triển khai chủ yếu tại Region Singapore (ap-southeast-1), trong đó Amazon EC2 được sử dụng để lưu trữ và vận hành website viết bằng PHP, còn Amazon RDS for MySQL đảm nhiệm việc quản lý dữ liệu ứng dụng, bao gồm tài khoản khách hàng, thông tin sản phẩm, giỏ hàng và đơn hàng. Amazon S3 được sử dụng để lưu trữ hình ảnh sản phẩm và các tài nguyên khác của website.
 
-Amazon S3 is used to store product images. S3 Versioning and Cross-Region Replication (CRR) help protect image data and maintain a copy in the secondary Region. AWS Backup is configured to manage backup plans, backup vaults, and recovery points for supported resources.
+Để tăng cường khả năng bảo vệ dữ liệu, Amazon S3 Versioning được kích hoạt nhằm lưu giữ nhiều phiên bản khác nhau của đối tượng. Bên cạnh đó, tính năng Cross-Region Replication (CRR) được cấu hình để tự động sao chép hình ảnh sản phẩm từ S3 bucket chính tại Singapore sang bucket đích tại Sydney (ap-southeast-2).
 
-Through this workshop, we will prepare the AWS environment, deploy the application and database, configure storage and backup services, and perform recovery operations. We will also simulate system failures and evaluate the recovery process using Recovery Time Objective (RTO) and Recovery Point Objective (RPO).
+Ngoài ra, AWS Backup được sử dụng làm dịch vụ quản lý sao lưu tập trung cho các tài nguyên được hỗ trợ, bao gồm Amazon EC2 và Amazon RDS. Backup Vault và Recovery Point đóng vai trò quan trọng trong việc quản lý dữ liệu sao lưu, tạo cơ sở để khôi phục hạ tầng ứng dụng và cơ sở dữ liệu khi xảy ra sự cố hoặc mất dữ liệu.
 
-### Objectives
+Thông qua workshop này, chúng ta sẽ thực hành chuẩn bị môi trường AWS, triển khai website, cấu hình cơ sở dữ liệu và dịch vụ lưu trữ, xây dựng các cơ chế sao lưu và thực hiện kiểm thử khôi phục nhằm xác minh tính toàn vẹn dữ liệu cũng như khả năng hoạt động của website sau khi khôi phục.
 
-- **AWS Cloud Infrastructure:** Prepare the AWS environment and configure the required network infrastructure using Amazon VPC, subnets, route tables, and security groups.
-- **Amazon EC2 Deployment:** Deploy and configure an EC2 instance to host the Maiora fashion e-commerce website.
-- **Database Configuration:** Set up Amazon RDS for MySQL and configure secure connectivity between the application server and the database.
-- **Amazon S3 Storage:** Store product images in Amazon S3 and configure bucket settings to support application access and data protection.
-- **S3 Versioning and Cross-Region Replication:** Enable object versioning and configure replication between the Singapore and Sydney Regions.
-- **AWS Backup Configuration:** Create a backup vault and backup plan, configure resource assignments, and generate recovery points for supported AWS resources.
-- **Disaster Recovery and Restoration:** Restore EC2 and RDS resources from backup recovery points and verify application and database recovery.
-- **System Testing and Evaluation:** Simulate failure scenarios, verify recovered data, and evaluate system recovery performance based on RTO and RPO.
-- **Monitoring and Resource Management:** Review system operation, backup status, recovery results, and clean up resources when testing is complete.
+Các nội dung chính bao gồm:
 
-### Workshop Contents
+- **Thiết kế kiến trúc AWS:** Xây dựng kiến trúc Backup và Disaster Recovery cho website Maiora Fashion Store bằng các dịch vụ AWS.
+- **Triển khai hạ tầng mạng AWS:** Tạo và cấu hình Amazon VPC, Public Subnet, Private Subnet, Route Table, Internet Gateway và Security Groups.
+- **Triển khai ứng dụng trên Amazon EC2:** Cài đặt và cấu hình website Maiora Fashion Store sử dụng PHP và Apache trên EC2.
+- **Cấu hình cơ sở dữ liệu:** Triển khai Amazon RDS for MySQL và thiết lập kết nối an toàn giữa máy chủ ứng dụng với cơ sở dữ liệu.
+- **Lưu trữ và sao chép dữ liệu bằng Amazon S3:** Lưu trữ hình ảnh sản phẩm, kích hoạt S3 Versioning và cấu hình Cross-Region Replication giữa Singapore và Sydney.
+- **Quản lý sao lưu bằng AWS Backup:** Tạo Backup Vault, Backup Plan, thiết lập bảo vệ tài nguyên EC2 và RDS, quản lý các Recovery Point.
+- **Triển khai Disaster Recovery và khôi phục hệ thống:** Thực hiện các quy trình khôi phục EC2 và RDS, kiểm tra hoạt động của ứng dụng và cơ sở dữ liệu sau khi khôi phục.
+- **Kiểm thử hệ thống và dọn dẹp tài nguyên:** Kiểm tra hoạt động sao lưu, khôi phục, xác minh chức năng website và tính toàn vẹn dữ liệu, đồng thời dọn dẹp các tài nguyên AWS khi cần thiết.
 
-1. [Workshop Overview](4.1-Workshop-overview/)
-2. [Prerequisites and Environment Preparation](4.2-Prerequiste/)
-3. [AWS Architecture Design](4.3-Architecture-Design/)
-4. [Network and Application Setup](4.4-Network and Application Setup/)
-5. [Database and Storage Configuration](4.5-Database and Storage Configuration/)
-6. [Backup and Cross-Region Replication](4.6-Backup and Cross-Region Replication/)
-7. [Disaster Recovery and Restoration](4.7-Disaster Recovery and Restoration/)
-8. [Testing, Monitoring and Cleanup](4.8-Testing, Monitoring and Cleanup/)
+### Nội dung
+
+1. [Tổng quan Workshop](4.1-Workshop-overview/)
+2. [Chuẩn bị môi trường triển khai](4.2-Prerequisite/)
+3. [Thiết kế kiến trúc hệ thống](4.3-Architecture-Design/)
+4. [Triển khai hạ tầng mạng AWS](4.4-AWS-Network-Infrastructure/)
+5. [Triển khai website Maiora Fashion Store trên Amazon EC2](4.5-EC2-Website-Deployment/)
+6. [Cấu hình cơ sở dữ liệu Amazon RDS](4.6-RDS-Database-Configuration/)
+7. [Lưu trữ và sao chép dữ liệu bằng Amazon S3](4.7-S3-Storage-Replication/)
+8. [Cấu hình và quản lý AWS Backup](4.8-AWS-Backup-Configuration/)
+9. [Kiểm thử Disaster Recovery và khôi phục hệ thống](4.9-Disaster-Recovery-Testing/)
+10. [Xác minh hệ thống và dọn dẹp tài nguyên AWS](4.10-System-Verification-Cleanup/)

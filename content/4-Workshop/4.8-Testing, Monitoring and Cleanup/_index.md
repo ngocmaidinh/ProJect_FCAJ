@@ -26,7 +26,7 @@ The following items are checked:
 
 This test provides an initial confirmation that the EC2 application server, database, and image storage can support the website.
 
-![Maiora Website Homepage Test](/images/4-Workshop/4.8-Testing-Monitoring-and-Cleanup/website-homepage-test.png)
+![Maiora Website Homepage Test](/ProJect_FCAJ/images/4-Workshop/4.8-Testing-Monitoring-and-Cleanup/website-homepage-test.png)
 
 ### 4.8.2. Testing Main Application Functions
 
@@ -43,7 +43,7 @@ The test cases include:
 
 The test results are reviewed to confirm that the main application functions are available after deployment and recovery.
 
-![Maiora Application Function Test](/images/4-Workshop/4.8-Testing-Monitoring-and-Cleanup/website-function-test.png)
+![Maiora Application Function Test](/ProJect_FCAJ/images/4-Workshop/4.8-Testing-Monitoring-and-Cleanup/website-function-test.png)
 
 ### 4.8.3. Checking EC2 Instance Status
 
@@ -58,7 +58,7 @@ The following information is checked:
 
 The application server should be in the Running state when the website is being tested.
 
-![EC2 Instance Status](/images/4-Workshop/4.8-Testing-Monitoring-and-Cleanup/ec2-status.png)
+![EC2 Instance Status](/ProJect_FCAJ/images/4-Workshop/4.8-Testing-Monitoring-and-Cleanup/ec2-status.png)
 
 ### 4.8.4. Checking RDS Database Status
 
@@ -74,7 +74,7 @@ The following information is checked:
 
 The database should be available and configured for private access from the EC2 application server.
 
-![RDS Database Status](/images/4-Workshop/4.8-Testing-Monitoring-and-Cleanup/rds-status.png)
+![RDS Database Status](/ProJect_FCAJ/images/4-Workshop/4.8-Testing-Monitoring-and-Cleanup/rds-status.png)
 
 ### 4.8.5. Reviewing AWS Backup Status
 
@@ -84,7 +84,7 @@ The Backup Vault and backup job information are checked to review the backup sta
 
 This activity helps verify that backup data is available for future restoration operations.
 
-![AWS Backup Status](/images/4-Workshop/4.8-Testing-Monitoring-and-Cleanup/backup-status.png)
+![AWS Backup Status](/ProJect_FCAJ/images/4-Workshop/4.8-Testing-Monitoring-and-Cleanup/backup-status.png)
 
 ### 4.8.6. Cleaning Up Unnecessary AWS Resources
 
@@ -101,7 +101,7 @@ The cleanup process includes:
 
 Before deleting any resource, its role in the application and backup process must be checked to avoid accidental data loss or service interruption.
 
-![AWS Resource Cleanup](/images/4-Workshop/4.8-Testing-Monitoring-and-Cleanup/aws-resource-cleanup.png)
+![AWS Resource Cleanup](/ProJect_FCAJ/images/4-Workshop/4.8-Testing-Monitoring-and-Cleanup/aws-resource-cleanup.png)
 
 ### 4.8.7. Final Evaluation
 

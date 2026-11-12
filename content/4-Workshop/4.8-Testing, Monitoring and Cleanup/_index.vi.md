@@ -26,7 +26,7 @@ Các nội dung được kiểm tra bao gồm:
 
 Bước kiểm thử này giúp xác nhận ban đầu rằng máy chủ ứng dụng EC2, cơ sở dữ liệu và hệ thống lưu trữ hình ảnh có thể phối hợp phục vụ website.
 
-![Kiểm thử trang chủ Maiora](/images/4-Workshop/4.8-Testing-Monitoring-and-Cleanup/website-homepage-test.png)
+![Kiểm thử trang chủ Maiora](/ProJect_FCAJ/images/4-Workshop/4.8-Testing-Monitoring-and-Cleanup/website-homepage-test.png)
 
 ### 4.8.2. Kiểm thử các chức năng chính của ứng dụng
 
@@ -43,7 +43,7 @@ Các trường hợp kiểm thử bao gồm:
 
 Kết quả kiểm thử được xem xét nhằm xác nhận các chức năng chính của ứng dụng có thể hoạt động sau khi triển khai và khôi phục hệ thống.
 
-![Kiểm thử chức năng ứng dụng Maiora](/images/4-Workshop/4.8-Testing-Monitoring-and-Cleanup/website-function-test.png)
+![Kiểm thử chức năng ứng dụng Maiora](/ProJect_FCAJ/images/4-Workshop/4.8-Testing-Monitoring-and-Cleanup/website-function-test.png)
 
 ### 4.8.3. Kiểm tra trạng thái EC2 Instance
 
@@ -58,7 +58,7 @@ Các thông tin được kiểm tra bao gồm:
 
 Máy chủ ứng dụng cần ở trạng thái Running trong quá trình kiểm thử website.
 
-![Trạng thái EC2 Instance](/images/4-Workshop/4.8-Testing-Monitoring-and-Cleanup/ec2-status.png)
+![Trạng thái EC2 Instance](/ProJect_FCAJ/images/4-Workshop/4.8-Testing-Monitoring-and-Cleanup/ec2-status.png)
 
 ### 4.8.4. Kiểm tra trạng thái cơ sở dữ liệu RDS
 
@@ -74,7 +74,7 @@ Các thông tin được kiểm tra bao gồm:
 
 Cơ sở dữ liệu cần ở trạng thái sẵn sàng và được cấu hình để chỉ cho phép máy chủ ứng dụng EC2 truy cập theo các quy tắc bảo mật đã thiết lập.
 
-![Trạng thái RDS Database](/images/4-Workshop/4.8-Testing-Monitoring-and-Cleanup/rds-status.png)
+![Trạng thái RDS Database](/ProJect_FCAJ/images/4-Workshop/4.8-Testing-Monitoring-and-Cleanup/rds-status.png)
 
 ### 4.8.5. Kiểm tra trạng thái AWS Backup
 
@@ -84,7 +84,7 @@ Backup Vault và thông tin Backup Job được xem xét để kiểm tra trạn
 
 Hoạt động này giúp xác nhận dữ liệu sao lưu đã được tạo và có thể sử dụng cho những lần khôi phục tiếp theo.
 
-![Trạng thái AWS Backup](/images/4-Workshop/4.8-Testing-Monitoring-and-Cleanup/backup-status.png)
+![Trạng thái AWS Backup](/ProJect_FCAJ/images/4-Workshop/4.8-Testing-Monitoring-and-Cleanup/backup-status.png)
 
 ### 4.8.6. Dọn dẹp các tài nguyên AWS không cần thiết
 
@@ -101,7 +101,7 @@ Quá trình dọn dẹp bao gồm:
 
 Trước khi xóa bất kỳ tài nguyên nào, cần kiểm tra vai trò của tài nguyên đó trong hệ thống ứng dụng và quy trình sao lưu để tránh mất dữ liệu hoặc làm gián đoạn dịch vụ ngoài ý muốn.
 
-![Dọn dẹp tài nguyên AWS](/images/4-Workshop/4.8-Testing-Monitoring-and-Cleanup/aws-resource-cleanup.png)
+![Dọn dẹp tài nguyên AWS](/ProJect_FCAJ/images/4-Workshop/4.8-Testing-Monitoring-and-Cleanup/aws-resource-cleanup.png)
 
 ### 4.8.7. Đánh giá kết quả triển khai
 
