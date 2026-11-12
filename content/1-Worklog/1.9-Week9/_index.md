@@ -1,4 +1,3 @@
-
 ---
 title: "Week 9 Worklog"
 date: 2026-10-05
@@ -9,25 +8,25 @@ pre: "<b>1.9.</b>"
 
 ### Week 9 Objectives:
 
-- Design and simulate potential failure scenarios for the Maiora Fashion Store system.
-- Test the recovery of data and resources from backups.
-- Evaluate website functionality after restoration.
-- Record recovery time and assess Recovery Time Objective (RTO) and Recovery Point Objective (RPO).
+- Design and examine potential failure scenarios for the Maiora Fashion Store system.
+- Test the recovery of data and resources from available backups.
+- Verify website functionality and data integrity after restoration.
+- Examine the recovery procedures and identify issues that may occur during system restoration.
 - Identify limitations and propose improvements to the Backup and Disaster Recovery solution.
 
 ### Tasks to Be Completed This Week:
 
 | Day | Tasks | Start Date | Completion Date | Reference Materials |
 |---|---|---|---|---|
-| Monday | Design failure scenarios involving data loss, accidental S3 object deletion, and EC2 application server failure. | 05/10/2026 | 05/10/2026 | [AWS Disaster Recovery](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/) |
-| Tuesday | Inspect S3 Versioning, Delete Markers, and the recovery of product image versions. | 06/10/2026 | 06/10/2026 | [Amazon S3 Versioning](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html) |
-| Wednesday | Simulate an EC2 application server failure and restore the instance from an AWS Backup Recovery Point. | 07/10/2026 | 08/10/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/) |
-| Friday | Verify RDS status, database contents, and website functionality after restoration. | 09/10/2026 | 09/10/2026 | [Amazon RDS Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/) |
-| Saturday | Record recovery time, determine RTO, and evaluate RPO based on the Recovery Point used. | 10/10/2026 | 10/10/2026 | [AWS Disaster Recovery](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/) |
+| Monday | Design failure scenarios involving data loss, accidental S3 object deletion, and EC2 application server failure. | 05/10/2026 | 05/10/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Tuesday | Inspect S3 Versioning, Delete Markers, and the recovery of product image versions. | 06/10/2026 | 06/10/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Wednesday | Simulate an EC2 application server failure and restore the instance from an AWS Backup Recovery Point. | 07/10/2026 | 08/10/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Friday | Verify RDS status, database contents, and website functionality after restoration. | 09/10/2026 | 09/10/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Saturday | Review the recovery process, summarize testing results, identify system limitations, and propose improvements to the Backup and Disaster Recovery solution. | 10/10/2026 | 10/10/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
 
 ### Week 9 Achievements:
 
-- Designed failure scenarios for the Maiora Fashion Store system:
+- Designed potential failure scenarios for the Maiora Fashion Store system:
   - Data loss or accidental data deletion.
   - Amazon EC2 application server failure.
   - Amazon RDS database failure or recovery requirements.
@@ -53,7 +52,7 @@ pre: "<b>1.9.</b>"
   - Inspected data used by the Maiora Fashion Store website.
   - Identified the changes required in the PHP application's database connection configuration.
 
-- Evaluated website functionality after restoration:
+- Verified website functionality after restoration:
   - Tested access to the homepage.
   - Checked product listings and product information.
   - Verified product image loading from Amazon S3.
@@ -61,31 +60,23 @@ pre: "<b>1.9.</b>"
   - Identified issues caused by changes to endpoints, IP addresses, or resource configurations.
 
 - Studied the role of Amazon CloudWatch in resource monitoring:
-  - Monitored EC2 operational metrics.
+  - Examined EC2 operational metrics.
   - Inspected RDS status and related metrics.
   - Studied the use of CloudWatch Alarms to detect abnormal conditions.
   - Explored integration with notification services when required.
 
-- Recorded recovery time to evaluate Recovery Time Objective (RTO):
-  - Identified the incident start time or the beginning of the recovery procedure according to the test scenario.
-  - Recorded the time when the resource restoration was completed.
-  - Identified when the website became operational and passed the required verification steps.
-  - Calculated the total recovery duration based on the recorded timestamps.
-
-- Evaluated Recovery Point Objective (RPO):
-  - Identified the incident occurrence time.
-  - Determined the timestamp of the Recovery Point used for restoration.
-  - Compared the two timestamps to estimate the potential data loss interval.
-  - Compared the result with the expected RPO target.
-
-- Compared test results with the defined RTO and RPO objectives, while evaluating how backup retention periods and backup frequency affect data recovery capabilities.
+- Reviewed the backup and recovery process:
+  - Examined the Recovery Points available for resource restoration.
+  - Reviewed the restoration steps and resource configurations.
+  - Identified the relationship between backup frequency, retention policies, and data recovery capabilities.
+  - Summarized the recovery testing results based on resource status and application functionality.
 
 - Identified several limitations of the current solution:
   - EC2 and RDS restoration requires additional configuration steps.
   - Changes to the RDS endpoint may require updates to the application configuration.
   - The Elastic IP may need to be reassociated after EC2 restoration.
   - Replicating S3 data to Sydney does not automatically provide application failover to the secondary Region.
-  - Resource restoration may require additional time and incur extra costs.
+  - Resource restoration may require additional configuration and incur extra costs.
 
 - Proposed improvements to the system:
   - Maintain suitable Backup Plans and retention policies.

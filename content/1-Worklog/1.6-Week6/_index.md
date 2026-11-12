@@ -20,11 +20,11 @@ pre: "<b>1.6.</b>"
 
 | Day | Tasks | Start Date | Completion Date | Reference Materials |
 |---|---|---|---|---|
-| Monday | Study AWS Backup, Backup Vaults, Backup Plans, Backup Jobs, and Recovery Points. | 14/09/2026 | 14/09/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/) |
-| Tuesday | Create the `BackupDR-Vault` Backup Vault and study Backup Plan and Backup Rule configuration. | 15/09/2026 | 15/09/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/) |
-| Wednesday | Select and configure Amazon EC2 and Amazon RDS resources for protection using AWS Backup. | 16/09/2026 | 17/09/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/) |
-| Friday | Perform test backups and monitor Backup Job statuses for EC2 and RDS. | 18/09/2026 | 18/09/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/) |
-| Saturday | Inspect Recovery Points, backup creation times, retention periods, and factors affecting backup costs. | 19/09/2026 | 19/09/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/) |
+| Monday | Study AWS Backup, Backup Vaults, Backup Plans, Backup Jobs, and Recovery Points. | 14/09/2026 | 14/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Tuesday | Create the `BackupDR-Vault` Backup Vault and study Backup Plan and Backup Rule configuration. | 15/09/2026 | 15/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Wednesday | Select and configure Amazon EC2 and Amazon RDS resources for protection using AWS Backup. | 16/09/2026 | 17/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Friday | Perform test backups and monitor Backup Job statuses for EC2 and RDS. | 18/09/2026 | 18/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Saturday | Inspect Recovery Points, backup creation times, retention periods, and factors affecting backup costs. | 19/09/2026 | 19/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
 
 ### Week 6 Achievements:
 

@@ -19,11 +19,11 @@ pre: "<b>1.7.</b>"
 
 | Day | Tasks | Start Date | Completion Date | Reference Materials |
 |---|---|---|---|---|
-| Monday | Study Recovery Time Objective (RTO), Recovery Point Objective (RPO), and Disaster Recovery models. | 21/09/2026 | 21/09/2026 | [AWS Disaster Recovery](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/) |
-| Tuesday | Analyze the system architecture with Singapore as the primary Region and Sydney as the secondary Region. | 22/09/2026 | 22/09/2026 | [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/) |
-| Wednesday | Study AWS Backup Cross-Region Copy and Amazon S3 Cross-Region Replication. | 23/09/2026 | 24/09/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/); [Amazon S3 Replication](https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html) |
-| Friday | Research recovery approaches for EC2, RDS, and S3 data when the primary Region experiences an outage. | 25/09/2026 | 25/09/2026 | [AWS Disaster Recovery](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/) |
-| Saturday | Design the Backup and DR architecture diagram and define the system recovery procedure. | 26/09/2026 | 26/09/2026 | [AWS Architecture Center](https://aws.amazon.com/architecture/) |
+| Monday | Study Recovery Time Objective (RTO), Recovery Point Objective (RPO), and Disaster Recovery models. | 21/09/2026 | 21/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Tuesday | Analyze the system architecture with Singapore as the primary Region and Sydney as the secondary Region. | 22/09/2026 | 22/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Wednesday | Study AWS Backup Cross-Region Copy and Amazon S3 Cross-Region Replication. | 23/09/2026 | 24/09/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/); [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Friday | Research recovery approaches for EC2, RDS, and S3 data when the primary Region experiences an outage. | 25/09/2026 | 25/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Saturday | Design the Backup and DR architecture diagram and define the system recovery procedure. | 26/09/2026 | 26/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
 
 ### Week 7 Achievements:
 

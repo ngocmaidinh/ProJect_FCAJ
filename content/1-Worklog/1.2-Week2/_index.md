@@ -21,10 +21,10 @@ pre: "<b>1.2.</b>"
 | Day | Tasks | Start Date | Completion Date | Reference Materials |
 |---|---|---|---|---|
 | Monday | Study Amazon VPC, CIDR, Availability Zones, Public Subnets, Private Subnets, and Route Tables. | 17/08/2026 | 17/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
-| Tuesday | Study Internet Gateway, Security Groups, and Network ACLs; understand their network traffic control mechanisms. | 18/08/2026 | 18/08/2026 | [Amazon VPC Documentation](https://docs.aws.amazon.com/vpc/) |
-| Wednesday | Create the `backup-dr-vpc` VPC, configure the `10.0.0.0/16` CIDR block, and divide the network into Public and Private Subnets. | 19/08/2026 | 20/08/2026 | [Amazon VPC Documentation](https://docs.aws.amazon.com/vpc/) |
-| Friday | Configure the Internet Gateway, Route Tables, and Security Groups; launch an EC2 instance as the application server. | 21/08/2026 | 21/08/2026 | [Amazon EC2 Documentation](https://docs.aws.amazon.com/ec2/) |
-| Saturday | Create a Key Pair, connect to EC2 through SSH, and verify the instance status, IP address, and network accessibility. | 22/08/2026 | 22/08/2026 | [Amazon EC2 Documentation](https://docs.aws.amazon.com/ec2/) |
+| Tuesday | Study Internet Gateway, Security Groups, and Network ACLs; understand their network traffic control mechanisms. | 18/08/2026 | 18/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Wednesday | Create the `backup-dr-vpc` VPC, configure the `10.0.0.0/16` CIDR block, and divide the network into Public and Private Subnets. | 19/08/2026 | 20/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Friday | Configure the Internet Gateway, Route Tables, and Security Groups; launch an EC2 instance as the application server. | 21/08/2026 | 21/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Saturday | Create a Key Pair, connect to EC2 through SSH, and verify the instance status, IP address, and network accessibility. | 22/08/2026 | 22/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
 
 ### Week 2 Achievements:
 

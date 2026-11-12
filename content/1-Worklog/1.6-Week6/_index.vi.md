@@ -20,11 +20,11 @@ pre: "<b>1.6.</b>"
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 |---|---|---|---|---|
-| 2 | Tìm hiểu AWS Backup, Backup Vault, Backup Plan, Backup Job và Recovery Point. | 14/09/2026 | 14/09/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/) |
-| 3 | Tạo Backup Vault `BackupDR-Vault` và tìm hiểu cách cấu hình Backup Plan, Backup Rule. | 15/09/2026 | 15/09/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/) |
-| 4 | Lựa chọn và cấu hình các tài nguyên Amazon EC2, Amazon RDS cần được bảo vệ bằng AWS Backup. | 16/09/2026 | 17/09/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/) |
-| 5 | Thực hiện sao lưu thử nghiệm và theo dõi trạng thái Backup Job của EC2 và RDS. | 18/09/2026 | 18/09/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/) |
-| 6 | Kiểm tra Recovery Point, thời gian tạo bản sao lưu, thời gian lưu giữ và các yếu tố ảnh hưởng đến chi phí. | 19/09/2026 | 19/09/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/) |
+| 2 | Tìm hiểu AWS Backup, Backup Vault, Backup Plan, Backup Job và Recovery Point. | 14/09/2026 | 14/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 3 | Tạo Backup Vault `BackupDR-Vault` và tìm hiểu cách cấu hình Backup Plan, Backup Rule. | 15/09/2026 | 15/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 4 | Lựa chọn và cấu hình các tài nguyên Amazon EC2, Amazon RDS cần được bảo vệ bằng AWS Backup. | 16/09/2026 | 17/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 5 | Thực hiện sao lưu thử nghiệm và theo dõi trạng thái Backup Job của EC2 và RDS. | 18/09/2026 | 18/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 6 | Kiểm tra Recovery Point, thời gian tạo bản sao lưu, thời gian lưu giữ và các yếu tố ảnh hưởng đến chi phí. | 19/09/2026 | 19/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
 
 ### Kết quả đạt được tuần 6:
 

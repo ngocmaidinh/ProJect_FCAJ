@@ -1,4 +1,3 @@
-
 ---
 title: "Week 10 Worklog"
 date: 2026-10-12
@@ -10,10 +9,11 @@ pre: "<b>1.10.</b>"
 ### Week 10 Objectives:
 
 - Review and finalize the Backup and Disaster Recovery system configurations.
-- Consolidate the architecture, implementation procedures, and testing results.
-- Evaluate backup and recovery effectiveness using RTO and RPO metrics.
+- Consolidate the system architecture, implementation procedures, and testing results.
+- Review the effectiveness of backup, restoration, and cross-Region data protection mechanisms.
 - Complete the internship report and technical documentation for the graduation thesis.
-- Summarize the project implementation process and the knowledge and skills acquired.
+- Finalize the FCAJ Workshop documentation in English and Vietnamese.
+- Summarize the project implementation process and the knowledge and skills acquired during the internship.
 
 ### Tasks to Be Completed This Week:
 
@@ -21,9 +21,9 @@ pre: "<b>1.10.</b>"
 |---|---|---|---|
 | Monday | Review the architecture, configurations, and status of AWS resources in the system. | 12/10/2026 | 12/10/2026 |
 | Tuesday | Consolidate architecture diagrams, evidence screenshots, and implementation and testing results. | 13/10/2026 | 13/10/2026 |
-| Wednesday | Finalize the RTO and RPO results table and evaluate the simulated failure scenarios. | 14/10/2026 | 15/10/2026 |
-| Friday | Write, edit, and review the internship report, presenting the achieved results. | 16/10/2026 | 16/10/2026 |
-| Sunday | Perform the final review, complete the report, and summarize the internship. | 18/10/2026 | 18/10/2026 |
+| Wednesday | Review backup and restoration results, verify the simulated failure scenarios, and identify system limitations. | 14/10/2026 | 15/10/2026 |
+| Friday | Write, edit, and review the internship report and technical documentation. | 16/10/2026 | 16/10/2026 |
+| Sunday | Perform the final review, complete the bilingual workshop documentation, and summarize the internship. | 18/10/2026 | 18/10/2026 |
 
 ### Week 10 Achievements:
 
@@ -35,17 +35,17 @@ pre: "<b>1.10.</b>"
   - Amazon S3: Stores product images and uses Versioning and Cross-Region Replication.
   - AWS Backup: Manages backup operations and stores Recovery Points for EC2 and RDS.
 
-- Consolidated the roles of security and access management services:
+- Reviewed the roles of security and access management services:
   - AWS IAM: Manages users, roles, and resource permissions.
   - Security Groups: Control inbound and outbound network traffic for EC2 and RDS.
   - S3 Bucket Policies: Manage access permissions for objects in S3 buckets.
   - IAM Roles: Provide the permissions required by AWS services to perform backup and restoration operations.
 
-- Summarized additional services studied:
+- Reviewed additional AWS services related to monitoring and disaster recovery:
   - Amazon CloudWatch: Monitors AWS resource metrics and statuses.
   - Amazon SNS: Supports notifications for events and alarms.
   - Amazon Route 53: Manages DNS and supports traffic routing.
-  - AWS Elastic Disaster Recovery: Supports server recovery when failures occur.
+  - AWS Elastic Disaster Recovery: Provides server recovery capabilities for disaster recovery scenarios.
 
 - Finalized and reviewed the system architecture diagrams:
   - VPC network architecture and website deployment components.
@@ -64,25 +64,25 @@ pre: "<b>1.10.</b>"
   - S3 Versioning and Cross-Region Replication configurations.
   - Website functionality verification after restoration.
 
-- Finalized the RTO and RPO evaluation table:
-  - Consolidated incident start times or recovery procedure start times according to the test scenarios.
-  - Recorded resource restoration completion times.
-  - Identified when the website became operational again.
-  - Calculated actual recovery durations.
-  - Evaluated potential data loss intervals based on the Recovery Points used.
-  - Compared testing results with the expected RTO and RPO targets.
+- Reviewed the backup and recovery results:
+  - Examined the available Recovery Points for EC2 and RDS resources.
+  - Reviewed the restoration procedures and configurations required after recovery.
+  - Verified the availability of the restored application server.
+  - Checked database connectivity and website functionality after restoration.
+  - Reviewed the recovery of product images using S3 Versioning.
+  - Examined the role of Cross-Region Replication in protecting product image data across AWS Regions.
 
 - Evaluated the advantages of the system:
   - Centralized backup management for EC2 and RDS through AWS Backup.
   - Recovery Points provide a basis for restoring resources after failures.
-  - S3 Versioning supports the recovery of appropriate object versions.
+  - S3 Versioning supports the recovery of previous object versions.
   - S3 Cross-Region Replication helps protect product image data in another Region.
   - Separating the application server and database improves resource management and access control.
 
-- Evaluated system limitations and costs:
+- Reviewed system limitations and operational costs:
   - EC2 and RDS restoration still requires additional configuration steps.
   - Automatic failover of the entire website to Sydney has not been implemented.
-  - Restoration may involve waiting time and additional resource costs.
+  - Restoration may involve additional configuration steps and resource costs.
   - Recovery Point retention, storage capacity, and data transfer costs must be managed.
   - Periodic recovery testing is necessary to ensure backups are usable when required.
 
@@ -92,6 +92,13 @@ pre: "<b>1.10.</b>"
   - Standardized tables, AWS terminology, and document formatting.
   - Consolidated reference materials.
   - Completed the documentation supporting the graduation thesis titled "Design and Implementation of a Backup and Disaster Recovery System on Amazon Web Services (AWS)".
+
+- Completed the FCAJ Workshop documentation:
+  - Organized the workshop into structured sections.
+  - Prepared implementation instructions and AWS configuration procedures.
+  - Added screenshots illustrating the deployment and configuration process.
+  - Reviewed and completed the English and Vietnamese documentation.
+  - Checked the navigation structure and presentation of workshop content.
 
 - Summarized the internship experience:
   - Strengthened knowledge of cloud computing and AWS services.

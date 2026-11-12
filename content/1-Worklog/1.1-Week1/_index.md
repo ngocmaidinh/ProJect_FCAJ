@@ -23,8 +23,8 @@ pre: "<b>1.1.</b>"
 | Monday | Get acquainted with FCAJ members; learn about internship regulations, the working environment, and working procedures. | 10/08/2026 | 10/08/2026 | Internship Guidelines |
 | Tuesday | Study AWS fundamentals and its main service categories: Compute, Storage, Networking, Database, and Security. | 11/08/2026 | 11/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
 | Wednesday | Become familiar with AWS Management Console, AWS CLI, AWS Regions, and Availability Zones. | 12/08/2026 | 12/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
-| Thursday | Learn about Amazon EC2, Amazon EBS, AMI, Instance Types, Key Pairs, and Elastic IP addresses. | 13/08/2026 | 14/08/2026 | [Amazon EC2 Documentation](https://docs.aws.amazon.com/ec2/) |
-| Saturday | Study IAM, Amazon S3, Amazon RDS, AWS Backup, and the fundamental concepts of Backup and Disaster Recovery. | 15/08/2026 | 15/08/2026 | [AWS Documentation](https://docs.aws.amazon.com/) |
+| Thursday | Learn about Amazon EC2, Amazon EBS, AMI, Instance Types, Key Pairs, and Elastic IP addresses. | 13/08/2026 | 14/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Saturday | Study IAM, Amazon S3, Amazon RDS, AWS Backup, and the fundamental concepts of Backup and Disaster Recovery. | 15/08/2026 | 15/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
 
 ### Week 1 Achievements:
 

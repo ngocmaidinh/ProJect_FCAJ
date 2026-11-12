@@ -19,11 +19,11 @@ pre: "<b>1.3.</b>"
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 |---|---|---|---|---|
-| 2 | Tìm hiểu Amazon Linux, hệ thống tệp, quyền truy cập và các lệnh quản trị Linux cơ bản. | 24/08/2026 | 24/08/2026 | [Amazon Linux Documentation](https://docs.aws.amazon.com/linux/) |
-| 3 | Cài đặt và cấu hình Apache HTTP Server trên EC2; tìm hiểu cách quản lý dịch vụ bằng systemctl. | 25/08/2026 | 25/08/2026 | [Apache HTTP Server Documentation](https://httpd.apache.org/docs/) |
-| 4 | Cài đặt PHP, PHP-FPM và các thành phần cần thiết để chạy ứng dụng PHP. | 26/08/2026 | 27/08/2026 | [PHP Documentation](https://www.php.net/docs.php) |
-| 5 | Xây dựng và triển khai giao diện Maiora Fashion Store bằng PHP; tạo các trang sản phẩm và chức năng cơ bản. | 28/08/2026 | 28/08/2026 | [PHP Documentation](https://www.php.net/docs.php) |
-| 6 | Kiểm tra website qua trình duyệt, kiểm tra dịch vụ Apache và xử lý các lỗi phát sinh trong quá trình triển khai. | 29/08/2026 | 29/08/2026 | [Amazon EC2 Documentation](https://docs.aws.amazon.com/ec2/) |
+| 2 | Tìm hiểu Amazon Linux, hệ thống tệp, quyền truy cập và các lệnh quản trị Linux cơ bản. | 24/08/2026 | 24/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 3 | Cài đặt và cấu hình Apache HTTP Server trên EC2; tìm hiểu cách quản lý dịch vụ bằng systemctl. | 25/08/2026 | 25/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 4 | Cài đặt PHP, PHP-FPM và các thành phần cần thiết để chạy ứng dụng PHP. | 26/08/2026 | 27/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 5 | Xây dựng và triển khai giao diện Maiora Fashion Store bằng PHP; tạo các trang sản phẩm và chức năng cơ bản. | 28/08/2026 | 28/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 6 | Kiểm tra website qua trình duyệt, kiểm tra dịch vụ Apache và xử lý các lỗi phát sinh trong quá trình triển khai. | 29/08/2026 | 29/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
 
 ### Kết quả đạt được tuần 3:
 

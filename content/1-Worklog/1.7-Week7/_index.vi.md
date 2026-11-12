@@ -19,11 +19,11 @@ pre: "<b>1.7.</b>"
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 |---|---|---|---|---|
-| 2 | Tìm hiểu Recovery Time Objective (RTO), Recovery Point Objective (RPO) và các mô hình Disaster Recovery. | 21/09/2026 | 21/09/2026 | [AWS Disaster Recovery](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/) |
-| 3 | Phân tích kiến trúc hệ thống với Singapore là Region chính và Sydney là Region dự phòng. | 22/09/2026 | 22/09/2026 | [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/) |
-| 4 | Tìm hiểu AWS Backup Cross-Region Copy và Amazon S3 Cross-Region Replication. | 23/09/2026 | 24/09/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/); [Amazon S3 Replication](https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html) |
-| 5 | Nghiên cứu phương án khôi phục EC2, RDS và dữ liệu S3 khi Region chính gặp sự cố. | 25/09/2026 | 25/09/2026 | [AWS Disaster Recovery](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/) |
-| 6 | Xây dựng sơ đồ kiến trúc Backup và DR, xác định quy trình khôi phục hệ thống. | 26/09/2026 | 26/09/2026 | [AWS Architecture Center](https://aws.amazon.com/architecture/) |
+| 2 | Tìm hiểu Recovery Time Objective (RTO), Recovery Point Objective (RPO) và các mô hình Disaster Recovery. | 21/09/2026 | 21/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 3 | Phân tích kiến trúc hệ thống với Singapore là Region chính và Sydney là Region dự phòng. | 22/09/2026 | 22/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 4 | Tìm hiểu AWS Backup Cross-Region Copy và Amazon S3 Cross-Region Replication. | 23/09/2026 | 24/09/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/); [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 5 | Nghiên cứu phương án khôi phục EC2, RDS và dữ liệu S3 khi Region chính gặp sự cố. | 25/09/2026 | 25/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 6 | Xây dựng sơ đồ kiến trúc Backup và DR, xác định quy trình khôi phục hệ thống. | 26/09/2026 | 26/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
 
 ### Kết quả đạt được tuần 7:
 

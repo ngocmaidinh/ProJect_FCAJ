@@ -19,11 +19,11 @@ pre: "<b>1.5.</b>"
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 |---|---|---|---|---|
-| 2 | Tìm hiểu Amazon S3, Bucket, Object, Object Key và các lớp lưu trữ. | 07/09/2026 | 07/09/2026 | [Amazon S3 Documentation](https://docs.aws.amazon.com/s3/) |
-| 3 | Tạo S3 Bucket tại Region Singapore và tải hình ảnh sản phẩm lên thư mục `products/`. | 08/09/2026 | 08/09/2026 | [Amazon S3 Documentation](https://docs.aws.amazon.com/s3/) |
-| 4 | Cấu hình quyền truy cập và tích hợp đường dẫn hình ảnh S3 vào website Maiora Fashion Store. | 09/09/2026 | 10/09/2026 | [Amazon S3 Documentation](https://docs.aws.amazon.com/s3/) |
-| 5 | Bật S3 Versioning, tìm hiểu cách quản lý phiên bản đối tượng và các chính sách bảo vệ dữ liệu. | 11/09/2026 | 11/09/2026 | [Managing S3 Versioning](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html) |
-| 6 | Tạo bucket tại Region Sydney và cấu hình Cross-Region Replication từ Singapore sang Sydney. | 12/09/2026 | 12/09/2026 | [S3 Replication Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html) |
+| 2 | Tìm hiểu Amazon S3, Bucket, Object, Object Key và các lớp lưu trữ. | 07/09/2026 | 07/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 3 | Tạo S3 Bucket tại Region Singapore và tải hình ảnh sản phẩm lên thư mục `products/`. | 08/09/2026 | 08/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 4 | Cấu hình quyền truy cập và tích hợp đường dẫn hình ảnh S3 vào website Maiora Fashion Store. | 09/09/2026 | 10/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 5 | Bật S3 Versioning, tìm hiểu cách quản lý phiên bản đối tượng và các chính sách bảo vệ dữ liệu. | 11/09/2026 | 11/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 6 | Tạo bucket tại Region Sydney và cấu hình Cross-Region Replication từ Singapore sang Sydney. | 12/09/2026 | 12/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
 
 ### Kết quả đạt được tuần 5:
 

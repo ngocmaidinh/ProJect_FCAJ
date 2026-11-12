@@ -19,11 +19,11 @@ pre: "<b>1.4.</b>"
 
 | Day | Tasks | Start Date | Completion Date | Reference Materials |
 |---|---|---|---|---|
-| Monday | Study Amazon RDS, MySQL, DB Instances, databases, and database backup mechanisms. | 31/08/2026 | 31/08/2026 | [Amazon RDS Documentation](https://docs.aws.amazon.com/rds/) |
-| Tuesday | Create an Amazon RDS for MySQL instance, select its configuration, and configure network connectivity within the VPC. | 01/09/2026 | 02/09/2026 | [Amazon RDS Documentation](https://docs.aws.amazon.com/rds/) |
-| Thursday | Configure the RDS Security Group and initialize the `shop` database with tables required by the website. | 03/09/2026 | 03/09/2026 | [MySQL Documentation](https://dev.mysql.com/doc/) |
-| Friday | Configure PHP on EC2 to connect to RDS using a separate database configuration file. | 04/09/2026 | 04/09/2026 | [PHP Documentation](https://www.php.net/docs.php) |
-| Saturday | Verify EC2-to-RDS connectivity, inspect database records, and test product display functionality on the website. | 05/09/2026 | 05/09/2026 | [Amazon RDS Documentation](https://docs.aws.amazon.com/rds/) |
+| Monday | Study Amazon RDS, MySQL, DB Instances, databases, and database backup mechanisms. | 31/08/2026 | 31/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Tuesday | Create an Amazon RDS for MySQL instance, select its configuration, and configure network connectivity within the VPC. | 01/09/2026 | 02/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Thursday | Configure the RDS Security Group and initialize the `shop` database with tables required by the website. | 03/09/2026 | 03/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Friday | Configure PHP on EC2 to connect to RDS using a separate database configuration file. | 04/09/2026 | 04/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Saturday | Verify EC2-to-RDS connectivity, inspect database records, and test product display functionality on the website. | 05/09/2026 | 05/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
 
 ### Week 4 Achievements:
 

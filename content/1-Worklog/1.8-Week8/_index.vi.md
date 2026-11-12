@@ -18,11 +18,11 @@ pre: "<b>1.8.</b>"
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 |---|---|---|---|---|
-| 2 | Kiểm tra Recovery Point của EC2 và RDS, lựa chọn bản sao lưu phù hợp để thử nghiệm khôi phục. | 28/09/2026 | 28/09/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/) |
-| 3 | Thực hành khôi phục máy chủ ứng dụng EC2 từ Recovery Point của AWS Backup và kiểm tra cấu hình sau khôi phục. | 29/09/2026 | 29/09/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/) |
-| 4 | Thực hành khôi phục cơ sở dữ liệu RDS từ Recovery Point hoặc snapshot phù hợp. | 30/09/2026 | 01/10/2026 | [Amazon RDS Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/) |
-| 5 | Kiểm tra Amazon S3 Versioning và tìm hiểu cách khôi phục phiên bản đối tượng hình ảnh sản phẩm. | 02/10/2026 | 02/10/2026 | [Amazon S3 Versioning](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html) |
-| 6 | Kiểm tra hoạt động của website, cơ sở dữ liệu và hình ảnh sản phẩm sau khi khôi phục. | 03/10/2026 | 03/10/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/) |
+| 2 | Kiểm tra Recovery Point của EC2 và RDS, lựa chọn bản sao lưu phù hợp để thử nghiệm khôi phục. | 28/09/2026 | 28/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 3 | Thực hành khôi phục máy chủ ứng dụng EC2 từ Recovery Point của AWS Backup và kiểm tra cấu hình sau khôi phục. | 29/09/2026 | 29/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 4 | Thực hành khôi phục cơ sở dữ liệu RDS từ Recovery Point hoặc snapshot phù hợp. | 30/09/2026 | 01/10/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 5 | Kiểm tra Amazon S3 Versioning và tìm hiểu cách khôi phục phiên bản đối tượng hình ảnh sản phẩm. | 02/10/2026 | 02/10/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 6 | Kiểm tra hoạt động của website, cơ sở dữ liệu và hình ảnh sản phẩm sau khi khôi phục. | 03/10/2026 | 03/10/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
 
 ### Kết quả đạt được tuần 8:
 

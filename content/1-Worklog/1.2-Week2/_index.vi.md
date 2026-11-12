@@ -21,10 +21,10 @@ pre: "<b>1.2.</b>"
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 |---|---|---|---|---|
 | 2 | Tìm hiểu Amazon VPC, CIDR, Availability Zone, Public Subnet, Private Subnet và Route Table. | 17/08/2026 | 17/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
-| 3 | Tìm hiểu Internet Gateway, Security Group và Network ACL; phân biệt cơ chế kiểm soát lưu lượng mạng. | 18/08/2026 | 18/08/2026 | [Amazon VPC Documentation](https://docs.aws.amazon.com/vpc/) |
-| 4 | Thực hành tạo VPC `backup-dr-vpc`, cấu hình CIDR `10.0.0.0/16` và phân chia Public Subnet, Private Subnet. | 19/08/2026 | 20/08/2026 | [Amazon VPC Documentation](https://docs.aws.amazon.com/vpc/) |
-| 5 | Cấu hình Internet Gateway, Route Table và Security Group; tạo EC2 làm máy chủ ứng dụng. | 21/08/2026 | 21/08/2026 | [Amazon EC2 Documentation](https://docs.aws.amazon.com/ec2/) |
-| 6 | Tạo Key Pair, kết nối SSH đến EC2 và kiểm tra trạng thái máy chủ, địa chỉ IP và khả năng truy cập mạng. | 22/08/2026 | 22/08/2026 | [Amazon EC2 Documentation](https://docs.aws.amazon.com/ec2/) |
+| 3 | Tìm hiểu Internet Gateway, Security Group và Network ACL; phân biệt cơ chế kiểm soát lưu lượng mạng. | 18/08/2026 | 18/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 4 | Thực hành tạo VPC `backup-dr-vpc`, cấu hình CIDR `10.0.0.0/16` và phân chia Public Subnet, Private Subnet. | 19/08/2026 | 20/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 5 | Cấu hình Internet Gateway, Route Table và Security Group; tạo EC2 làm máy chủ ứng dụng. | 21/08/2026 | 21/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 6 | Tạo Key Pair, kết nối SSH đến EC2 và kiểm tra trạng thái máy chủ, địa chỉ IP và khả năng truy cập mạng. | 22/08/2026 | 22/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
 
 ### Kết quả đạt được tuần 2:
 

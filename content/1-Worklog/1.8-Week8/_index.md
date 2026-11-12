@@ -18,11 +18,11 @@ pre: "<b>1.8.</b>"
 
 | Day | Tasks | Start Date | Completion Date | Reference Materials |
 |---|---|---|---|---|
-| Monday | Inspect EC2 and RDS Recovery Points and select suitable backups for restoration testing. | 28/09/2026 | 28/09/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/) |
-| Tuesday | Restore the EC2 application server from an AWS Backup Recovery Point and verify its configuration. | 29/09/2026 | 29/09/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/) |
-| Wednesday | Restore the RDS database from a suitable Recovery Point or snapshot. | 30/09/2026 | 01/10/2026 | [Amazon RDS Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/) |
-| Friday | Inspect Amazon S3 Versioning and study how to restore product image object versions. | 02/10/2026 | 02/10/2026 | [Amazon S3 Versioning](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html) |
-| Saturday | Verify website functionality, database availability, and product images after restoration. | 03/10/2026 | 03/10/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/) |
+| Monday | Inspect EC2 and RDS Recovery Points and select suitable backups for restoration testing. | 28/09/2026 | 28/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Tuesday | Restore the EC2 application server from an AWS Backup Recovery Point and verify its configuration. | 29/09/2026 | 29/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Wednesday | Restore the RDS database from a suitable Recovery Point or snapshot. | 30/09/2026 | 01/10/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Friday | Inspect Amazon S3 Versioning and study how to restore product image object versions. | 02/10/2026 | 02/10/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Saturday | Verify website functionality, database availability, and product images after restoration. | 03/10/2026 | 03/10/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
 
 ### Week 8 Achievements:
 

@@ -23,8 +23,8 @@ pre: "<b>1.1.</b>"
 | 2 | Làm quen với các thành viên FCAJ; tìm hiểu nội quy, môi trường thực tập và quy trình làm việc. | 10/08/2026 | 10/08/2026 | Tài liệu hướng dẫn thực tập |
 | 3 | Tìm hiểu tổng quan về AWS và các nhóm dịch vụ Compute, Storage, Networking, Database và Security. | 11/08/2026 | 11/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
 | 4 | Làm quen với AWS Management Console, AWS CLI, AWS Region và Availability Zone. | 12/08/2026 | 12/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
-| 5 | Tìm hiểu Amazon EC2, Amazon EBS, AMI, Instance Types, Key Pair và Elastic IP. | 13/08/2026 | 14/08/2026 | [Amazon EC2 Documentation](https://docs.aws.amazon.com/ec2/) |
-| 6 | Tìm hiểu IAM, Amazon S3, Amazon RDS, AWS Backup và các khái niệm cơ bản về Backup và Disaster Recovery. | 15/08/2026 | 15/08/2026 | [AWS Documentation](https://docs.aws.amazon.com/) |
+| 5 | Tìm hiểu Amazon EC2, Amazon EBS, AMI, Instance Types, Key Pair và Elastic IP. | 13/08/2026 | 14/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 6 | Tìm hiểu IAM, Amazon S3, Amazon RDS, AWS Backup và các khái niệm cơ bản về Backup và Disaster Recovery. | 15/08/2026 | 15/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
 
 ### Kết quả đạt được tuần 1:
 

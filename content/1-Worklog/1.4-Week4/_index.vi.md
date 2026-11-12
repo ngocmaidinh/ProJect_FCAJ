@@ -19,11 +19,11 @@ pre: "<b>1.4.</b>"
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 |---|---|---|---|---|
-| 2 | Tìm hiểu Amazon RDS, MySQL, DB Instance, Database và các cơ chế sao lưu cơ sở dữ liệu. | 31/08/2026 | 31/08/2026 | [Amazon RDS Documentation](https://docs.aws.amazon.com/rds/) |
-| 3 | Tạo Amazon RDS for MySQL, lựa chọn cấu hình DB Instance và thiết lập kết nối mạng trong VPC. | 01/09/2026 | 02/09/2026 | [Amazon RDS Documentation](https://docs.aws.amazon.com/rds/) |
-| 4 | Cấu hình Security Group cho RDS và khởi tạo cơ sở dữ liệu `shop` cùng các bảng dữ liệu phục vụ website. | 03/09/2026 | 03/09/2026 | [MySQL Documentation](https://dev.mysql.com/doc/) |
-| 5 | Cấu hình PHP trên EC2 kết nối đến RDS bằng tệp cấu hình cơ sở dữ liệu riêng. | 04/09/2026 | 04/09/2026 | [PHP Documentation](https://www.php.net/docs.php) |
-| 6 | Kiểm tra khả năng kết nối giữa EC2 và RDS, kiểm tra dữ liệu và chức năng hiển thị sản phẩm trên website. | 05/09/2026 | 05/09/2026 | [Amazon RDS Documentation](https://docs.aws.amazon.com/rds/) |
+| 2 | Tìm hiểu Amazon RDS, MySQL, DB Instance, Database và các cơ chế sao lưu cơ sở dữ liệu. | 31/08/2026 | 31/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 3 | Tạo Amazon RDS for MySQL, lựa chọn cấu hình DB Instance và thiết lập kết nối mạng trong VPC. | 01/09/2026 | 02/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 4 | Cấu hình Security Group cho RDS và khởi tạo cơ sở dữ liệu `shop` cùng các bảng dữ liệu phục vụ website. | 03/09/2026 | 03/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 5 | Cấu hình PHP trên EC2 kết nối đến RDS bằng tệp cấu hình cơ sở dữ liệu riêng. | 04/09/2026 | 04/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 6 | Kiểm tra khả năng kết nối giữa EC2 và RDS, kiểm tra dữ liệu và chức năng hiển thị sản phẩm trên website. | 05/09/2026 | 05/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
 
 ### Kết quả đạt được tuần 4:
 

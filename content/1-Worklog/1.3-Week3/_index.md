@@ -19,11 +19,11 @@ pre: "<b>1.3.</b>"
 
 | Day | Tasks | Start Date | Completion Date | Reference Materials |
 |---|---|---|---|---|
-| Monday | Study Amazon Linux, file systems, access permissions, and basic Linux administration commands. | 24/08/2026 | 24/08/2026 | [Amazon Linux Documentation](https://docs.aws.amazon.com/linux/) |
-| Tuesday | Install and configure Apache HTTP Server on EC2; learn how to manage services using systemctl. | 25/08/2026 | 25/08/2026 | [Apache HTTP Server Documentation](https://httpd.apache.org/docs/) |
-| Wednesday - Thursday | Install PHP, PHP-FPM, and the required components to run PHP applications. | 26/08/2026 | 27/08/2026 | [PHP Documentation](https://www.php.net/docs.php) |
-| Friday | Develop and deploy the Maiora Fashion Store interface using PHP; create product pages and basic website functions. | 28/08/2026 | 28/08/2026 | [PHP Documentation](https://www.php.net/docs.php) |
-| Saturday | Test the website through a web browser, check Apache services, and troubleshoot issues during deployment. | 29/08/2026 | 29/08/2026 | [Amazon EC2 Documentation](https://docs.aws.amazon.com/ec2/) |
+| Monday | Study Amazon Linux, file systems, access permissions, and basic Linux administration commands. | 24/08/2026 | 24/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Tuesday | Install and configure Apache HTTP Server on EC2; learn how to manage services using systemctl. | 25/08/2026 | 25/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Wednesday - Thursday | Install PHP, PHP-FPM, and the required components to run PHP applications. | 26/08/2026 | 27/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Friday | Develop and deploy the Maiora Fashion Store interface using PHP; create product pages and basic website functions. | 28/08/2026 | 28/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Saturday | Test the website through a web browser, check Apache services, and troubleshoot issues during deployment. | 29/08/2026 | 29/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
 
 ### Week 3 Achievements:
 

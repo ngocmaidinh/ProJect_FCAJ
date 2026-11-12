@@ -19,11 +19,11 @@ pre: "<b>1.5.</b>"
 
 | Day | Tasks | Start Date | Completion Date | Reference Materials |
 |---|---|---|---|---|
-| Monday | Study Amazon S3, Buckets, Objects, Object Keys, and storage classes. | 07/09/2026 | 07/09/2026 | [Amazon S3 Documentation](https://docs.aws.amazon.com/s3/) |
-| Tuesday | Create an S3 Bucket in the Singapore Region and upload product images to the `products/` folder. | 08/09/2026 | 08/09/2026 | [Amazon S3 Documentation](https://docs.aws.amazon.com/s3/) |
-| Wednesday | Configure access permissions and integrate S3 image URLs into the Maiora Fashion Store website. | 09/09/2026 | 10/09/2026 | [Amazon S3 Documentation](https://docs.aws.amazon.com/s3/) |
-| Friday | Enable S3 Versioning and study object version management and data protection policies. | 11/09/2026 | 11/09/2026 | [Managing S3 Versioning](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html) |
-| Saturday | Create a bucket in the Sydney Region and configure Cross-Region Replication from Singapore to Sydney. | 12/09/2026 | 12/09/2026 | [S3 Replication Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html) |
+| Monday | Study Amazon S3, Buckets, Objects, Object Keys, and storage classes. | 07/09/2026 | 07/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Tuesday | Create an S3 Bucket in the Singapore Region and upload product images to the `products/` folder. | 08/09/2026 | 08/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Wednesday | Configure access permissions and integrate S3 image URLs into the Maiora Fashion Store website. | 09/09/2026 | 10/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Friday | Enable S3 Versioning and study object version management and data protection policies. | 11/09/2026 | 11/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Saturday | Create a bucket in the Sydney Region and configure Cross-Region Replication from Singapore to Sydney. | 12/09/2026 | 12/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
 
 ### Week 5 Achievements:
 
