@@ -23,7 +23,7 @@ The recovery point contains backup data of the EC2 instance at the time the back
 
 The recovery point is selected based on its resource identifier, creation time, and backup status.
 
-![EC2 Recovery Point](/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/ec2-restore-point.png)
+![EC2 Recovery Point](/ProJect_FCAJ/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/ec2-restore-point.png)
 
 ### 4.7.2. Restoring the EC2 Application Server
 
@@ -33,7 +33,7 @@ During the restore process, the required instance configuration and network sett
 
 After the restore job completes, AWS creates the restored EC2 instance. The restored instance is checked in the EC2 console to verify that it is running.
 
-![Restored EC2 Instance](/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/ec2-restored-instance.png)
+![Restored EC2 Instance](/ProJect_FCAJ/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/ec2-restored-instance.png)
 
 ### 4.7.3. Reassociating the Elastic IP Address
 
@@ -43,7 +43,7 @@ The Elastic IP address is checked in the EC2 console and associated with the res
 
 This step allows users to access the website through the same public IP address, provided that the address is available and belongs to the same AWS Region.
 
-![Elastic IP Reassociation](/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/elastic-ip-reassociation.png)
+![Elastic IP Reassociation](/ProJect_FCAJ/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/elastic-ip-reassociation.png)
 
 ### 4.7.4. Restoring the RDS MySQL Database
 
@@ -53,7 +53,7 @@ During the restore process, the database configuration is reviewed, including th
 
 AWS RDS creates a new DB instance for the restored database. The application connection configuration must be updated if the restored database has a different endpoint.
 
-![RDS Restore Process](/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/rds-restore.png)
+![RDS Restore Process](/ProJect_FCAJ/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/rds-restore.png)
 
 ### 4.7.5. Verifying the Restored Database
 
@@ -71,7 +71,7 @@ The database contains the main application tables:
 
 This verification helps confirm that the database recovery process has restored the required application data.
 
-![Restored Database](/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/restored-database.png)
+![Restored Database](/ProJect_FCAJ/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/restored-database.png)
 
 ### 4.7.6. Verifying Product Images in the Sydney Region
 
@@ -81,7 +81,7 @@ The objects under the `products/` prefix are reviewed to verify that the expecte
 
 These replicated objects provide an additional copy of eligible product images in a separate AWS Region.
 
-![S3 Recovery in Sydney](/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/s3-sydney-recovery.png)
+![S3 Recovery in Sydney](/ProJect_FCAJ/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/s3-sydney-recovery.png)
 
 ### 4.7.7. Testing the Recovered Maiora Fashion Store Website
 
@@ -97,7 +97,7 @@ The following application functions are checked:
 
 The verification confirms that the restored application components can work together and provide the main website functions.
 
-![Maiora Website Recovery Test](/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/maiora-recovery-test.png)
+![Maiora Website Recovery Test](/ProJect_FCAJ/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/maiora-recovery-test.png)
 
 ### 4.7.8. Section Summary
 

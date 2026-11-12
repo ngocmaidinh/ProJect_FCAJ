@@ -58,7 +58,7 @@ Trong workshop này, Sydney được sử dụng làm khu vực lưu trữ phụ
 
 Sơ đồ dưới đây minh họa mối quan hệ giữa môi trường ứng dụng chính, dịch vụ sao lưu và môi trường lưu trữ phụ.
 
-![Kiến trúc hệ thống Backup và Disaster Recovery trên AWS](/images/4-Workshop/4.3-Architecture-Design/aws-backup-dr-architecture.png)
+![Kiến trúc hệ thống Backup và Disaster Recovery trên AWS](/ProJect_FCAJ/images/4-Workshop/4.3-Architecture-Design/aws-backup-dr-architecture.png)
 
 Các luồng dữ liệu chính:
 

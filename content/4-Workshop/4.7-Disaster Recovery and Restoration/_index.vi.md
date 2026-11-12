@@ -23,7 +23,7 @@ Recovery Point chứa dữ liệu sao lưu của EC2 tại thời điểm thực
 
 Recovery Point được lựa chọn dựa trên mã định danh tài nguyên, thời gian tạo và trạng thái sao lưu.
 
-![EC2 Recovery Point](/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/ec2-restore-point.png)
+![EC2 Recovery Point](/ProJect_FCAJ/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/ec2-restore-point.png)
 
 ### 4.7.2. Khôi phục máy chủ ứng dụng EC2
 
@@ -33,7 +33,7 @@ Trong quá trình khôi phục, các thông số cần thiết của phiên bả
 
 Sau khi Restore Job hoàn thành, AWS tạo một EC2 Instance được khôi phục. Instance mới được kiểm tra trong EC2 Console để xác nhận trạng thái hoạt động.
 
-![Restored EC2 Instance](/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/ec2-restored-instance.png)
+![Restored EC2 Instance](/ProJect_FCAJ/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/ec2-restored-instance.png)
 
 ### 4.7.3. Gán lại Elastic IP Address
 
@@ -43,7 +43,7 @@ Elastic IP được kiểm tra trong EC2 Console và thực hiện liên kết v
 
 Bước này cho phép người dùng tiếp tục truy cập website thông qua cùng một địa chỉ IP công khai, với điều kiện địa chỉ IP vẫn khả dụng và thuộc cùng AWS Region.
 
-![Elastic IP Reassociation](/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/elastic-ip-reassociation.png)
+![Elastic IP Reassociation](/ProJect_FCAJ/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/elastic-ip-reassociation.png)
 
 ### 4.7.4. Khôi phục cơ sở dữ liệu MySQL trên RDS
 
@@ -53,7 +53,7 @@ Trong quá trình khôi phục, các thông số cấu hình cơ sở dữ liệ
 
 Amazon RDS tạo một DB Instance mới cho cơ sở dữ liệu được khôi phục. Cấu hình kết nối của ứng dụng cần được cập nhật nếu cơ sở dữ liệu sau khôi phục có Endpoint khác với ban đầu.
 
-![RDS Restore Process](/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/rds-restore.png)
+![RDS Restore Process](/ProJect_FCAJ/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/rds-restore.png)
 
 ### 4.7.5. Kiểm tra cơ sở dữ liệu sau khôi phục
 
@@ -71,7 +71,7 @@ Cơ sở dữ liệu bao gồm các bảng chính:
 
 Việc kiểm tra này giúp xác nhận quá trình khôi phục cơ sở dữ liệu đã phục hồi được các dữ liệu cần thiết cho ứng dụng.
 
-![Restored Database](/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/restored-database.png)
+![Restored Database](/ProJect_FCAJ/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/restored-database.png)
 
 ### 4.7.6. Kiểm tra hình ảnh sản phẩm tại Region Sydney
 
@@ -81,7 +81,7 @@ Các đối tượng trong tiền tố `products/` được kiểm tra để xá
 
 Các đối tượng được sao chép cung cấp thêm một bản lưu trữ của hình ảnh sản phẩm đủ điều kiện tại một AWS Region khác.
 
-![S3 Recovery in Sydney](/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/s3-sydney-recovery.png)
+![S3 Recovery in Sydney](/ProJect_FCAJ/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/s3-sydney-recovery.png)
 
 ### 4.7.7. Kiểm tra website Maiora Fashion Store sau khôi phục
 
@@ -97,7 +97,7 @@ Các chức năng chính của ứng dụng được kiểm tra bao gồm:
 
 Quá trình kiểm tra giúp xác nhận các thành phần ứng dụng sau khi khôi phục có thể phối hợp hoạt động và cung cấp những chức năng chính của website.
 
-![Maiora Website Recovery Test](/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/maiora-recovery-test.png)
+![Maiora Website Recovery Test](/ProJect_FCAJ/images/4-Workshop/4.7-Disaster-Recovery-and-Restoration/maiora-recovery-test.png)
 
 ### 4.7.8. Tổng kết
 

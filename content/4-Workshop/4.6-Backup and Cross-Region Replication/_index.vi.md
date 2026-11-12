@@ -21,7 +21,7 @@ Một Backup Vault có tên `BackupDR-Vault` được sử dụng tại Region S
 
 Vault cung cấp vị trí quản lý tập trung cho dữ liệu sao lưu và hỗ trợ quá trình khôi phục tài nguyên khi cần thiết.
 
-![AWS Backup Vault](/images/4-Workshop/4.6-Backup-and-Cross-Region-Replication/backup-vault.png)
+![AWS Backup Vault](/ProJect_FCAJ/images/4-Workshop/4.6-Backup-and-Cross-Region-Replication/backup-vault.png)
 
 ### 4.6.2. Sao lưu tài nguyên EC2 và RDS
 
@@ -36,7 +36,7 @@ Các tác vụ sao lưu theo yêu cầu (On-demand backup) được khởi chạ
 
 Các Recovery Point này cung cấp dữ liệu sao lưu có thể sử dụng để khôi phục máy chủ ứng dụng hoặc cơ sở dữ liệu khi cần thiết.
 
-![AWS Backup Recovery Points](/images/4-Workshop/4.6-Backup-and-Cross-Region-Replication/backup-recovery-points.png)
+![AWS Backup Recovery Points](/ProJect_FCAJ/images/4-Workshop/4.6-Backup-and-Cross-Region-Replication/backup-recovery-points.png)
 
 ### 4.6.3. Theo dõi trạng thái tác vụ sao lưu
 
@@ -53,7 +53,7 @@ Các thông tin quan trọng bao gồm:
 
 Trạng thái hoàn thành thành công cho biết AWS Backup đã tạo Recovery Point tương ứng.
 
-![AWS Backup Job Status](/images/4-Workshop/4.6-Backup-and-Cross-Region-Replication/backup-job.png)
+![AWS Backup Job Status](/ProJect_FCAJ/images/4-Workshop/4.6-Backup-and-Cross-Region-Replication/backup-job.png)
 
 ### 4.6.4. Bật tính năng S3 Versioning
 
@@ -63,7 +63,7 @@ Versioning cho phép duy trì nhiều phiên bản của cùng một đối tư�
 
 Tính năng này giúp bảo vệ hình ảnh sản phẩm trước những thao tác ghi đè hoặc xóa nhầm, đồng thời cung cấp thêm khả năng khôi phục dữ liệu.
 
-![S3 Versioning Configuration](/images/4-Workshop/4.6-Backup-and-Cross-Region-Replication/s3-versioning.png)
+![S3 Versioning Configuration](/ProJect_FCAJ/images/4-Workshop/4.6-Backup-and-Cross-Region-Replication/s3-versioning.png)
 
 ### 4.6.5. Cấu hình S3 Cross-Region Replication
 
@@ -81,7 +81,7 @@ Cả Bucket nguồn và Bucket đích đều phải bật S3 Versioning.
 
 Sau khi quy tắc sao chép được kích hoạt, các đối tượng mới đủ điều kiện được tải lên Bucket nguồn sẽ tự động được sao chép sang Bucket đích. Quá trình sao chép diễn ra bất đồng bộ nên đối tượng tại Bucket đích có thể không xuất hiện ngay lập tức.
 
-![S3 Cross-Region Replication Rule](/images/4-Workshop/4.6-Backup-and-Cross-Region-Replication/s3-replication-rule.png)
+![S3 Cross-Region Replication Rule](/ProJect_FCAJ/images/4-Workshop/4.6-Backup-and-Cross-Region-Replication/s3-replication-rule.png)
 
 ### 4.6.6. Kiểm tra dữ liệu được sao chép tại Sydney
 
@@ -93,7 +93,7 @@ Bucket đích cung cấp một bản sao thứ cấp của các đối tượng 
 
 Cần lưu ý rằng S3 Cross-Region Replication không tự động sao chép toàn bộ các đối tượng cũ đã được tải lên trước khi quy tắc sao chép được kích hoạt. Những đối tượng hiện có có thể cần sử dụng S3 Batch Replication. Việc sao chép Delete Marker và thao tác xóa vĩnh viễn phiên bản cũng phụ thuộc vào cấu hình replication.
 
-![S3 Replicated Objects in Sydney](/images/4-Workshop/4.6-Backup-and-Cross-Region-Replication/s3-sydney-replica.png)
+![S3 Replicated Objects in Sydney](/ProJect_FCAJ/images/4-Workshop/4.6-Backup-and-Cross-Region-Replication/s3-sydney-replica.png)
 
 ### 4.6.7. Tổng kết
 

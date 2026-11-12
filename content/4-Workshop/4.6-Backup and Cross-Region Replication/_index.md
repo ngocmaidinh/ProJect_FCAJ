@@ -21,7 +21,7 @@ A backup vault named `BackupDR-Vault` is used in the Singapore Region to store r
 
 The vault provides a centralized location for managing backup data and supports the restoration process when resources need to be recovered.
 
-![AWS Backup Vault](/images/4-Workshop/4.6-Backup-and-Cross-Region-Replication/backup-vault.png)
+![AWS Backup Vault](/ProJect_FCAJ/images/4-Workshop/4.6-Backup-and-Cross-Region-Replication/backup-vault.png)
 
 ### 4.6.2. Backing Up EC2 and RDS Resources
 
@@ -36,7 +36,7 @@ On-demand backup jobs are initiated to create recovery points for the selected r
 
 These recovery points provide backup data that can be used to restore the application server or database when necessary.
 
-![AWS Backup Recovery Points](/images/4-Workshop/4.6-Backup-and-Cross-Region-Replication/backup-recovery-points.png)
+![AWS Backup Recovery Points](/ProJect_FCAJ/images/4-Workshop/4.6-Backup-and-Cross-Region-Replication/backup-recovery-points.png)
 
 ### 4.6.3. Monitoring Backup Jobs
 
@@ -53,7 +53,7 @@ Important information includes:
 
 A completed backup job indicates that AWS Backup has successfully created the corresponding recovery point.
 
-![AWS Backup Job Status](/images/4-Workshop/4.6-Backup-and-Cross-Region-Replication/backup-job.png)
+![AWS Backup Job Status](/ProJect_FCAJ/images/4-Workshop/4.6-Backup-and-Cross-Region-Replication/backup-job.png)
 
 ### 4.6.4. Enabling Amazon S3 Versioning
 
@@ -63,7 +63,7 @@ Versioning maintains multiple versions of an object in the same bucket. When an 
 
 This feature helps protect product images from accidental overwrites or deletions and provides additional recovery options.
 
-![S3 Versioning Configuration](/images/4-Workshop/4.6-Backup-and-Cross-Region-Replication/s3-versioning.png)
+![S3 Versioning Configuration](/ProJect_FCAJ/images/4-Workshop/4.6-Backup-and-Cross-Region-Replication/s3-versioning.png)
 
 ### 4.6.5. Configuring S3 Cross-Region Replication
 
@@ -81,7 +81,7 @@ Both source and destination buckets must have S3 Versioning enabled.
 
 After the replication rule is enabled, eligible new objects uploaded to the source bucket are automatically replicated to the destination bucket. Replication is asynchronous, so the destination object may not appear immediately.
 
-![S3 Cross-Region Replication Rule](/images/4-Workshop/4.6-Backup-and-Cross-Region-Replication/s3-replication-rule.png)
+![S3 Cross-Region Replication Rule](/ProJect_FCAJ/images/4-Workshop/4.6-Backup-and-Cross-Region-Replication/s3-replication-rule.png)
 
 ### 4.6.6. Verifying Replicated Objects in Sydney
 
@@ -93,7 +93,7 @@ This helps improve data availability if the source Region or source bucket becom
 
 Note that S3 Cross-Region Replication does not automatically replicate every historical object uploaded before the replication rule was enabled. Existing objects may require S3 Batch Replication. Replication behavior for delete markers and permanent version deletions also depends on the replication configuration.
 
-![S3 Replicated Objects in Sydney](/images/4-Workshop/4.6-Backup-and-Cross-Region-Replication/s3-sydney-replica.png)
+![S3 Replicated Objects in Sydney](/ProJect_FCAJ/images/4-Workshop/4.6-Backup-and-Cross-Region-Replication/s3-sydney-replica.png)
 
 ### 4.6.7. Section Summary
 
@@ -106,16 +106,16 @@ sted zone](/images/5-Workshop/5.6-Cleanup/delete-zone.png)
 
 2. Disassociate the Route 53 Resolver Rule - myS3Rule from "VPC Onprem" and Delete it. 
 
-![hosted zone](/images/5-Workshop/5.6-Cleanup/vpc.png)
+![hosted zone](/ProJect_FCAJ/images/5-Workshop/5.6-Cleanup/vpc.png)
 
 4. Open the CloudFormation console  and delete the two CloudFormation Stacks that you created for this lab:
 + PLOnpremSetup
 + PLCloudSetup
 
-![delete stack](/images/5-Workshop/5.6-Cleanup/delete-stack.png)
+![delete stack](/ProJect_FCAJ/images/5-Workshop/5.6-Cleanup/delete-stack.png)
 
 5. Delete S3 buckets
 + Open S3 console
 + Choose the bucket we created for the lab, click and confirm empty. Click delete and confirm delete.
 
-![delete s3](/images/5-Workshop/5.6-Cleanup/delete-s3.png)
+![delete s3](/ProJect_FCAJ/images/5-Workshop/5.6-Cleanup/delete-s3.png)

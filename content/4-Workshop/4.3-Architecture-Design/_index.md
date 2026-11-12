@@ -58,7 +58,7 @@ The Sydney Region is used as a secondary storage location in this workshop. It i
 
 The following diagram illustrates the relationship between the primary application environment, backup services, and secondary storage environment.
 
-![AWS Backup and Disaster Recovery Architecture](/images/4-Workshop/4.3-Architecture-Design/aws-backup-dr-architecture.png)
+![AWS Backup and Disaster Recovery Architecture](/ProJect_FCAJ/images/4-Workshop/4.3-Architecture-Design/aws-backup-dr-architecture.png)
 
 The main data flows are:
 
