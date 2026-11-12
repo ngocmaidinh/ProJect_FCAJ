@@ -101,8 +101,6 @@ The cleanup process includes:
 
 Before deleting any resource, its role in the application and backup process must be checked to avoid accidental data loss or service interruption.
 
-![AWS Resource Cleanup](/ProJect_FCAJ/images/4-Workshop/4.8-Testing-Monitoring-and-Cleanup/aws-resource-cleanup.png)
-
 ### 4.8.7. Final Evaluation
 
 The final evaluation reviews the main results of the AWS Backup and Disaster Recovery implementation.

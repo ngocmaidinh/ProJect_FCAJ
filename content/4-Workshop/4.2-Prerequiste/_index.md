@@ -34,19 +34,19 @@ The Sydney Region (ap-southeast-2) is used as the destination for Amazon S3 Cros
 
 Image 4.2.1: Amazon VPC and application infrastructure in the Singapore Region.
 
-![AWS VPC Environment](/ProJect_FCAJ/images/5-Workshop/5.2-Prerequisite/aws-vpc-environment.png)
+![AWS VPC Environment](/ProJect_FCAJ/images/4-Workshop/4.2-Prerequisite/aws-vpc-environment.png)
 
 Image 4.2.2: Maiora Fashion Store website running on Amazon EC2.
 
-![Maiora Fashion Store Website](/ProJect_FCAJ/images/5-Workshop/5.2-Prerequisite/maiora-website.png)
+![Maiora Fashion Store Website](/ProJect_FCAJ/images/4-Workshop/4.2-Prerequisite/maiora-website.png)
 
 Image 4.2.3: Amazon S3 buckets configured for cross-region replication.
 
-![Amazon S3 Cross-Region Replication](/ProJect_FCAJ/images/5-Workshop/5.2-Prerequisite/s3-cross-region-replication.png)
+![Amazon S3 Cross-Region Replication](/ProJect_FCAJ/images/5-Workshop/4.2-Prerequisite/s3-cross-region-replication.png)
 
 Image 4.2.4: AWS Backup vault and recovery points.
 
-![AWS Backup Vault](/ProJect_FCAJ/images/5-Workshop/5.2-Prerequisite/aws-backup-vault.png)
+![AWS Backup Vault](/ProJect_FCAJ/images/4-Workshop/4.2-Prerequisite/aws-backup-vault.png)
 
 ### 3. Prerequisites Before Deployment
 

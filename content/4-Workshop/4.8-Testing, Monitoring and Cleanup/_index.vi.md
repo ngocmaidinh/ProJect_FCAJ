@@ -101,8 +101,6 @@ Quá trình dọn dẹp bao gồm:
 
 Trước khi xóa bất kỳ tài nguyên nào, cần kiểm tra vai trò của tài nguyên đó trong hệ thống ứng dụng và quy trình sao lưu để tránh mất dữ liệu hoặc làm gián đoạn dịch vụ ngoài ý muốn.
 
-![Dọn dẹp tài nguyên AWS](/ProJect_FCAJ/images/4-Workshop/4.8-Testing-Monitoring-and-Cleanup/aws-resource-cleanup.png)
-
 ### 4.8.7. Đánh giá kết quả triển khai
 
 Phần đánh giá cuối cùng tổng hợp những kết quả chính của quá trình triển khai giải pháp AWS Backup và Disaster Recovery.
