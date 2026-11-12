@@ -102,20 +102,4 @@ In this section, AWS Backup and Amazon S3 Cross-Region Replication are configure
 AWS Backup provides recovery points for the EC2 application server and RDS database, while S3 Cross-Region Replication provides a secondary copy of eligible product images in Sydney.
 
 Together, these mechanisms improve the protection and recoverability of application infrastructure and stored image data.
-sted zone](/images/5-Workshop/5.6-Cleanup/delete-zone.png)
-
-2. Disassociate the Route 53 Resolver Rule - myS3Rule from "VPC Onprem" and Delete it. 
-
-![hosted zone](/ProJect_FCAJ/images/5-Workshop/5.6-Cleanup/vpc.png)
-
-4. Open the CloudFormation console  and delete the two CloudFormation Stacks that you created for this lab:
-+ PLOnpremSetup
-+ PLCloudSetup
-
-![delete stack](/ProJect_FCAJ/images/5-Workshop/5.6-Cleanup/delete-stack.png)
-
-5. Delete S3 buckets
-+ Open S3 console
-+ Choose the bucket we created for the lab, click and confirm empty. Click delete and confirm delete.
-
-![delete s3](/ProJect_FCAJ/images/5-Workshop/5.6-Cleanup/delete-s3.png)
+sted zone(/images/5-Workshop/5.6-Cleanup/delete-zone.png)
