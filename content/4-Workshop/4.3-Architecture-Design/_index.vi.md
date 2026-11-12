@@ -4,7 +4,7 @@ title: "Thiết kế kiến trúc hệ thống AWS"
 date: 2026-10-30
 weight: 3
 chapter: false
-pre: " <b> 4.3. </b> "
+pre: " <b>4.3.</b> "
 ---
 
 ### 1. Tổng quan kiến trúc hệ thống

@@ -1,10 +1,10 @@
 
 ---
 title: "Testing, Monitoring and Cleanup"
-date: 2026-11-10
+date: 2026-11-1
 weight: 8
 chapter: false
-pre: "<b> 4.8. </b>"
+pre: "<b>4.8.</b>"
 ---
 
 ## 4.8. Testing, Monitoring and Cleanup

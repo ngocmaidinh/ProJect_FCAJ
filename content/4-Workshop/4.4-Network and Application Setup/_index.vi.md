@@ -1,10 +1,10 @@
 
 ---
 title: "Cấu hình mạng và triển khai ứng dụng"
-date: 2026-10-30
+date: 2026-10-31
 weight: 4
 chapter: false
-pre: " <b> 4.4. </b> "
+pre: " <b>4.4.</b> "
 ---
 
 ## 1. Tổng quan

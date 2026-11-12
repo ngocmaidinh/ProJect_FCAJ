@@ -1,10 +1,10 @@
 
 ---
 title: "Sao lưu và đồng bộ dữ liệu liên vùng"
-date: 2026-11-10
+date: 2026-10-31
 weight: 6
 chapter: false
-pre: "<b> 4.6. </b>"
+pre: "<b>4.6.</b>"
 ---
 
 ## 4.6. Sao lưu và đồng bộ dữ liệu liên vùng

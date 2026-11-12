@@ -1,9 +1,9 @@
 ---
 title: "Introduction"
-date: 2026-11-10
+date: 2026-10-29
 weight: 1
 chapter: false
-pre: " <b> 5.1. </b> "
+pre: " <b>4.1.</b> "
 ---
 
 ### 1. Introduction to the Backup and Disaster Recovery System

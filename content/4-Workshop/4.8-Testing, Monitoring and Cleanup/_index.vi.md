@@ -1,10 +1,10 @@
 
 ---
 title: "Kiểm thử, giám sát và dọn dẹp tài nguyên"
-date: 2026-11-10
+date: 2026-11-1
 weight: 8
 chapter: false
-pre: "<b> 4.8. </b>"
+pre: "<b>4.8.</b>"
 ---
 
 ## 4.8. Kiểm thử, giám sát và dọn dẹp tài nguyên

@@ -4,7 +4,7 @@ title: "Network and Application Setup"
 date: 2026-10-30
 weight: 4
 chapter: false
-pre: " <b> 4.4. </b> "
+pre: " <b>4.4.</b> "
 ---
 
 ## 1. Overview

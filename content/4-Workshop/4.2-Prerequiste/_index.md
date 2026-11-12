@@ -1,9 +1,9 @@
 ---
 title: "Prerequisites"
-date: 2026-11-10
+date: 2026-10-29
 weight: 2
 chapter: false
-pre: " <b> 5.2. </b> "
+pre: " <b>4.2.</b> "
 ---
 
 ### 1. Overview of the Deployment Environment

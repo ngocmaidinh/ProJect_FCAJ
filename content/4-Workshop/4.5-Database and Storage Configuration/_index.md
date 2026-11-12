@@ -1,10 +1,10 @@
 
 ---
 title: "Database and Storage Configuration"
-date: 2026-11-10
+date: 2026-10-31
 weight: 5
 chapter: false
-pre: "<b> 4.5. </b>"
+pre: "<b>4.5.</b>"
 ---
 
 ## 4.5. Database and Storage Configuration

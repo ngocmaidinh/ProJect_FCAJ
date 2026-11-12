@@ -1,10 +1,10 @@
 
 ---
 title: "Khôi phục sau thảm họa và phục hồi hệ thống"
-date: 2026-11-10
+date: 2026-11-1
 weight: 7
 chapter: false
-pre: "<b> 4.7. </b>"
+pre: "<b>4.7.</b>"
 ---
 
 ## 4.7. Khôi phục sau thảm họa và phục hồi hệ thống

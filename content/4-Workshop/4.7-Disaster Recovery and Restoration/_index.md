@@ -1,10 +1,10 @@
 
 ---
 title: "Disaster Recovery and Restoration"
-date: 2026-11-10
+date: 2026-11-1
 weight: 7
 chapter: false
-pre: "<b> 4.7. </b>"
+pre: "<b>4.7.</b>"
 ---
 
 ## 4.7. Disaster Recovery and Restoration
