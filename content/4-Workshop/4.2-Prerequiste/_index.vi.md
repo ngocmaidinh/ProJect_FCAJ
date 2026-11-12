@@ -32,19 +32,19 @@ Region Sydney (ap-southeast-2) được sử dụng làm nơi nhận dữ liệu
 
 #### Hình ảnh môi trường triển khai
 
-Hình 5.2.1: Môi trường Amazon VPC và hạ tầng ứng dụng tại Region Singapore.
+Hình 4.2.1: Môi trường Amazon VPC và hạ tầng ứng dụng tại Region Singapore.
 
 ![AWS VPC Environment](/ProJect_FCAJ/images/5-Workshop/5.2-Prerequisite/aws-vpc-environment.png)
 
-Hình 5.2.2: Website Maiora Fashion Store được vận hành trên Amazon EC2.
+Hình 4.2.2: Website Maiora Fashion Store được vận hành trên Amazon EC2.
 
 ![Maiora Fashion Store Website](/ProJect_FCAJ/images/5-Workshop/5.2-Prerequisite/maiora-website.png)
 
-Hình 5.2.3: Các bucket Amazon S3 được cấu hình sao chép dữ liệu giữa hai Region.
+Hình 4.2.3: Các bucket Amazon S3 được cấu hình sao chép dữ liệu giữa hai Region.
 
 ![Amazon S3 Cross-Region Replication](/ProJect_FCAJ/images/5-Workshop/5.2-Prerequisite/s3-cross-region-replication.png)
 
-Hình 5.2.4: AWS Backup Vault và các Recovery Point.
+Hình 4.2.4: AWS Backup Vault và các Recovery Point.
 
 ![AWS Backup Vault](/ProJect_FCAJ/images/5-Workshop/5.2-Prerequisite/aws-backup-vault.png)
 
