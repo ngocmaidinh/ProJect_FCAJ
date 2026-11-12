@@ -1,7 +1,7 @@
 
 ---
 title: "Testing, Monitoring and Cleanup"
-date: 2026-11-1
+date: 2026-10-30
 weight: 8
 chapter: false
 pre: "<b>4.8.</b>"

@@ -1,19 +1,4 @@
----
-title : "Clean up"
-date : 2024-10-31
-weight : 6
-chapter : false
-pre : " <b>4.6.</b> "
----
-Congratulations on completing this workshop! 
-In this workshop, you learned architecture patterns for accessing Amazon S3 without using the Public Internet. 
-+ By creating a gateway endpoint, you enabled direct communication between EC2 resources and Amazon S3, without traversing an Internet Gateway. 
-+ By creating an interface endpoint you extended S3 connectivity to resources running in your on-premises data center via AWS Site-to-Site VPN or Direct Connect. 
 
-#### clean up
-1. Navigate to Hosted Zones on the left side of Route 53 console. Click the name of *s3.us-east-1.amazonaws.com* zone. Click Delete and confirm deletion by typing delete. 
-
-![ho
 ---
 title: "Backup and Cross-Region Replication"
 date: 2026-11-10

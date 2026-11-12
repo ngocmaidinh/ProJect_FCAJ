@@ -1,7 +1,7 @@
 
 ---
 title: "Khôi phục sau thảm họa và phục hồi hệ thống"
-date: 2026-11-1
+date: 2026-10-30
 weight: 7
 chapter: false
 pre: "<b>4.7.</b>"
