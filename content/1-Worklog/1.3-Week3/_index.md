@@ -1,3 +1,4 @@
+
 ---
 title: "Week 3 Worklog"
 date: 2026-08-24
@@ -8,45 +9,62 @@ pre: "<b>1.3.</b>"
 
 ### Week 3 Objectives:
 
-* Install and configure the web environment on Amazon Linux.
-* Learn about Apache, PHP, and the application deployment process.
-* Build the initial version of an online shopping website.
+- Learn the Linux environment and basic EC2 server administration operations.
+- Install and configure the web server environment on Amazon Linux.
+- Understand Apache HTTP Server, PHP, and PHP-FPM.
+- Develop and deploy the Maiora Fashion Store e-commerce website.
+- Test website accessibility and troubleshoot basic deployment issues.
 
 ### Tasks to Be Completed This Week:
 
-| Day | Task | Start Date | Completion Date | Reference Materials |
+| Day | Tasks | Start Date | Completion Date | Reference Materials |
 |---|---|---|---|---|
-| 2 | Learn about Linux, file management, access permissions, and basic commands. | 24/08/2026 | 24/08/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
-| 3 | Install and configure Apache on EC2. | 25/08/2026 | 25/08/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
-| 4 | Install PHP and verify the application runtime environment. | 26/08/2026 | 27/08/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
-| 5 | Deploy the shopping website interface and product pages. | 28/08/2026 | 28/08/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
-| 6 | Test website access through a web browser and troubleshoot basic errors. | 29/08/2026 | 29/08/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
+| Monday | Study Amazon Linux, file systems, access permissions, and basic Linux administration commands. | 24/08/2026 | 24/08/2026 | [Amazon Linux Documentation](https://docs.aws.amazon.com/linux/) |
+| Tuesday | Install and configure Apache HTTP Server on EC2; learn how to manage services using systemctl. | 25/08/2026 | 25/08/2026 | [Apache HTTP Server Documentation](https://httpd.apache.org/docs/) |
+| Wednesday - Thursday | Install PHP, PHP-FPM, and the required components to run PHP applications. | 26/08/2026 | 27/08/2026 | [PHP Documentation](https://www.php.net/docs.php) |
+| Friday | Develop and deploy the Maiora Fashion Store interface using PHP; create product pages and basic website functions. | 28/08/2026 | 28/08/2026 | [PHP Documentation](https://www.php.net/docs.php) |
+| Saturday | Test the website through a web browser, check Apache services, and troubleshoot issues during deployment. | 29/08/2026 | 29/08/2026 | [Amazon EC2 Documentation](https://docs.aws.amazon.com/ec2/) |
 
 ### Week 3 Achievements:
 
-* Understand how to deploy a web application on Amazon EC2 using Amazon Linux.
+- Understood how to deploy a web application on Amazon EC2 using the Amazon Linux operating system.
 
-* Install and configure the web server environment:
-  * Linux
-  * Apache HTTP Server
-  * PHP
+- Became familiar with Linux server administration:
+  - Managing files and directories.
+  - Checking and modifying access permissions.
+  - Using basic administration commands.
+  - Checking service status with systemctl.
+  - Reviewing system logs and troubleshooting basic errors.
 
-* Learn basic Linux administration tasks:
-  * Manage files and directories.
-  * Configure access permissions.
-  * Check service status.
-  * Read logs and troubleshoot basic errors.
+- Installed and configured the web server environment:
+  - Amazon Linux.
+  - Apache HTTP Server.
+  - PHP.
+  - PHP-FPM.
 
-* Develop and deploy a PHP-based shopping website:
-  * Create the website interface.
-  * Display a list of products.
-  * Build basic functional pages.
+- Developed and deployed the Maiora Fashion Store e-commerce website:
+  - Created the homepage interface.
+  - Developed the product listing page.
+  - Created user registration and login pages.
+  - Implemented shopping cart functionality.
+  - Implemented order placement and order viewing functions.
+  - Organized the PHP application source code and components.
 
-* Configure Security Groups to allow the required connections:
-  * SSH for server administration.
-  * HTTP for website access.
-  * HTTPS when deploying an SSL/TLS certificate.
+- Configured Security Groups to allow the required network connections:
+  - SSH (TCP 22) for server administration.
+  - HTTP (TCP 80) for website access.
+  - HTTPS (TCP 443) when an SSL/TLS certificate is deployed.
 
-* Verify website accessibility through a web browser.
+- Verified web server operations:
+  - Checked the Apache service status.
+  - Verified PHP and PHP-FPM.
+  - Accessed the website through the EC2 public IPv4 address.
+  - Tested the website interface and basic functions.
 
-* Understand the roles of EC2, Apache, and PHP in a web application architecture.
+- Understood the roles of the main components in the web application architecture:
+  - Amazon EC2: Provides the environment for running the application.
+  - Apache: Receives and processes HTTP requests.
+  - PHP: Handles the website's business logic.
+  - PHP-FPM: Manages PHP execution processes.
+
+- Completed the initial deployment of Maiora Fashion Store on EC2, establishing the foundation for integrating Amazon RDS as the database and Amazon S3 for product image storage in the following week.

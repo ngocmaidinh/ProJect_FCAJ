@@ -1,3 +1,4 @@
+
 ---
 title: "Week 1 Worklog"
 date: 2026-08-10
@@ -8,47 +9,56 @@ pre: "<b>1.1.</b>"
 
 ### Week 1 Objectives:
 
-* Get acquainted with the members of the First Cloud AI Journey (FCAJ).
-* Learn about the internship environment, internal regulations, and working procedures.
-* Gain basic knowledge of AWS, AWS Management Console, and AWS CLI.
+- Get acquainted with members of the First Cloud AI Journey (FCAJ) program.
+- Learn about the internship environment, regulations, and working procedures.
+- Understand the fundamentals of Amazon Web Services (AWS) and its main cloud service categories.
+- Become familiar with AWS Management Console and AWS Command Line Interface (AWS CLI).
+- Explore AWS services related to the Backup and Disaster Recovery project.
+- Identify the scope and main components of the proposed Maiora Fashion Store system.
 
 ### Tasks to Be Completed This Week:
 
-| Day | Task | Start Date | Completion Date | Reference Materials |
+| Day | Tasks | Start Date | Completion Date | Reference Materials |
 |---|---|---|---|---|
-| 2 | Get acquainted with FCAJ members; learn about internal regulations and working procedures. | 10/08/2026 | 10/08/2026 | Internship guidelines |
-| 3 | Learn about AWS and its main service categories: Compute, Storage, Networking, and Database. | 11/08/2026 | 11/08/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
-| 4 | Learn about AWS Free Tier, IAM, AWS Management Console, and AWS CLI. | 12/08/2026 | 12/08/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
-| 5 | Learn about EC2, AMI, EBS, instance types, and SSH connectivity. | 13/08/2026 | 14/08/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
-| 6 | Practice checking AWS resources and learn about Key Pairs and Elastic IPs. | 15/08/2026 | 15/08/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
+| Monday | Get acquainted with FCAJ members; learn about internship regulations, the working environment, and working procedures. | 10/08/2026 | 10/08/2026 | Internship Guidelines |
+| Tuesday | Study AWS fundamentals and its main service categories: Compute, Storage, Networking, Database, and Security. | 11/08/2026 | 11/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Wednesday | Become familiar with AWS Management Console, AWS CLI, AWS Regions, and Availability Zones. | 12/08/2026 | 12/08/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Thursday | Learn about Amazon EC2, Amazon EBS, AMI, Instance Types, Key Pairs, and Elastic IP addresses. | 13/08/2026 | 14/08/2026 | [Amazon EC2 Documentation](https://docs.aws.amazon.com/ec2/) |
+| Saturday | Study IAM, Amazon S3, Amazon RDS, AWS Backup, and the fundamental concepts of Backup and Disaster Recovery. | 15/08/2026 | 15/08/2026 | [AWS Documentation](https://docs.aws.amazon.com/) |
 
 ### Week 1 Achievements:
 
-* Understand what AWS is and become familiar with its main service categories:
-  * Compute
-  * Storage
-  * Networking
-  * Database
-  * Security
+- Became familiar with FCAJ members and understood the program's regulations and working procedures.
 
-* Become familiar with AWS Management Console and AWS CLI.
+- Gained an overview of Amazon Web Services (AWS) and its main service categories:
+  - Compute.
+  - Storage.
+  - Networking.
+  - Database.
+  - Security.
 
-* Learn about IAM and its access management components:
-  * IAM User
-  * IAM Role
-  * IAM Policy
+- Became familiar with AWS management tools and concepts:
+  - AWS Management Console.
+  - AWS Command Line Interface (AWS CLI).
+  - AWS Region.
+  - Availability Zone.
 
-* Learn about basic AWS services and components:
-  * Amazon EC2
-  * Amazon EBS
-  * Amazon Machine Image (AMI)
-  * Key Pair
-  * Elastic IP
+- Studied AWS services related to the project:
+  - Amazon EC2: Provides virtual servers for hosting the website.
+  - Amazon EBS: Provides block storage for EC2 instances.
+  - Amazon RDS: Provides a managed relational database service.
+  - Amazon S3: Stores product images and object data.
+  - AWS Backup: Manages and performs backups of AWS resources.
+  - IAM: Manages identities, roles, and access permissions for AWS services.
 
-* Learn how to use AWS CLI to:
-  * Check configuration information.
-  * List available AWS Regions.
-  * Check EC2 instance information.
-  * Manage Key Pairs and AWS resources.
+- Understood the fundamental concepts:
+  - Backup: Creating copies of data and system resources.
+  - Recovery Point: A point in time to which a resource can be restored from a backup.
+  - Restore: Recovering resources from backups.
+  - Disaster Recovery: Restoring systems after an unexpected incident.
+  - RPO (Recovery Point Objective): The target point in time to which data must be recovered.
+  - RTO (Recovery Time Objective): The target duration required to restore a system after an incident.
 
-* Identify the AWS services required to build a Backup and Disaster Recovery system.
+- Identified the proposed application model as the Maiora Fashion Store e-commerce website, using EC2 as the application server, RDS for MySQL as the database, and S3 for product image storage.
+
+- Initially identified the system architecture with Singapore (`ap-southeast-1`) as the primary Region and Sydney (`ap-southeast-2`) as the secondary Region, providing the foundation for implementing backup and data protection mechanisms in subsequent weeks.

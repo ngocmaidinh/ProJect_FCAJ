@@ -1,3 +1,4 @@
+
 ---
 title: "Week 7 Worklog"
 date: 2026-09-21
@@ -8,47 +9,63 @@ pre: "<b>1.7.</b>"
 
 ### Week 7 Objectives:
 
-* Learn about multi-Region Backup and Disaster Recovery architectures.
-* Develop a disaster recovery strategy between Singapore and Sydney.
-* Study resource replication and recovery in the standby Region.
+- Study Backup and Disaster Recovery architectures across multiple AWS Regions.
+- Analyze the disaster recovery approach between Singapore and Sydney.
+- Explore data replication mechanisms and resource restoration across Regions.
+- Determine a suitable disaster recovery scope for the Maiora Fashion Store system.
+- Design the Backup and Disaster Recovery architecture for the system.
 
 ### Tasks to Be Completed This Week:
 
-| Day | Task | Start Date | Completion Date | Reference Materials |
+| Day | Tasks | Start Date | Completion Date | Reference Materials |
 |---|---|---|---|---|
-| 2 | Learn about RTO, RPO, and Disaster Recovery models. | 21/09/2026 | 21/09/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
-| 3 | Analyze the architecture using Singapore as the primary Region and Sydney as the standby Region. | 22/09/2026 | 22/09/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
-| 4 | Learn about copying Recovery Points to another Region and the required conditions. | 23/09/2026 | 24/09/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
-| 5 | Study recovery strategies for EC2, RDS, and S3 data in the standby Region. | 25/09/2026 | 25/09/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
-| 6 | Develop a Backup and DR architecture diagram and identify the recovery steps. | 26/09/2026 | 26/09/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
+| Monday | Study Recovery Time Objective (RTO), Recovery Point Objective (RPO), and Disaster Recovery models. | 21/09/2026 | 21/09/2026 | [AWS Disaster Recovery](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/) |
+| Tuesday | Analyze the system architecture with Singapore as the primary Region and Sydney as the secondary Region. | 22/09/2026 | 22/09/2026 | [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/) |
+| Wednesday | Study AWS Backup Cross-Region Copy and Amazon S3 Cross-Region Replication. | 23/09/2026 | 24/09/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/); [Amazon S3 Replication](https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html) |
+| Friday | Research recovery approaches for EC2, RDS, and S3 data when the primary Region experiences an outage. | 25/09/2026 | 25/09/2026 | [AWS Disaster Recovery](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/) |
+| Saturday | Design the Backup and DR architecture diagram and define the system recovery procedure. | 26/09/2026 | 26/09/2026 | [AWS Architecture Center](https://aws.amazon.com/architecture/) |
 
 ### Week 7 Achievements:
 
-* Understand Backup and Disaster Recovery architectures deployed across multiple AWS Regions.
+- Understood Backup and Disaster Recovery architectures deployed across multiple AWS Regions to improve data protection when the primary Region experiences an outage.
 
-* Learn about the roles of the two Regions:
-  * Singapore as the primary Region.
-  * Sydney as the standby Region.
+- Studied and defined the roles of the two Regions in the architecture:
+  - Singapore (`ap-southeast-1`): The primary Region hosting the Maiora Fashion Store website, Amazon EC2 application server, and Amazon RDS for MySQL database.
+  - Sydney (`ap-southeast-2`): The secondary Region receiving product image data replicated from the primary S3 bucket through Cross-Region Replication.
 
-* Study data replication mechanisms:
-  * AWS Backup Cross-Region Copy.
-  * Amazon S3 Cross-Region Replication.
-  * Copying Recovery Points to another Region.
+- Studied cross-Region data replication and protection mechanisms:
+  - AWS Backup Cross-Region Copy: Copies Recovery Points to a Backup Vault in another Region when configured.
+  - Amazon S3 Cross-Region Replication (CRR): Automatically replicates eligible S3 objects to a destination bucket in another Region according to replication rules.
+  - Recovery Point: Preserves resource data at a specific point in time and serves as a basis for resource restoration.
 
-* Understand the requirements for implementing cross-Region backups:
-  * A Backup Vault in the destination Region.
-  * IAM Roles and access permissions.
-  * Backup retention policies.
-  * The ability to restore resources in the destination Region.
+- Learned the requirements for implementing cross-Region backups:
+  - Create a Backup Vault in the destination Region when using AWS Backup Cross-Region Copy.
+  - Configure appropriate IAM Roles and access permissions.
+  - Define Recovery Point retention policies.
+  - Ensure that services and resources in the destination Region meet restoration requirements.
+  - Verify replication status and data accessibility in the destination Region.
 
-* Learn about services that support availability and monitoring:
-  * Amazon Route 53 for DNS management and traffic routing.
-  * Amazon CloudWatch for resource monitoring.
-  * Amazon SNS for sending alert notifications.
-  * AWS Elastic Disaster Recovery for server recovery.
+- Studied services that support system availability and monitoring:
+  - Amazon Route 53: Manages DNS and supports traffic routing between endpoints.
+  - Amazon CloudWatch: Collects and monitors operational metrics from AWS resources.
+  - Amazon SNS: Supports notifications for events and alarms.
+  - AWS Elastic Disaster Recovery: Supports server recovery on AWS when failures occur.
 
-* Develop a Backup and DR architecture diagram for the online shopping website.
+- Analyzed recovery approaches for the Maiora Fashion Store components:
+  - EC2: Use AWS Backup Recovery Points to restore the application server in an appropriate Region.
+  - RDS: Use suitable backups or snapshots to restore the database.
+  - S3: Use replicated data in the Sydney destination bucket to support product image access and recovery.
 
-* Identify the steps required to restore the application server, database, and product images.
+- Defined a general recovery procedure for primary Region failures:
+  - Identify the scope and impact of the incident.
+  - Select an appropriate Recovery Point.
+  - Restore the application server and database.
+  - Verify product image data in the secondary Region.
+  - Update connection settings and access addresses when necessary.
+  - Test website functionality after restoration.
 
-* Understand the relationship between implementation costs, Recovery Time Objective (RTO), and Recovery Point Objective (RPO).
+- Designed the Backup and Disaster Recovery architecture for Maiora Fashion Store, illustrating data flows between EC2, RDS, S3, and AWS Backup in the primary Region, together with the replication of product image data to the secondary Region.
+
+- Understood the relationship between implementation costs, Recovery Time Objective (RTO), and Recovery Point Objective (RPO). Recognized that continuously running standby resources can increase costs, while on-demand recovery can reduce costs but requires additional recovery time.
+
+- Defined the actual implementation scope of the project: AWS Backup protects EC2 and RDS resources in Singapore, while S3 Cross-Region Replication copies product image data to Sydney. Restoring EC2 and RDS in another Region is treated as a Disaster Recovery procedure that requires manual recovery steps rather than automatic failover.

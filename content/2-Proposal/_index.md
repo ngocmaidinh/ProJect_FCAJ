@@ -1,266 +1,180 @@
+
 ---
 title: "Proposal"
-date: 2026-10-17
+date: 2026-11-12
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# AWS MULTI-REGION BACKUP & DISASTER RECOVERY SYSTEM
+# DESIGN AND IMPLEMENTATION OF A BACKUP AND DISASTER RECOVERY SYSTEM ON AMAZON WEB SERVICES (AWS)
 
-## A Solution for Data Backup, Cross-Region Recovery, and Incident Monitoring
+## 1. Project Overview
 
-## 1. Executive Summary
+This project focuses on designing and implementing a Backup and Disaster Recovery (DR) system on the Amazon Web Services (AWS) platform for the Maiora Fashion Store e-commerce website.
 
-This project focuses on researching and developing a Multi-Region Backup and Disaster Recovery (BDR) system on Amazon Web Services (AWS) to improve data protection and support application recovery when failures occur in the primary deployment environment.
+The system uses AWS services such as Amazon EC2, Amazon RDS, Amazon S3, and AWS Backup to protect application servers, databases, and product image data. In addition, Amazon S3 Cross-Region Replication is used to replicate product image data from the Singapore Region to the Sydney Region, enhancing data protection in the event of an incident affecting the primary Region.
 
-The system is developed based on Maiora, a fashion e-commerce website built using PHP. Amazon EC2 is used to host the web application, Amazon RDS manages the MySQL database, and Amazon S3 stores product images.
-
-The proposed architecture uses two AWS Regions: Singapore (ap-southeast-1) as the primary region and Sydney (ap-southeast-2) as the disaster recovery region.
-
-The solution integrates several AWS services to achieve three main objectives: protecting resources through AWS Backup and Amazon S3 Versioning; replicating data across regions using S3 Cross-Region Replication; and monitoring application availability through Amazon Route 53, Amazon CloudWatch, and Amazon SNS.
-
-Instead of focusing on Recovery Time Objective (RTO) and Recovery Point Objective (RPO), this project evaluates backup capabilities, resource restoration, data integrity, cross-region replication, website availability in the recovery environment, and incident monitoring and notification effectiveness.
-
-The expected outcome is a practical Multi-Region BDR model that can be deployed and tested, together with a technical workshop document that can serve as a reference for small and medium-sized businesses.
+Through system deployment and recovery testing, the project evaluates the system's recovery capabilities and proposes improvements to enhance availability, data security, and website continuity.
 
 ## 2. Problem Statement
 
-### 2.1. Current Problems
+In an e-commerce environment, product information, customer details, order records, and product images play an important role in business operations. Data loss or server interruptions can prevent a website from operating normally, affecting user experience and order management activities.
 
-Web applications deployed in a single AWS Region may face significant risks when the primary region experiences service disruptions or infrastructure failures. Such incidents can affect application servers, databases, and stored data, resulting in website downtime and interruptions to business operations.
+Potential incidents include:
 
-Furthermore, relying only on isolated backup mechanisms without a recovery environment in another region can make system restoration difficult. Data may become unavailable, incomplete, or inconsistent if backup and recovery procedures have not been properly tested.
+- Amazon EC2 instance failures or accidental deletion.
+- Amazon RDS database data loss or connectivity failures.
+- Product images being deleted or overwritten in Amazon S3.
+- Incidents in the primary Region that interrupt access to resources.
+- Incorrect changes to application or database configurations.
 
-For e-commerce websites, protecting customer information, product details, order records, and product images is essential for maintaining business continuity.
+Without an appropriate backup and recovery mechanism, system restoration may take a significant amount of time, and important data may be lost.
 
-### 2.2. Proposed Solution
+Therefore, implementing a Backup and Disaster Recovery system on AWS is necessary to protect data, support resource restoration, and minimize the impact of unexpected incidents.
 
-This project proposes a Multi-Region BDR system on AWS to address these challenges through the following approaches:
+## 3. Proposed Solution Architecture
 
-- Use AWS Backup to manage and create backups of critical AWS resources, including EC2 instances and RDS databases.
-- Enable Amazon S3 Versioning to preserve multiple versions of objects and support recovery from accidental deletion or overwriting.
-- Implement S3 Cross-Region Replication (CRR) to replicate product images from Singapore to Sydney.
-- Prepare a disaster recovery environment in Sydney to support application server and database restoration from backups.
-- Use Amazon Route 53 Health Check to monitor website availability.
-- Integrate Amazon CloudWatch and Amazon SNS to monitor service status and send email notifications when incidents are detected.
+### 3.1. Architecture Model
 
-### 2.3. Benefits
+The system is deployed across two AWS Regions:
 
-- Reduce the risk of data loss when failures occur in the primary region.
-- Support the recovery of application servers, databases, and product images from backups.
-- Improve data protection through versioning and cross-region replication.
-- Provide a recovery environment for testing website availability.
-- Detect and report incidents through monitoring and notification services.
-- Establish reusable procedures for deployment, backup, restoration, and testing.
+- Primary Region: Asia Pacific (Singapore) - `ap-southeast-1`.
+- Secondary Region: Asia Pacific (Sydney) - `ap-southeast-2`.
 
-## 3. Proposed Architecture
+In the Singapore Region, the Maiora Fashion Store website is deployed on Amazon EC2, Amazon RDS for MySQL is used to store application data, and Amazon S3 is used to store product images.
 
-The proposed architecture follows a two-region deployment model. Singapore serves as the primary region, where the Maiora website operates and connects to its database. Sydney serves as the disaster recovery region, maintaining replicated data and supporting system restoration when required.
+AWS Backup is used to create and manage recovery points for EC2 and RDS resources. For product image data, Amazon S3 Versioning combined with Cross-Region Replication helps retain different object versions and replicate data to the Sydney Region.
 
-The system does not implement automatic failover for all services between the two regions. Recovery in Sydney is performed through a controlled process using available backups and replicated data.
+### 3.2. Main Components
 
-![Multi-Region BDR Architecture]( /images/2-Proposal/bdr_architecture.png )
+- Amazon VPC: Provides an isolated network environment for the system, including Public Subnets and Private Subnets.
+- Amazon EC2: Hosts the application server running Amazon Linux, Apache, and PHP.
+- Amazon RDS for MySQL: Stores the `shop` database, including user, product, shopping cart, and order information.
+- Amazon S3: Stores product images used by the website.
+- Amazon S3 Versioning: Retains multiple versions of objects to support recovery when data is overwritten or deleted.
+- Amazon S3 Cross-Region Replication: Replicates eligible product image objects from the Singapore bucket to the Sydney bucket according to the configured replication rules.
+- AWS Backup: Manages backup plans, Backup Vaults, and Recovery Points for supported resources.
+- Amazon CloudWatch: Supports resource monitoring and activity tracking when configured.
 
-### 3.1. AWS Services Used
+### 3.3. Operating Principles
 
-- **Amazon VPC:** Provides the `backup-dr-vpc` network infrastructure, including public and private subnets for application and database resources.
-- **Amazon EC2:** Hosts the `app-server` instance running the Maiora website using PHP and Apache. An Elastic IP is used to maintain the primary server's public IPv4 address.
-- **Amazon RDS:** Hosts the `backup-dr-db` MySQL database, which stores user accounts, product information, shopping cart data, and orders. Public access is disabled.
-- **Amazon S3:** Stores website product images. Versioning is enabled to maintain object versions, while Cross-Region Replication copies data to a bucket in Sydney.
-- **AWS Backup:** Centralizes backup management through Backup Vaults and Backup Plans, supporting backup and restoration of configured resources.
-- **Amazon Route 53:** Uses Health Check to monitor the availability of the primary website.
-- **Amazon CloudWatch:** Monitors Health Check status and resource metrics, and generates alarms when abnormal conditions are detected.
-- **Amazon SNS:** Sends email notifications to administrators when CloudWatch Alarms enter the ALARM state.
-- **AWS IAM:** Manages access permissions through users, groups, and service roles to ensure that backup and recovery operations are properly authorized.
+Users access the website through the Amazon EC2 application server. The EC2 instance connects to Amazon RDS for MySQL to retrieve and update application data. Product images are stored in Amazon S3 and accessed by the website through object URLs.
 
-### 3.2. Component Design
+AWS Backup protects selected resources and creates Recovery Points for restoration purposes. When an incident occurs, administrators can select an appropriate Recovery Point to restore EC2 or RDS resources.
 
-- **Web Application:** The Maiora website is deployed on an EC2 instance in Singapore. Users access the website through its public IP address or configured domain name.
-- **Database:** The EC2 instance connects to the RDS MySQL database through the internal network, with Security Groups restricting access.
-- **Data Protection:** AWS Backup creates backups of selected resources. Amazon S3 Versioning supports the restoration of previous object versions when necessary.
-- **Cross-Region Replication:** S3 CRR replicates objects from the Singapore bucket to the Sydney bucket.
-- **System Recovery:** When an incident occurs, administrators use AWS Backup Recovery Points to restore resources in the recovery environment.
-- **Monitoring:** Route 53 Health Check monitors website availability, while CloudWatch receives and evaluates monitoring metrics.
-- **Notifications:** SNS sends email notifications to administrators when CloudWatch detects an incident.
+For product image data, S3 Versioning allows previous object versions to be retrieved. Cross-Region Replication supports the replication of eligible objects to the Sydney bucket.
 
-## 4. Technical Implementation
+Resource restoration and service switching are performed manually by administrators within the scope of this implementation.
 
-### 4.1. Implementation Phases
+### 3.4. Architecture Diagram
 
-The project is divided into several implementation phases. Each phase produces verifiable results through the AWS Management Console, website interface, or relevant command-line checks.
+![AWS Backup and Disaster Recovery Architecture](/images/2-Proposal/bdr_architecture.png)
 
-**Phase 1: Infrastructure and Access Management**
+## 4. Technical Implementation Scope
 
-- Explore the AWS environment and required services.
-- Create and configure IAM users, groups, and access permissions.
-- Configure service roles for AWS Backup.
-- Build the VPC, subnets, Internet Gateway, Route Tables, and Security Groups.
+The project focuses on the following implementation activities:
 
-**Phase 2: Application and Database Deployment in Singapore**
+### 4.1. Network Infrastructure Design and Configuration
 
-- Create an EC2 instance for the application server.
-- Install Apache, PHP, and required software components.
-- Deploy the Maiora e-commerce website.
-- Create a MySQL database using Amazon RDS.
-- Configure private connectivity between EC2 and RDS.
-- Test registration, login, product management, shopping cart, and checkout functions.
+- Create an Amazon VPC with the CIDR block `10.0.0.0/16`.
+- Divide the network into Public Subnets and Private Subnets.
+- Configure the Internet Gateway and Route Tables.
+- Configure Security Groups to control network traffic.
+- Deploy EC2 in a Public Subnet and configure connectivity to RDS in a Private Subnet.
 
-**Phase 3: S3 Storage and Data Protection**
+### 4.2. Application Server Deployment
 
-- Create an S3 bucket for product images.
-- Enable Versioning and data encryption.
-- Configure Cross-Region Replication between Singapore and Sydney.
-- Verify object replication between the two buckets.
-- Test object version recovery after accidental deletion or overwriting.
+- Launch an EC2 instance running Amazon Linux.
+- Install and configure Apache and PHP.
+- Deploy the Maiora Fashion Store e-commerce website.
+- Verify website accessibility and the operation of its main functions.
 
-**Phase 4: Disaster Recovery Environment in Sydney**
+### 4.3. Database and Storage Configuration
 
-- Prepare the AWS environment in Sydney.
-- Deploy or restore the application server from an existing backup.
-- Restore the database from an appropriate backup.
+- Create an Amazon RDS for MySQL instance.
+- Initialize the `shop` database.
+- Configure connectivity from EC2 to RDS through Security Groups.
+- Create an Amazon S3 bucket to store product images.
+- Enable S3 Versioning to protect different versions of stored objects.
+- Configure Cross-Region Replication from Singapore to Sydney.
+
+### 4.4. Backup System Implementation
+
+- Create an AWS Backup Vault.
+- Configure a Backup Plan and Backup Rules.
+- Select EC2 and RDS resources for backup.
+- Execute Backup Jobs.
+- Verify backup job statuses and generated Recovery Points.
+
+### 4.5. Disaster Recovery and Restoration Testing
+
+- Restore the EC2 instance from a Recovery Point.
+- Restore the RDS database from a backup.
 - Verify application-to-database connectivity after restoration.
-- Test access to product images from the recovery bucket.
-- Compare data between the primary and recovery environments.
+- Test website accessibility.
+- Test product image recovery using S3 Versioning.
+- Verify replicated data in the Sydney Region.
 
-**Phase 5: Backup Implementation Using AWS Backup**
+### 4.6. System Testing and Evaluation
 
-- Create the `BackupDR-Vault` Backup Vault.
-- Configure a Backup Plan for selected resources.
-- Assign EC2 and RDS resources to the backup policy.
-- Execute and monitor Backup Jobs.
-- Verify Recovery Points after successful backups.
-- Perform restoration tests to validate backup usability.
+- Verify website functionality after deployment.
+- Simulate application server failure scenarios.
+- Simulate accidental data deletion or modification.
+- Perform resource restoration using Recovery Points.
+- Evaluate restoration results and identify limitations of the implemented model.
 
-**Phase 6: Monitoring and Notification Implementation**
+## 5. Implementation Roadmap and Milestones
 
-- Create a Route 53 Health Check to monitor website availability.
-- Configure a CloudWatch Alarm to monitor Health Check status.
-- Set up appropriate monitoring alarms for EC2 and RDS.
-- Create the `BackupDR-Alerts-Route53` SNS Topic.
-- Subscribe an email address to receive notifications.
-- Verify email alerts when incidents occur.
+| Phase | Activities | Expected Results |
+|---|---|---|
+| Phase 1 | Study AWS and Backup and Disaster Recovery services | Identify the technologies to be used |
+| Phase 2 | Design the architecture and configure VPC | Complete the network infrastructure |
+| Phase 3 | Deploy EC2 and the website | Website becomes operational |
+| Phase 4 | Configure RDS and S3 | Complete the data storage environment |
+| Phase 5 | Configure AWS Backup and S3 Replication | Establish data protection mechanisms |
+| Phase 6 | Perform restoration and testing | Evaluate recovery capabilities |
+| Phase 7 | Consolidate results and complete the report | Complete the project |
 
-**Phase 7: System Testing and Evaluation**
+## 6. Estimated Budget
 
-- Test EC2 and RDS backup capabilities using AWS Backup.
-- Restore the application server from a Recovery Point.
-- Restore the database and compare data after recovery.
-- Test the restoration of previous S3 object versions.
-- Verify replicated data in Sydney.
-- Simulate an application server failure.
-- Verify website availability in the recovery environment.
-- Test incident detection and email notifications.
-- Document test results, screenshots, and identified issues.
+The AWS services used in this project may incur costs depending on resource runtime, storage capacity, the number of backups, and data transfer volume.
 
-### 4.2. Technical Requirements
+The main components that may generate costs include:
 
-- An AWS account with sufficient permissions to create, configure, and manage the required services.
-- Two AWS Regions: Singapore (ap-southeast-1) and Sydney (ap-southeast-2).
-- AWS Management Console as the primary deployment interface, with AWS CLI used when necessary.
-- Basic knowledge of networking, Linux, EC2, RDS, S3, IAM, and AWS monitoring services.
-- Ability to deploy and test a PHP web application connected to a MySQL database.
+- Amazon EC2: Costs for the compute instance and EBS storage.
+- Amazon RDS: Costs for the DB instance, storage capacity, and backups.
+- Amazon S3: Costs for object storage, Versioning, and access requests.
+- AWS Backup: Costs for backup storage and related operations.
+- Cross-Region Replication: Costs for replication requests and data transfer between Regions.
+- Network services: Potential charges for data transfer and network resources.
 
-## 5. Project Timeline and Milestones
+To control the budget, the system is deployed within a testing environment. Unnecessary resources will be stopped or deleted after testing is completed. Backups and data required for evaluation will be retained according to the project requirements.
 
-The project is organized into individual phases, combining theoretical research with practical implementation on AWS.
+## 7. Risk Assessment and Mitigation
 
-- **Phase 1:** Complete AWS fundamentals, IAM configuration, and VPC infrastructure.
-- **Phase 2:** Complete EC2, RDS, and Maiora website deployment in Singapore.
-- **Phase 3:** Complete S3 configuration, Versioning, and Cross-Region Replication.
-- **Phase 4:** Prepare the Sydney recovery environment and test resource restoration.
-- **Phase 5:** Complete AWS Backup, Backup Vault, Backup Plan, and Recovery Point verification.
-- **Phase 6:** Implement Route 53 Health Check, CloudWatch Alarm, and SNS email notifications.
-- **Phase 7:** Perform system testing, evaluate results, and finalize technical documentation.
+| Risk | Impact | Mitigation |
+|---|---|---|
+| EC2 instance failure or accidental deletion | Website becomes unavailable | Restore EC2 from AWS Backup |
+| RDS becomes inaccessible | Website cannot retrieve database records | Restore RDS from a Recovery Point and update the endpoint if necessary |
+| Product images are deleted | Product images become unavailable on the website | Use S3 Versioning or replicated data |
+| Data is overwritten | Stored content becomes incorrect | Retrieve a previous object version |
+| Primary Region failure | Resources in the primary Region become inaccessible | Use replicated data in the Sydney Region and perform the appropriate recovery procedures |
+| Incorrect IAM configuration | Backup or Restore operations fail | Verify IAM Roles, Trust Relationships, and required permissions |
 
-Implementation results are documented through AWS Console screenshots, resource status information, website testing results, and restored data verification.
-
-## 6. Budget Estimation
-
-The total implementation cost depends on resource types, usage duration, storage capacity, and the amount of data transferred between AWS Regions.
-
-To align with the project's research and practical objectives, the implementation prioritizes appropriately sized resources and only maintains services required for deployment and testing. The disaster recovery environment does not need to remain fully operational at all times.
-
-### 6.1. Cost Factors
-
-- **Amazon EC2:** Costs depend on instance running hours, EBS storage capacity, and related networking resources.
-- **Amazon RDS:** Costs depend on DB instance running hours, storage capacity, and applicable backup storage charges.
-- **Amazon S3:** Costs include data storage, PUT, GET, COPY requests, Versioning, and Replication operations.
-- **Cross-Region Data Transfer:** Charges may apply when replicating data between Singapore and Sydney.
-- **AWS Backup:** Costs depend on Recovery Point storage and other service operations according to AWS pricing.
-- **Amazon Route 53:** Costs are associated with Health Check usage.
-- **Amazon CloudWatch:** Costs depend on the number of alarms, metrics, and monitoring operations.
-- **Amazon SNS:** Notification costs depend on notification types and the number of messages delivered.
-
-### 6.2. Cost Control Measures
-
-- Use appropriately sized EC2 instances for the test application.
-- Launch the disaster recovery environment only when testing or demonstration is required.
-- Stop or terminate unused EC2 instances after testing.
-- Avoid continuously running RDS instances in both regions when unnecessary.
-- Configure backup retention periods according to project requirements.
-- Use S3 Lifecycle policies to transition eligible data to lower-cost storage classes.
-- Remove unused testing resources and review remaining snapshots, Recovery Points, and Elastic IP addresses.
-- Monitor AWS spending through AWS Billing and Cost Explorer.
-- Configure AWS Budgets to receive notifications when spending exceeds the expected threshold.
-
-## 7. Risk Assessment
-
-### 7.1. Risk Matrix
-
-- **Unexpected Cost Increases:** May occur when EC2, RDS, or storage resources remain active for extended periods. Impact: Medium; Likelihood: Medium.
-- **Incomplete Data Replication:** May occur when S3 Replication encounters errors or has not completed. Impact: High; Likelihood: Medium.
-- **Unsuccessful Resource Restoration:** May result from incorrect IAM configurations, AWS Backup permissions, or restoration parameters. Impact: High; Likelihood: Medium.
-- **Incomplete Restored Data:** May occur when backups do not contain the required data or restoration has not completed successfully. Impact: High; Likelihood: Medium.
-- **Monitoring and Notification Failure:** May occur due to incorrect Health Check, CloudWatch Alarm, or SNS configuration. Impact: Medium; Likelihood: Low.
-- **Website Unavailability in the Recovery Region:** May result from incorrect server settings, database configuration, IP addresses, or network connectivity. Impact: High; Likelihood: Medium.
-
-### 7.2. Risk Mitigation Strategies
-
-- **Cost Control:** Monitor AWS Billing, configure AWS Budgets, and stop unnecessary resources.
-- **Data Protection:** Verify S3 Replication and Versioning status and compare data between regions.
-- **Backup Validation:** Monitor Backup Jobs, verify Recovery Points, and check backup status.
-- **Recovery Validation:** Review IAM Roles, IAM permissions, and resource configurations before restoration.
-- **Application Validation:** Verify database connectivity, website configuration, and product image availability after restoration.
-- **Notification Validation:** Check Health Check status, CloudWatch Alarms, and email delivery.
-
-### 7.3. Contingency Plan
-
-- If AWS Backup restoration fails, use another suitable backup to recover the required resources.
-- If S3 replication is incomplete, investigate the replication status and use available object versions.
-- If the website is unavailable in Sydney, inspect EC2, application configuration, database connectivity, and network settings.
-- If a live demonstration fails, use screenshots and recorded videos showing the implementation and testing procedures.
+The current implementation does not provide automatic failover of the entire system to the Sydney Region. EC2 and RDS restoration, as well as application configuration updates, are performed manually. This limitation must be considered when evaluating the proposed solution.
 
 ## 8. Expected Outcomes
 
-### 8.1. Technical Outcomes
-
 Upon completion, the project is expected to achieve the following results:
 
-- Deploy the Maiora e-commerce website on Amazon EC2 with Amazon RDS as its database management system.
-- Establish a centralized backup system using AWS Backup and manage Recovery Points through a Backup Vault.
-- Implement S3 Versioning to support data recovery after accidental deletion or overwriting.
-- Configure S3 Cross-Region Replication to maintain copies of product images in Sydney.
-- Restore required resources from backups and verify website functionality in the recovery environment.
-- Validate data integrity by comparing product information, user accounts, orders, and images before and after restoration.
-- Establish website monitoring and email notifications for detected incidents.
-- Develop practical backup, recovery, testing, and incident-handling procedures for the BDR system.
+- Build an AWS infrastructure environment for the Maiora Fashion Store website.
+- Successfully deploy the website using EC2, RDS for MySQL, and S3.
+- Establish backup mechanisms for EC2 and RDS using AWS Backup.
+- Create and manage Recovery Points for resource restoration.
+- Configure S3 Versioning and Cross-Region Replication to improve product image data protection.
+- Perform application server and database restoration from backups.
+- Test selected data loss and service interruption scenarios.
+- Evaluate the advantages, limitations, and future development directions of the AWS Backup and Disaster Recovery model.
 
-### 8.2. System Evaluation Criteria
-
-Instead of using RTO and RPO, this project evaluates system performance based on the following practical criteria:
-
-- **Backup Capability:** EC2 and RDS resources are backed up successfully, with valid Recovery Points available.
-- **Recovery Capability:** Resources can be restored from Recovery Points and returned to a verifiable operating state.
-- **Data Integrity:** Restored data is compared with the original data, including product information, user accounts, and orders.
-- **Cross-Region Replication:** Configured objects are successfully replicated to the S3 bucket in Sydney.
-- **Application Availability:** The website can be deployed or restored in the recovery environment, and its main functions can be tested.
-- **Monitoring and Notification Effectiveness:** The system detects website unavailability and sends email notifications to administrators.
-
-### 8.3. Practical Value
-
-This project goes beyond studying individual AWS services by integrating them into a practical Backup and Disaster Recovery system that can be deployed, tested, and evaluated.
-
-The proposed model can serve as a technical reference for small and medium-sized businesses seeking solutions to protect data, restore applications, and reduce the impact of cloud infrastructure failures.
-
-Furthermore, the project provides practical implementation procedures for AWS Backup, Amazon S3, Amazon EC2, Amazon RDS, and AWS monitoring services.
+Through this project, the implementation applies knowledge of cloud computing, infrastructure management, data storage, backup, and system recovery to a practical application environment.

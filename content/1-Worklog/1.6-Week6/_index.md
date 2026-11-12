@@ -1,3 +1,4 @@
+
 ---
 title: "Week 6 Worklog"
 date: 2026-09-14
@@ -8,51 +9,66 @@ pre: "<b>1.6.</b>"
 
 ### Week 6 Objectives:
 
-* Learn about centralized backup mechanisms using AWS Backup.
-* Set up a Backup Vault and configure a Backup Plan.
-* Check Recovery Points for supported resources.
+- Study AWS Backup and centralized backup management on AWS.
+- Create a Backup Vault to store recovery points.
+- Configure Backup Plans and Backup Rules for protected resources.
+- Perform backups of Amazon EC2 and Amazon RDS.
+- Verify Backup Job statuses and Recovery Points.
+- Study IAM Roles and the permissions required for backup and resource restoration.
 
 ### Tasks to Be Completed This Week:
 
-| Day | Task | Start Date | Completion Date | Reference Materials |
+| Day | Tasks | Start Date | Completion Date | Reference Materials |
 |---|---|---|---|---|
-| 2 | Learn about AWS Backup, Backup Vaults, Recovery Points, and Backup Jobs. | 14/09/2026 | 14/09/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
-| 3 | Create a Backup Vault and configure a Backup Plan. | 15/09/2026 | 15/09/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
-| 4 | Assign EC2, EBS, and RDS resources to an appropriate backup plan. | 16/09/2026 | 17/09/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
-| 5 | Perform test backups and check Backup Job statuses. | 18/09/2026 | 18/09/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
-| 6 | Check Recovery Points, retention policies, and backup costs. | 19/09/2026 | 19/09/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
+| Monday | Study AWS Backup, Backup Vaults, Backup Plans, Backup Jobs, and Recovery Points. | 14/09/2026 | 14/09/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/) |
+| Tuesday | Create the `BackupDR-Vault` Backup Vault and study Backup Plan and Backup Rule configuration. | 15/09/2026 | 15/09/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/) |
+| Wednesday | Select and configure Amazon EC2 and Amazon RDS resources for protection using AWS Backup. | 16/09/2026 | 17/09/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/) |
+| Friday | Perform test backups and monitor Backup Job statuses for EC2 and RDS. | 18/09/2026 | 18/09/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/) |
+| Saturday | Inspect Recovery Points, backup creation times, retention periods, and factors affecting backup costs. | 19/09/2026 | 19/09/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/) |
 
 ### Week 6 Achievements:
 
-* Understand AWS Backup and its role in centralized backup management.
+- Understood AWS Backup and its role in managing, automating, and centralizing backup operations for AWS resources.
 
-* Become familiar with the main AWS Backup components:
-  * Backup Plan
-  * Backup Rule
-  * Backup Vault
-  * Recovery Point
-  * Backup Job
-  * Restore Job
+- Gained knowledge of the main AWS Backup components:
+  - Backup Plan.
+  - Backup Rule.
+  - Backup Vault.
+  - Recovery Point.
+  - Backup Job.
+  - Restore Job.
 
-* Practice configuring a backup plan:
-  * Create a Backup Vault.
-  * Configure a backup schedule.
-  * Set backup retention periods.
-  * Assign resources to be backed up.
+- Configured the backup environment:
+  - Created a Backup Vault named `BackupDR-Vault`.
+  - Studied and configured a Backup Plan.
+  - Defined Backup Rules and backup schedules.
+  - Configured backup retention periods.
+  - Selected resources to be protected.
 
-* Learn about backup capabilities for AWS resources:
-  * Amazon EC2.
-  * Amazon EBS.
-  * Amazon RDS.
+- Studied and performed backups of the following resources:
+  - Amazon EC2: Protected the application server and its associated data through the EC2 backup mechanism.
+  - Amazon RDS for MySQL: Backed up the database used by the Maiora Fashion Store website.
+  - Amazon EBS: Studied volume data protection through EC2 backups or the appropriate EBS backup mechanism.
 
-* Practice checking backup statuses:
-  * Monitor Backup Jobs.
-  * Check Recovery Points.
-  * Identify backup creation timestamps.
-  * Verify job completion statuses.
+- Practiced monitoring and verifying backup results:
+  - Checked Backup Job statuses.
+  - Identified successful and failed backup operations.
+  - Inspected Recovery Points stored in the Backup Vault.
+  - Identified backup creation timestamps.
+  - Verified information about protected resources.
 
-* Learn about IAM Roles and the permissions required for AWS Backup to access resources.
+- Studied IAM Roles and the permissions required by AWS Backup:
+  - The role of IAM Roles during backup and restoration operations.
+  - Trust Relationships that allow AWS Backup to assume an IAM Role.
+  - Permissions required for Backup and Restore operations.
+  - The `iam:PassRole` permission when restoring resources, where required.
 
-* Understand how to use Recovery Points as the basis for restoring a system after a failure.
+- Understood how Recovery Points can be used to restore application servers and databases when incidents occur.
 
-* Identify factors affecting the cost of storing and maintaining backups.
+- Studied the factors affecting AWS Backup costs:
+  - Backup data volume.
+  - Recovery Point retention periods.
+  - Number of stored backups.
+  - Related restoration and data transfer operations.
+
+- Completed the configuration and verification of centralized backup mechanisms for EC2 and RDS resources, establishing the foundation for Disaster Recovery implementation and restoration testing in subsequent weeks.

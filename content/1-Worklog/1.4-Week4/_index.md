@@ -1,3 +1,4 @@
+
 ---
 title: "Week 4 Worklog"
 date: 2026-08-31
@@ -8,47 +9,60 @@ pre: "<b>1.4.</b>"
 
 ### Week 4 Objectives:
 
-* Learn about Amazon RDS and MySQL databases.
-* Deploy a database for the website.
-* Establish a secure connection between EC2 and RDS.
+- Study Amazon RDS and the MySQL database management system.
+- Deploy Amazon RDS for MySQL to store data for the Maiora Fashion Store website.
+- Configure secure private connectivity between the EC2 application server and the RDS database.
+- Integrate the PHP website with the MySQL database.
+- Explore Amazon RDS backup and data protection mechanisms.
 
 ### Tasks to Be Completed This Week:
 
-| Day | Task | Start Date | Completion Date | Reference Materials |
+| Day | Tasks | Start Date | Completion Date | Reference Materials |
 |---|---|---|---|---|
-| 2 | Learn about RDS, MySQL, DB Instances, and database backup methods. | 31/08/2026 | 31/08/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
-| 3 | Create a MySQL database and configure the Security Group for RDS. | 01/09/2026 | 02/09/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
-| 4 | Create a database, a products table, and sample product data. | 03/09/2026 | 03/09/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
-| 5 | Configure PHP to connect to RDS using a separate configuration file. | 04/09/2026 | 04/09/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
-| 6 | Test product display functionality and database connectivity. | 05/09/2026 | 05/09/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
+| Monday | Study Amazon RDS, MySQL, DB Instances, databases, and database backup mechanisms. | 31/08/2026 | 31/08/2026 | [Amazon RDS Documentation](https://docs.aws.amazon.com/rds/) |
+| Tuesday | Create an Amazon RDS for MySQL instance, select its configuration, and configure network connectivity within the VPC. | 01/09/2026 | 02/09/2026 | [Amazon RDS Documentation](https://docs.aws.amazon.com/rds/) |
+| Thursday | Configure the RDS Security Group and initialize the `shop` database with tables required by the website. | 03/09/2026 | 03/09/2026 | [MySQL Documentation](https://dev.mysql.com/doc/) |
+| Friday | Configure PHP on EC2 to connect to RDS using a separate database configuration file. | 04/09/2026 | 04/09/2026 | [PHP Documentation](https://www.php.net/docs.php) |
+| Saturday | Verify EC2-to-RDS connectivity, inspect database records, and test product display functionality on the website. | 05/09/2026 | 05/09/2026 | [Amazon RDS Documentation](https://docs.aws.amazon.com/rds/) |
 
 ### Week 4 Achievements:
 
-* Understand the role of Amazon RDS in database management on AWS.
+- Understood the role of Amazon RDS in deploying and managing relational databases on AWS.
 
-* Learn about database components and functions:
-  * Amazon RDS for MySQL
-  * DB Instance
-  * Database
-  * Table
-  * SQL Query
+- Gained knowledge of fundamental database components and concepts:
+  - Amazon RDS for MySQL.
+  - DB Instance.
+  - Database.
+  - Table.
+  - SQL Query.
+  - Database Endpoint.
 
-* Practice managing data using MySQL:
-  * Create a database.
-  * Create a products table.
-  * Insert and query product data.
-  * Verify data stored in the database.
+- Deployed Amazon RDS for MySQL:
+  - Created a DB Instance running MySQL.
+  - Configured the DB Instance within the `backup-dr-vpc` VPC.
+  - Disabled public accessibility (Public Access: No).
+  - Configured the `rds-sg` Security Group to control database access.
 
-* Connect the PHP website hosted on EC2 to Amazon RDS:
-  * Configure database connection settings.
-  * Set up a MySQL access account.
-  * Test connectivity between the application and the database.
+- Initialized and managed the `shop` database:
+  - Created the `shop` database.
+  - Created the `users`, `products`, `cart_items`, `orders`, and `order_items` tables.
+  - Inserted and queried product records.
+  - Inspected database records using SQL statements.
+  - Studied the relationships between database tables.
 
-* Configure Security Groups to control access to RDS.
+- Established connectivity between the PHP website on EC2 and Amazon RDS:
+  - Identified the database endpoint.
+  - Configured database connection details in `/etc/shop/db-config.php`.
+  - Used a dedicated database account for the application.
+  - Configured the Security Group to allow MySQL connections over TCP port 3306 from the EC2 instance's Security Group.
+  - Verified the website's ability to retrieve database records.
 
-* Learn about RDS data protection mechanisms:
-  * Automated Backups.
-  * DB Snapshots.
-  * Point-in-Time Recovery.
+- Studied Amazon RDS backup and data protection mechanisms:
+  - Automated Backups.
+  - DB Snapshots.
+  - Backup Retention Period.
+  - Point-in-Time Recovery (PITR).
 
-* Understand how to combine EC2 and RDS to deploy a web application with a centralized database.
+- Understood how Amazon EC2 and Amazon RDS work together to build a web application architecture with a centralized database, where the application server and database are deployed separately.
+
+- Completed the database integration with the Maiora Fashion Store website, establishing the foundation for implementing Backup and Disaster Recovery mechanisms in subsequent weeks.
