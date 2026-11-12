@@ -69,7 +69,7 @@ Việc khôi phục và chuyển đổi hoạt động giữa các tài nguyên 
 
 ### 3.4. Sơ đồ kiến trúc
 
-![AWS Backup and Disaster Recovery Architecture](/images/2-Proposal/bdr_architecture.png)
+![AWS Backup and Disaster Recovery Architecture](/ProJect_FCAJ/images/2-Proposal/bdr_architecture.png)
 
 ## 4. Phạm vi triển khai kỹ thuật
 

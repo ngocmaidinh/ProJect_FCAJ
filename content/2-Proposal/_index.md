@@ -69,7 +69,7 @@ Resource restoration and service switching are performed manually by administrat
 
 ### 3.4. Architecture Diagram
 
-![AWS Backup and Disaster Recovery Architecture](/images/2-Proposal/bdr_architecture.png)
+![AWS Backup and Disaster Recovery Architecture](/ProJect_FCAJ/images/2-Proposal/bdr_architecture.png)
 
 ## 4. Technical Implementation Scope
 
