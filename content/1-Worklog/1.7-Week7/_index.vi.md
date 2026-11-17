@@ -9,63 +9,63 @@ pre: "<b>1.7.</b>"
 
 ### Mục tiêu tuần 7:
 
-- Tìm hiểu kiến trúc Backup và Disaster Recovery trên nhiều AWS Region.
-- Phân tích phương án dự phòng giữa Singapore và Sydney.
-- Tìm hiểu các cơ chế sao chép dữ liệu và khôi phục tài nguyên giữa các Region.
-- Xác định phạm vi dự phòng phù hợp với hệ thống Maiora Fashion Store.
-- Xây dựng sơ đồ kiến trúc Backup và Disaster Recovery cho hệ thống.
+- Tìm hiểu mô hình triển khai hệ thống trên nhiều AWS Region.
+- Phân tích phương án sao chép dữ liệu giữa Singapore và Sydney.
+- Tìm hiểu cơ chế Amazon S3 Cross-Region Replication (CRR).
+- Tìm hiểu các yêu cầu cần thiết để cấu hình S3 Cross-Region Replication.
+- Xác định vai trò của Region chính và Region dự phòng trong hệ thống Maiora Fashion Store.
+- Xây dựng sơ đồ kiến trúc sao chép dữ liệu S3 giữa hai Region.
 
 ### Các công việc cần triển khai trong tuần này:
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 |---|---|---|---|---|
-| 2 | Tìm hiểu Recovery Time Objective (RTO), Recovery Point Objective (RPO) và các mô hình Disaster Recovery. | 21/09/2026 | 21/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
-| 3 | Phân tích kiến trúc hệ thống với Singapore là Region chính và Sydney là Region dự phòng. | 22/09/2026 | 22/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
-| 4 | Tìm hiểu AWS Backup Cross-Region Copy và Amazon S3 Cross-Region Replication. | 23/09/2026 | 24/09/2026 | [AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/); [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
-| 5 | Nghiên cứu phương án khôi phục EC2, RDS và dữ liệu S3 khi Region chính gặp sự cố. | 25/09/2026 | 25/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
-| 6 | Xây dựng sơ đồ kiến trúc Backup và DR, xác định quy trình khôi phục hệ thống. | 26/09/2026 | 26/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 2 | Tìm hiểu kiến trúc triển khai hệ thống trên nhiều AWS Region và vai trò của Region chính, Region dự phòng. | 21/09/2026 | 21/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 3 | Phân tích kiến trúc hệ thống Maiora Fashion Store với Singapore là Region chính và Sydney là Region dự phòng. | 22/09/2026 | 22/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 4 | Tìm hiểu Amazon S3 Cross-Region Replication (CRR), Versioning và các yêu cầu cấu hình sao chép dữ liệu giữa hai Region. | 23/09/2026 | 24/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 5 | Tìm hiểu IAM Role, Trust Relationship và quyền truy cập cần thiết để Amazon S3 thực hiện Cross-Region Replication. | 25/09/2026 | 25/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 6 | Hoàn thiện sơ đồ kiến trúc S3 Cross-Region Replication và xác định phương pháp kiểm tra dữ liệu được sao chép sang Region đích. | 26/09/2026 | 26/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
 
 ### Kết quả đạt được tuần 7:
 
-- Hiểu được kiến trúc Backup và Disaster Recovery triển khai trên nhiều AWS Region, giúp tăng khả năng bảo vệ dữ liệu khi Region chính gặp sự cố.
+- Hiểu được mô hình triển khai hệ thống trên nhiều AWS Region, trong đó dữ liệu được phân bố giữa các khu vực địa lý khác nhau nhằm tăng khả năng bảo vệ và sẵn sàng truy cập dữ liệu.
 
-- Tìm hiểu và xác định vai trò của hai Region trong kiến trúc:
-  - Singapore (`ap-southeast-1`): Region chính, triển khai website Maiora Fashion Store, máy chủ ứng dụng EC2 và cơ sở dữ liệu Amazon RDS for MySQL.
-  - Sydney (`ap-southeast-2`): Region dự phòng, tiếp nhận dữ liệu hình ảnh sản phẩm được sao chép từ S3 tại Singapore thông qua Cross-Region Replication.
+- Tìm hiểu và xác định vai trò của hai Region trong kiến trúc Maiora Fashion Store:
+  - Singapore (ap-southeast-1): Region chính, triển khai website Maiora Fashion Store, máy chủ ứng dụng Amazon EC2, cơ sở dữ liệu Amazon RDS for MySQL và S3 Bucket lưu trữ hình ảnh sản phẩm.
+  - Sydney (ap-southeast-2): Region dự phòng, lưu trữ bản sao hình ảnh sản phẩm được sao chép từ S3 tại Singapore thông qua Amazon S3 Cross-Region Replication.
 
-- Tìm hiểu các cơ chế sao chép và bảo vệ dữ liệu giữa các Region:
-  - AWS Backup Cross-Region Copy: Sao chép Recovery Point sang Backup Vault tại Region khác khi được cấu hình.
-  - Amazon S3 Cross-Region Replication (CRR): Tự động sao chép các đối tượng S3 đáp ứng điều kiện của quy tắc replication sang bucket tại Region đích.
-  - Recovery Point: Lưu trữ trạng thái dữ liệu tại một thời điểm nhất định, làm cơ sở cho quá trình khôi phục tài nguyên.
+- Tìm hiểu cơ chế Amazon S3 Cross-Region Replication (CRR):
+  - Tự động sao chép các đối tượng S3 đáp ứng điều kiện của Replication Rule từ bucket nguồn sang bucket đích tại AWS Region khác.
+  - Hỗ trợ duy trì bản sao dữ liệu hình ảnh sản phẩm tại Region dự phòng.
+  - Yêu cầu bật Versioning trên cả bucket nguồn và bucket đích.
+  - Cần cấu hình Replication Rule để xác định bucket nguồn, bucket đích và phạm vi đối tượng được sao chép.
 
-- Nắm được các yêu cầu khi triển khai sao lưu liên Region:
-  - Tạo Backup Vault tại Region đích khi sử dụng AWS Backup Cross-Region Copy.
-  - Cấu hình IAM Role và quyền truy cập phù hợp.
-  - Thiết lập chính sách lưu giữ Recovery Point.
-  - Đảm bảo dịch vụ và tài nguyên tại Region đích đáp ứng điều kiện khôi phục.
-  - Kiểm tra trạng thái sao chép và khả năng truy cập dữ liệu tại Region đích.
+- Tìm hiểu các thành phần và quyền cần thiết khi cấu hình S3 Cross-Region Replication:
+  - Source Bucket: S3 Bucket tại Singapore chứa hình ảnh sản phẩm.
+  - Destination Bucket: S3 Bucket tại Sydney dùng để lưu trữ bản sao.
+  - Versioning: Quản lý các phiên bản đối tượng trên cả hai bucket.
+  - IAM Role: Cung cấp quyền cho Amazon S3 thực hiện quá trình sao chép dữ liệu.
+  - Replication Rule: Xác định điều kiện và đích đến của quá trình sao chép.
+  - Trust Relationship: Cho phép dịch vụ Amazon S3 sử dụng IAM Role được cấu hình.
 
-- Tìm hiểu các dịch vụ hỗ trợ tính sẵn sàng và giám sát hệ thống:
-  - Amazon Route 53: Quản lý DNS và hỗ trợ định tuyến lưu lượng giữa các endpoint.
-  - Amazon CloudWatch: Thu thập và theo dõi các chỉ số hoạt động của tài nguyên AWS.
-  - Amazon SNS: Hỗ trợ gửi thông báo khi có sự kiện hoặc cảnh báo.
-  - AWS Elastic Disaster Recovery: Hỗ trợ phục hồi máy chủ trên AWS khi xảy ra sự cố.
+- Tìm hiểu cách kiểm tra hoạt động của S3 Cross-Region Replication:
+  - Kiểm tra trạng thái Replication Rule tại bucket nguồn.
+  - Kiểm tra Versioning trên cả bucket nguồn và bucket đích.
+  - Theo dõi trạng thái replication của từng đối tượng S3.
+  - Kiểm tra sự xuất hiện của hình ảnh sản phẩm tại bucket đích ở Sydney.
+  - Xác minh dữ liệu được sao chép có thể truy cập tại Region dự phòng.
 
-- Phân tích phương án khôi phục các thành phần của Maiora Fashion Store:
-  - EC2: Sử dụng Recovery Point của AWS Backup để khôi phục máy chủ ứng dụng tại Region phù hợp.
-  - RDS: Sử dụng bản sao lưu hoặc snapshot phù hợp để khôi phục cơ sở dữ liệu.
-  - S3: Sử dụng dữ liệu đã được sao chép sang bucket tại Sydney để hỗ trợ truy cập và khôi phục hình ảnh sản phẩm.
+- Phân tích phạm vi bảo vệ dữ liệu của hệ thống Maiora Fashion Store:
+  - Hình ảnh sản phẩm: Sử dụng S3 Cross-Region Replication để sao chép từ Singapore sang Sydney.
+  - Cơ sở dữ liệu MySQL: Được bảo vệ thông qua cơ chế sao lưu của Amazon RDS và AWS Backup.
+  - Máy chủ ứng dụng EC2: Được bảo vệ thông qua cơ chế sao lưu tài nguyên bằng AWS Backup.
 
-- Xác định quy trình khôi phục tổng quát khi Region chính gặp sự cố:
-  - Xác định phạm vi và mức độ ảnh hưởng của sự cố.
-  - Lựa chọn Recovery Point phù hợp.
-  - Khôi phục máy chủ ứng dụng và cơ sở dữ liệu.
-  - Kiểm tra dữ liệu hình ảnh tại Region dự phòng.
-  - Cập nhật cấu hình kết nối và địa chỉ truy cập nếu cần thiết.
-  - Kiểm tra hoạt động của website sau khi khôi phục.
+- Xác định quy trình sử dụng dữ liệu tại Region dự phòng khi xảy ra sự cố:
+  - Kiểm tra khả năng truy cập S3 Bucket tại Sydney.
+  - Xác định các hình ảnh sản phẩm đã được sao chép.
+  - Sử dụng dữ liệu hình ảnh từ bucket tại Sydney khi cần thiết.
+  - Kiểm tra tính toàn vẹn và khả năng truy cập của các đối tượng được sao chép.
 
-- Xây dựng sơ đồ kiến trúc Backup và Disaster Recovery cho website Maiora Fashion Store, thể hiện luồng dữ liệu giữa EC2, RDS, S3 và AWS Backup tại Region chính, cùng cơ chế sao chép dữ liệu hình ảnh sang Region dự phòng.
+- Hoàn thiện sơ đồ kiến trúc sao chép dữ liệu giữa hai AWS Region, thể hiện S3 Bucket tại Singapore là nguồn dữ liệu và S3 Bucket tại Sydney là nơi lưu trữ các bản sao hình ảnh sản phẩm thông qua Amazon S3 Cross-Region Replication.
 
-- Hiểu mối quan hệ giữa chi phí triển khai, Recovery Time Objective (RTO) và Recovery Point Objective (RPO). Nhận thấy việc duy trì tài nguyên dự phòng hoạt động liên tục có thể làm tăng chi phí, trong khi phương án khôi phục theo yêu cầu giúp tiết kiệm chi phí nhưng cần thêm thời gian phục hồi.
-
-- Xác định phạm vi triển khai thực tế của đề tài: sử dụng AWS Backup để bảo vệ EC2 và RDS tại Singapore, kết hợp S3 Cross-Region Replication để sao chép dữ liệu hình ảnh sang Sydney. Việc khôi phục EC2 và RDS tại Region khác được xem là phương án DR cần thực hiện theo quy trình khôi phục, không phải cơ chế tự động chuyển đổi dự phòng.
+- Xác định phạm vi triển khai thực tế của đề tài: sử dụng Amazon S3 Cross-Region Replication để sao chép hình ảnh sản phẩm từ Singapore (ap-southeast-1) sang Sydney (ap-southeast-2). Cơ chế này tập trung bảo vệ dữ liệu hình ảnh sản phẩm, không thực hiện sao chép tự động toàn bộ website, EC2 hoặc cơ sở dữ liệu RDS sang Region dự phòng.

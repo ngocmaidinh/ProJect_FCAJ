@@ -20,7 +20,7 @@ pre: "<b>1.5.</b>"
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 |---|---|---|---|---|
 | 2 | Tìm hiểu Amazon S3, Bucket, Object, Object Key và các lớp lưu trữ. | 07/09/2026 | 07/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
-| 3 | Tạo S3 Bucket tại Region Singapore và tải hình ảnh sản phẩm lên thư mục `products/`. | 08/09/2026 | 08/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| 3 | Tạo S3 Bucket tại Region Singapore và tải hình ảnh sản phẩm lên thư mục products/. | 08/09/2026 | 08/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
 | 4 | Cấu hình quyền truy cập và tích hợp đường dẫn hình ảnh S3 vào website Maiora Fashion Store. | 09/09/2026 | 10/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
 | 5 | Bật S3 Versioning, tìm hiểu cách quản lý phiên bản đối tượng và các chính sách bảo vệ dữ liệu. | 11/09/2026 | 11/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
 | 6 | Tạo bucket tại Region Sydney và cấu hình Cross-Region Replication từ Singapore sang Sydney. | 12/09/2026 | 12/09/2026 | [AWS Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
@@ -39,7 +39,7 @@ pre: "<b>1.5.</b>"
 - Triển khai lưu trữ hình ảnh sản phẩm trên Amazon S3:
   - Tạo S3 Bucket tại Region Singapore.
   - Tải hình ảnh sản phẩm lên bucket.
-  - Sắp xếp hình ảnh trong thư mục `products/`.
+  - Sắp xếp hình ảnh trong thư mục products/.
   - Kiểm tra và quản lý các đối tượng được lưu trữ.
 
 - Tích hợp Amazon S3 với website Maiora Fashion Store:
@@ -57,8 +57,8 @@ pre: "<b>1.5.</b>"
 - Hiểu cách S3 Versioning lưu giữ nhiều phiên bản của một đối tượng, hỗ trợ truy xuất phiên bản trước đó khi dữ liệu bị ghi đè hoặc xóa nhầm.
 
 - Tìm hiểu và triển khai S3 Cross-Region Replication:
-  - Sử dụng Region Singapore (`ap-southeast-1`) làm Region nguồn.
-  - Sử dụng Region Sydney (`ap-southeast-2`) làm Region đích.
+  - Sử dụng Region Singapore (ap-southeast-1) làm Region nguồn.
+  - Sử dụng Region Sydney (ap-southeast-2) làm Region đích.
   - Cấu hình bucket đích và quyền IAM phục vụ quá trình replication.
   - Thiết lập quy tắc sao chép các đối tượng đáp ứng điều kiện cấu hình.
   - Kiểm tra sự xuất hiện của dữ liệu được sao chép tại bucket đích.

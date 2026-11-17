@@ -44,15 +44,15 @@ pre: "<b>1.2.</b>"
   - Network ACLs: Control inbound and outbound traffic at the subnet level.
 
 - Designed and deployed the VPC for the system:
-  - Created a VPC named `backup-dr-vpc`.
-  - Configured the IP address range `10.0.0.0/16`.
+  - Created a VPC named backup-dr-vpc.
+  - Configured the IP address range 10.0.0.0/16.
   - Created two Public Subnets and two Private Subnets across two Availability Zones.
   - Configured the Internet Gateway and corresponding Route Tables.
   - Did not deploy NAT Gateways or VPC Endpoints in the testing environment.
 
 - Deployed and configured Amazon EC2:
   - Selected an Amazon Machine Image (AMI).
-  - Used the `t3.micro` instance type.
+  - Used the t3.micro instance type.
   - Created and used a Key Pair.
   - Connected to the instance through SSH.
   - Verified the EC2 instance status.

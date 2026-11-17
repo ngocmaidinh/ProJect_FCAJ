@@ -39,7 +39,7 @@ pre: "<b>1.6.</b>"
   - Restore Job.
 
 - Configured the backup environment:
-  - Created a Backup Vault named `BackupDR-Vault`.
+  - Created a Backup Vault named BackupDR-Vault.
   - Studied and configured a Backup Plan.
   - Defined Backup Rules and backup schedules.
   - Configured backup retention periods.
@@ -61,7 +61,7 @@ pre: "<b>1.6.</b>"
   - The role of IAM Roles during backup and restoration operations.
   - Trust Relationships that allow AWS Backup to assume an IAM Role.
   - Permissions required for Backup and Restore operations.
-  - The `iam:PassRole` permission when restoring resources, where required.
+  - The iam:PassRole permission when restoring resources, where required.
 
 - Understood how Recovery Points can be used to restore application servers and databases when incidents occur.
 

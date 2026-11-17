@@ -53,7 +53,7 @@ pre: "<b>1.10.</b>"
   - Product image access flow from Amazon S3.
   - Backup and Recovery Point creation using AWS Backup.
   - EC2 application server and RDS database restoration procedures.
-  - Product image replication from Singapore (`ap-southeast-1`) to Sydney (`ap-southeast-2`) through S3 Cross-Region Replication.
+  - Product image replication from Singapore (ap-southeast-1) to Sydney (ap-southeast-2) through S3 Cross-Region Replication.
 
 - Consolidated implementation evidence and testing results:
   - VPC, subnet, route table, and Security Group configurations.

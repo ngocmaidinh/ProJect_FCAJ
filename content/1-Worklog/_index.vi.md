@@ -6,7 +6,6 @@ chapter: false
 pre: "<b>1.</b>"
 ---
 
-# Nhật ký thực tập
 
 ### Tổng quan
 

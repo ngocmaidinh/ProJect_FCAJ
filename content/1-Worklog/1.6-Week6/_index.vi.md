@@ -39,7 +39,7 @@ pre: "<b>1.6.</b>"
   - Restore Job.
 
 - Thực hiện cấu hình hệ thống sao lưu:
-  - Tạo Backup Vault có tên `BackupDR-Vault`.
+  - Tạo Backup Vault có tên BackupDR-Vault.
   - Tìm hiểu và cấu hình Backup Plan.
   - Thiết lập Backup Rule và lịch sao lưu.
   - Cấu hình thời gian lưu giữ bản sao lưu.
@@ -61,7 +61,7 @@ pre: "<b>1.6.</b>"
   - Vai trò của IAM Role trong quá trình sao lưu và khôi phục.
   - Trust Relationship cho phép dịch vụ AWS Backup sử dụng IAM Role.
   - Quyền thực hiện Backup và Restore.
-  - Quyền `iam:PassRole` trong quá trình khôi phục tài nguyên khi cần thiết.
+  - Quyền iam:PassRole trong quá trình khôi phục tài nguyên khi cần thiết.
 
 - Hiểu cách sử dụng Recovery Point làm cơ sở để khôi phục máy chủ ứng dụng và cơ sở dữ liệu khi xảy ra sự cố.
 

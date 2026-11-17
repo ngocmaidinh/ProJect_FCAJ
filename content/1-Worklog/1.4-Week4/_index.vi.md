@@ -39,20 +39,20 @@ pre: "<b>1.4.</b>"
 
 - Triển khai Amazon RDS for MySQL:
   - Tạo DB Instance sử dụng MySQL.
-  - Cấu hình DB Instance trong VPC `backup-dr-vpc`.
+  - Cấu hình DB Instance trong VPC backup-dr-vpc.
   - Thiết lập RDS không cho phép truy cập công khai (Public Access: No).
-  - Cấu hình Security Group `rds-sg` để kiểm soát kết nối đến cơ sở dữ liệu.
+  - Cấu hình Security Group rds-sg để kiểm soát kết nối đến cơ sở dữ liệu.
 
-- Khởi tạo và quản lý cơ sở dữ liệu `shop`:
-  - Tạo cơ sở dữ liệu `shop`.
-  - Tạo các bảng `users`, `products`, `cart_items`, `orders` và `order_items`.
+- Khởi tạo và quản lý cơ sở dữ liệu shop:
+  - Tạo cơ sở dữ liệu shop.
+  - Tạo các bảng users, products, cart_items, orders và order_items.
   - Thêm và truy vấn dữ liệu sản phẩm.
   - Kiểm tra dữ liệu bằng các câu lệnh SQL.
   - Tìm hiểu mối quan hệ giữa các bảng trong cơ sở dữ liệu.
 
 - Thiết lập kết nối giữa website PHP trên EC2 và Amazon RDS:
   - Xác định Database Endpoint.
-  - Cấu hình thông tin kết nối trong tệp `/etc/shop/db-config.php`.
+  - Cấu hình thông tin kết nối trong tệp /etc/shop/db-config.php.
   - Sử dụng tài khoản cơ sở dữ liệu riêng cho ứng dụng.
   - Cấu hình Security Group cho phép kết nối MySQL qua TCP port 3306 từ Security Group của máy chủ EC2.
   - Kiểm tra khả năng truy xuất dữ liệu từ website.

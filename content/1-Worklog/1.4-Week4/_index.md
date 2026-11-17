@@ -39,20 +39,20 @@ pre: "<b>1.4.</b>"
 
 - Deployed Amazon RDS for MySQL:
   - Created a DB Instance running MySQL.
-  - Configured the DB Instance within the `backup-dr-vpc` VPC.
+  - Configured the DB Instance within the backup-dr-vpc VPC.
   - Disabled public accessibility (Public Access: No).
-  - Configured the `rds-sg` Security Group to control database access.
+  - Configured the rds-sg Security Group to control database access.
 
-- Initialized and managed the `shop` database:
-  - Created the `shop` database.
-  - Created the `users`, `products`, `cart_items`, `orders`, and `order_items` tables.
+- Initialized and managed the shop database:
+  - Created the shop database.
+  - Created the users, products, cart_items, orders, and order_items tables.
   - Inserted and queried product records.
   - Inspected database records using SQL statements.
   - Studied the relationships between database tables.
 
 - Established connectivity between the PHP website on EC2 and Amazon RDS:
   - Identified the database endpoint.
-  - Configured database connection details in `/etc/shop/db-config.php`.
+  - Configured database connection details in /etc/shop/db-config.php.
   - Used a dedicated database account for the application.
   - Configured the Security Group to allow MySQL connections over TCP port 3306 from the EC2 instance's Security Group.
   - Verified the website's ability to retrieve database records.
@@ -65,4 +65,4 @@ pre: "<b>1.4.</b>"
 
 - Understood how Amazon EC2 and Amazon RDS work together to build a web application architecture with a centralized database, where the application server and database are deployed separately.
 
-- Completed the database integration with the Maiora Fashion Store website, establishing the foundation for implementing Backup and Disaster Recovery mechanisms in subsequent weeks.
+- Completed the database integration with the Maiora Fashion Store website, establishing the foundation for implementing Backup and Disaster Recovery mechanisms in subsequent weeks.s

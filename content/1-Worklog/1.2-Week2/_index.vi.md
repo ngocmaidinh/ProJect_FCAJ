@@ -44,15 +44,15 @@ pre: "<b>1.2.</b>"
   - Network ACL: Kiểm soát lưu lượng vào và ra ở cấp độ Subnet.
 
 - Thiết kế và triển khai VPC cho hệ thống:
-  - Tạo VPC có tên `backup-dr-vpc`.
-  - Sử dụng dải địa chỉ IP `10.0.0.0/16`.
+  - Tạo VPC có tên backup-dr-vpc.
+  - Sử dụng dải địa chỉ IP 10.0.0.0/16.
   - Phân chia hai Public Subnet và hai Private Subnet trên hai Availability Zone.
   - Cấu hình Internet Gateway và Route Table cho các Subnet tương ứng.
   - Không triển khai NAT Gateway và VPC Endpoint trong mô hình thử nghiệm.
 
 - Triển khai và cấu hình Amazon EC2:
   - Lựa chọn Amazon Machine Image (AMI).
-  - Sử dụng Instance Type `t3.micro`.
+  - Sử dụng Instance Type t3.micro.
   - Tạo và sử dụng Key Pair.
   - Kết nối SSH đến máy chủ.
   - Kiểm tra trạng thái hoạt động của EC2.
