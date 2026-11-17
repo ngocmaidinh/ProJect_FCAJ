@@ -19,7 +19,7 @@ chapter: false
 
 &emsp; **Major:** Information Technology
 
-&emsp; **Class:** MMTA
+&emsp; **Class:** K67MMTA
 
 &emsp; **Internship Company:** Amazon Web Services Viet Nam Company Limited
 
