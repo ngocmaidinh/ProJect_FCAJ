@@ -37,7 +37,7 @@ pre: "<b>1.1.</b>"
   - Database.
   - Security.
 
-- Làm quen với các công cụ quản lý AWS:
+- Làm quen với các công cụ và khái niệm quản lý AWS:
   - AWS Management Console.
   - AWS Command Line Interface (AWS CLI).
   - AWS Region.
@@ -51,14 +51,13 @@ pre: "<b>1.1.</b>"
   - AWS Backup: Quản lý và thực hiện sao lưu tài nguyên AWS.
   - IAM: Quản lý danh tính, vai trò và quyền truy cập dịch vụ AWS.
 
-- Nắm được các khái niệm cơ bản:
-  - Backup: Sao lưu dữ liệu và tài nguyên hệ thống.
+- Nắm được các khái niệm cơ bản liên quan đến Backup và Disaster Recovery:
+  - Backup: Sao lưu dữ liệu và tài nguyên hệ thống nhằm bảo vệ dữ liệu trước các sự cố.
   - Recovery Point: Điểm khôi phục được tạo từ bản sao lưu.
-  - Restore: Khôi phục tài nguyên từ bản sao lưu.
+  - Restore: Khôi phục dữ liệu hoặc tài nguyên hệ thống từ bản sao lưu.
   - Disaster Recovery: Khôi phục hệ thống sau khi xảy ra sự cố.
-  - RPO (Recovery Point Objective): Mục tiêu điểm khôi phục.
-  - RTO (Recovery Time Objective): Mục tiêu thời gian khôi phục.
+  - Cross-Region Replication (CRR): Cơ chế sao chép dữ liệu giữa các AWS Region nhằm tăng khả năng bảo vệ và sẵn sàng của dữ liệu.
 
 - Xác định được mô hình ứng dụng dự kiến triển khai là website thương mại điện tử Maiora Fashion Store, sử dụng EC2 làm máy chủ ứng dụng, RDS MySQL làm cơ sở dữ liệu và S3 lưu trữ hình ảnh sản phẩm.
 
-- Bước đầu xác định định hướng kiến trúc hệ thống gồm Region chính Singapore (`ap-southeast-1`) và Region dự phòng Sydney (`ap-southeast-2`), phục vụ việc triển khai cơ chế sao lưu và bảo vệ dữ liệu ở các tuần tiếp theo.
+- Bước đầu xác định định hướng kiến trúc hệ thống gồm Region chính Singapore (ap-southeast-1) và Region dự phòng Sydney (ap-southeast-2), phục vụ việc triển khai cơ chế sao lưu, sao chép dữ liệu liên vùng và khôi phục tài nguyên khi xảy ra sự cố trong các tuần tiếp theo.
