@@ -6,24 +6,28 @@ chapter: false
 pre: " <b>5.</b> "
 ---
 
-Trong suốt thời gian thực tập tại **[Công ty TNHH Amazon Web Services Viet Nam]** từ **[10/08/2026]** đến **[18/10/2026]**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.  
-Mục tiêu của tôi trong quá trình thực tập là tìm hiểu kiến ​​thức và xây dựng hệ thống Backup và Disaster Recovery trên nền tảng AWS**. Tôi đã triển khai mô hình hai Region (Singapore là hệ thống chính, Sydney là hệ thống dự phòng) cho một ứng dụng web bán quần áo mẫu, gồm các thành phần sau:
+Trong suốt thời gian thực tập tại **Công ty TNHH Amazon Web Services Viet Nam** từ **10/08/2026** đến **18/10/2026**, tôi đã có cơ hội học hỏi, rèn luyện và vận dụng những kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.
 
-- Máy chủ ứng dụng trên EC2 và cơ sở dữ liệu trên RDS.
-- Lưu trữ hình ảnh trên S3 với Versioning và Cross-Region Replication.
-- Sao lưu tập trung bằng AWS Backup theo lịch.
-- Giám sát và cảnh báo bằng Route 53, CloudWatch và SNS.
-- Bảo mật kết nối bằng HTTPS.
+Mục tiêu của tôi trong quá trình thực tập là tìm hiểu các dịch vụ điện toán đám mây của Amazon Web Services (AWS) và triển khai hệ thống Backup và Disaster Recovery trên nền tảng AWS. Trong khuôn khổ dự án, tôi đã thiết kế và triển khai mô hình hệ thống đa vùng (Multi-Region), sử dụng Singapore làm Region chính và Sydney làm Region dự phòng cho một ứng dụng web bán quần áo mẫu mang thương hiệu Maiora. Hệ thống bao gồm các thành phần chính sau:
 
-Sau đó, tôi mô phỏng các sự cố như mất dữ liệu, xoá nhầm dữ liệu và mất máy chủ, thực hiện khôi phục và đo chỉ số RTO, RPO.
+- **Hạ tầng ứng dụng:** Triển khai máy chủ ứng dụng trên Amazon EC2 và cơ sở dữ liệu MySQL trên Amazon RDS.
+- **Lưu trữ dữ liệu:** Sử dụng Amazon S3 để lưu trữ hình ảnh sản phẩm, kết hợp Versioning và Cross-Region Replication để bảo vệ và sao chép dữ liệu giữa hai Region.
+- **Sao lưu dữ liệu:** Cấu hình AWS Backup Vault và Backup Plan để thực hiện sao lưu định kỳ các tài nguyên AWS được hỗ trợ, phục vụ việc khôi phục dữ liệu và tài nguyên khi xảy ra sự cố.
+- **Hệ thống dự phòng đa vùng:** Triển khai môi trường dự phòng tại Region Sydney, bao gồm các tài nguyên AWS và cơ sở dữ liệu RDS độc lập, phục vụ việc khôi phục và duy trì hoạt động của ứng dụng trong các tình huống sự cố.
+- **Giám sát và cảnh báo:** Tìm hiểu và cấu hình các dịch vụ Amazon CloudWatch, Amazon SNS và Route 53 phục vụ giám sát, theo dõi trạng thái và cảnh báo sự cố.
+- **Bảo mật hệ thống:** Tìm hiểu và áp dụng các cơ chế bảo mật như IAM, Security Group và HTTPS.
 
-Qua dự án, tôi đã cải thiện nhiều kỹ năng:
+Trong quá trình triển khai, tôi đã thực hiện các tình huống mô phỏng sự cố như mất dữ liệu, xóa nhầm đối tượng trên Amazon S3 và sự cố máy chủ ứng dụng EC2. Từ đó, tôi thực hành khôi phục dữ liệu và tài nguyên từ các bản sao lưu, kiểm tra tính toàn vẹn của dữ liệu cũng như xác minh khả năng hoạt động của website sau khi khôi phục.
 
-- **Chuyên môn:** sử dụng các dịch vụ AWS (IAM, VPC, EC2, RDS, S3, AWS Backup), quản trị Linux, Apache và PHP, thao tác với cơ sở dữ liệu MySQL.
-- **Xử lý sự cố:** đọc log, phân tích nguyên nhân và khắc phục các lỗi thực tế như phân quyền IAM, Security Group, kết nối cơ sở dữ liệu và cấp chứng chỉ SSL.
-- **Tư duy hệ thống:** hiểu cách thiết kế hệ thống chịu lỗi, đánh đổi giữa chi phí, RTO và RPO.
-- **Viết báo cáo:** ghi chép từng bước triển khai, chụp minh chứng và trình bày thành tài liệu phục vụ báo cáo thực tập.
-- **Tự học và kỷ luật:** chủ động tra cứu tài liệu, kiểm tra kết quả sau mỗi bước.
+Qua quá trình thực tập và thực hiện dự án, tôi đã cải thiện nhiều kỹ năng quan trọng:
+
+- **Kiến thức chuyên môn:** Nâng cao khả năng sử dụng các dịch vụ AWS như IAM, VPC, EC2, RDS, S3, AWS Backup, CloudWatch, Route 53 và SNS; đồng thời củng cố kiến thức quản trị Linux, Apache, PHP và cơ sở dữ liệu MySQL.
+- **Kỹ năng xử lý sự cố:** Rèn luyện khả năng đọc log, phân tích nguyên nhân và khắc phục các lỗi phát sinh trong quá trình triển khai, đặc biệt là các vấn đề liên quan đến phân quyền IAM, Security Group, kết nối cơ sở dữ liệu và cấu hình máy chủ web.
+- **Tư duy thiết kế hệ thống:** Hiểu rõ hơn về kiến trúc hệ thống đa vùng, cơ chế sao lưu, sao chép dữ liệu liên vùng và phương án khôi phục hệ thống khi xảy ra sự cố.
+- **Kỹ năng viết báo cáo và tài liệu kỹ thuật:** Biết cách ghi chép quy trình triển khai, thu thập hình ảnh minh chứng, tổng hợp kết quả và trình bày nội dung kỹ thuật một cách có hệ thống.
+- **Kỹ năng tự học và làm việc:** Chủ động tìm kiếm tài liệu, nghiên cứu hướng dẫn từ AWS, thực hành kiểm tra từng cấu hình và kiên trì giải quyết các vấn đề phát sinh trong quá trình thực hiện dự án.
+
+Nhìn chung, kỳ thực tập đã giúp tôi củng cố kiến thức chuyên môn, nâng cao kỹ năng thực hành với nền tảng AWS và có thêm kinh nghiệm trong việc triển khai, quản trị cũng như xử lý sự cố đối với một hệ thống ứng dụng trên môi trường điện toán đám mây.
 
 Về tác phong, tôi luôn cố gắng hoàn thành tốt nhiệm vụ, tuân thủ nội quy, và tích cực trao đổi với đồng nghiệp để nâng cao hiệu quả công việc.
 
@@ -32,8 +36,7 @@ Về tác phong, tôi luôn cố gắng hoàn thành tốt nhiệm vụ, tuân t
 
 | STT | Tiêu chí                            | Mô tả                                                                                            | Tốt | Khá | Trung bình |
 | --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | --- | --- | ---------- |
-| 1   | **Kiến thức và kỹ năng chuyên môn** | Hiểu biết về ngành, áp dụng kiến thức vào thực tế, kỹ năng sử dụng công cụ, chất lượng công việc |
-☐    | ✅    | ☐       | 
+| 1   | **Kiến thức và kỹ năng chuyên môn** | Hiểu biết về ngành, áp dụng kiến thức vào thực tế, kỹ năng sử dụng công cụ, chất lượng công việc |☐    | ✅    | ☐       | 
 | 2   | **Khả năng học hỏi**                | Tiếp thu kiến thức mới, học hỏi nhanh                                                            | ☐    | ✅    | ☐       |
 | 3   | **Chủ động**                        | Tự tìm hiểu, nhận nhiệm vụ mà không chờ chỉ dẫn                                                  | ☐   | ✅   | ☐          |
 | 4   | **Tinh thần trách nhiệm**           | Hoàn thành công việc đúng hạn, đảm bảo chất lượng                                                | ☐   | ✅   | ☐          |
@@ -53,4 +56,4 @@ Về tác phong, tôi luôn cố gắng hoàn thành tốt nhiệm vụ, tuân t
 * Chủ động hơn trong việc tìm kiếm, đề xuất và triển khai các nhiệm vụ được giao.
 * Cải thiện tư duy giải quyết vấn đề, mạnh dạn đề xuất các giải pháp phù hợp khi gặp khó khăn.
 * Tích cực tham gia các hoạt động nhóm, nâng cao mức độ đóng góp vào dự án và đề xuất sáng kiến cải tiến công việc.
-* Tiếp tục phát huy tinh thần học hỏi, trách nhiệm và cầu tiến để nâng cao chất lượng công việc.*
+* Tiếp tục phát huy tinh thần học hỏi, trách nhiệm và cầu tiến để nâng cao chất lượng công việc.

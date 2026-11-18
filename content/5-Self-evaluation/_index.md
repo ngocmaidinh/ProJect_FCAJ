@@ -8,25 +8,28 @@ pre: " <b>5.</b> "
 
 
 
-During my internship at **[Amazon Web Services Viet Nam Company Limited]** from **[10/08/2026]** to **[18/10/2026]**, I had the opportunity to learn, develop my skills, and apply the knowledge acquired at university in a real-world working environment.
+During my internship at **Amazon Web Services Vietnam Company Limited** from **August 10, 2026** to **October 18, 2026**, I had the opportunity to learn, develop my skills, and apply the knowledge acquired at university in a practical working environment.
 
-My objective during the internship was to gain knowledge and develop a Backup and Disaster Recovery system on the AWS platform. I implemented a two-Region architecture (Singapore as the primary system and Sydney as the disaster recovery system) for a sample online clothing store web application, which included the following components:
+My objective during the internship was to explore Amazon Web Services (AWS) cloud services and implement a Backup and Disaster Recovery system on the AWS platform. As part of the project, I designed and deployed a Multi-Region architecture, using Singapore as the primary Region and Sydney as the backup Region for a sample clothing e-commerce website under the Maiora brand. The system consisted of the following main components:
 
-- Application server hosted on EC2 and database hosted on RDS.
-- Image storage on S3 with Versioning and Cross-Region Replication.
-- Centralized backups scheduled and managed through AWS Backup.
-- Monitoring and alerting using Route 53, CloudWatch, and SNS.
-- Secure connections using HTTPS.
+- **Application Infrastructure:** Deployed the application server on Amazon EC2 and the MySQL database on Amazon RDS.
+- **Data Storage:** Used Amazon S3 to store product images, combined with Versioning and Cross-Region Replication to protect and replicate data between the two Regions.
+- **Data Backup:** Configured AWS Backup Vault and Backup Plan to perform scheduled backups of supported AWS resources, enabling data and resource recovery in the event of failures.
+- **Multi-Region Disaster Recovery Environment:** Deployed a backup environment in the Sydney Region, including AWS resources and an independent RDS database, to support application recovery and continuity during failure scenarios.
+- **Monitoring and Alerting:** Explored and configured Amazon CloudWatch, Amazon SNS, and Route 53 for system monitoring, status tracking, and incident notifications.
+- **System Security:** Explored and applied security mechanisms such as IAM, Security Groups, and HTTPS.
 
-I then simulated incidents such as data loss, accidental data deletion, and server failure, performed recovery procedures, and measured the RTO and RPO metrics.
+During the implementation process, I simulated several failure scenarios, including data loss, accidental deletion of Amazon S3 objects, and application server failures on EC2. I then practiced restoring data and resources from backups, checking data integrity, and verifying website functionality after the recovery process.
 
-Through this project, I improved several skills:
+Through the internship and project implementation, I developed several important skills:
 
-- **Technical expertise:** Using AWS services (IAM, VPC, EC2, RDS, S3, and AWS Backup), administering Linux, Apache, and PHP, and working with MySQL databases.
-- **Troubleshooting:** Reading logs, analyzing root causes, and resolving practical issues involving IAM permissions, Security Groups, database connectivity, and SSL certificate configuration.
-- **Systems thinking:** Understanding how to design fault-tolerant systems and evaluate trade-offs between cost, RTO, and RPO.
-- **Technical documentation:** Recording each implementation step, capturing supporting evidence, and organizing the results into documentation for the internship report.
-- **Self-learning and discipline:** Proactively researching technical documentation and verifying the results after each implementation step. 
+- **Technical Knowledge:** Improved my ability to work with AWS services such as IAM, VPC, EC2, RDS, S3, AWS Backup, CloudWatch, Route 53, and SNS, while strengthening my knowledge of Linux administration, Apache, PHP, and MySQL databases.
+- **Troubleshooting Skills:** Developed the ability to read logs, analyze root causes, and resolve issues encountered during implementation, particularly those related to IAM permissions, Security Groups, database connectivity, and web server configuration.
+- **System Design Thinking:** Gained a better understanding of Multi-Region architecture, backup mechanisms, cross-region data replication, and system recovery strategies in the event of failures.
+- **Technical Documentation and Reporting:** Improved my ability to document implementation procedures, collect supporting screenshots, summarize results, and present technical information systematically.
+- **Self-Learning and Work Discipline:** Developed the habit of proactively searching for documentation, studying AWS guidelines, verifying configurations at each implementation stage, and persistently resolving technical challenges.
+
+Overall, the internship helped me strengthen my technical knowledge, improve my practical skills with the AWS platform, and gain valuable experience in deploying, managing, and troubleshooting cloud-based application systems.
 
 In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
 
